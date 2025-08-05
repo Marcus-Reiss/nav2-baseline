@@ -1,5 +1,6 @@
 export TURTLEBOT3_MODEL=burger
-export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/home/ROS/ros_ws/src/obst_avoid1/plugins/build
+export LDS_MODEL=HLS_LFCD2
+export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/home/ROS/ros_ws/src/nav2_baseline/plugins/build
 source /opt/ros/humble/setup.bash
 source /home/ROS/ros_ws/install/setup.bash
 # source /usr/share/colcon_argcomplete/hook/colcon_argcomplete.bash
