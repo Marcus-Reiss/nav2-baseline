@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# VSCode
+.vscode/
+
+# Log and temporary files
+ROS/ros_ws/src/log/
+ROS/ros_ws/log/
+ROS/ros_ws/install/
+ROS/ros_ws/frames_*.gv
+ROS/ros_ws/frames_*.pdf
