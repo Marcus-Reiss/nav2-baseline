@@ -8,7 +8,7 @@ import os
 def generate_launch_description():
     gazebo_pkg = get_package_share_directory('gazebo_ros')
     world_path = os.path.join(get_package_share_directory('nav2_baseline'), 
-                              'worlds', 'maze_static.world')
+                              'worlds', 'corridor_dynamic.world')
     
     return LaunchDescription([
         IncludeLaunchDescription(

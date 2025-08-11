@@ -102,5 +102,12 @@
     </link>
     <static>0</static>
     <allow_auto_disable>1</allow_auto_disable>
+    <plugin name='bumper' filename='libgazebo_ros_bumper.so'>
+      <ros>
+        <namespace>/</namespace>
+        <remapping>bumper:=collision</remapping>
+      </ros>
+      <frameName>base_link</frameName>
+    </plugin>
   </model>
 </sdf>

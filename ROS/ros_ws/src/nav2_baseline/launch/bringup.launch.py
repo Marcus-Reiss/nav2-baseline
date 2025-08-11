@@ -24,5 +24,20 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(turtlebot3_pkg, 'launch', 'robot.launch.py')
             )
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(pkg, 'launch', 'goal_pose.launch.py')
+            )
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(pkg, 'launch', 'nav2_navigation.launch.py')
+            )
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(pkg, 'launch', 'rviz.launch.py')
+            )
         )
     ])
