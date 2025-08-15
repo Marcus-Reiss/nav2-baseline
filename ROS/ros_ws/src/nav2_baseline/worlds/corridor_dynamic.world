@@ -799,7 +799,7 @@
         <axis>y</axis>
         <angle>36.8</angle>
         <amplitude>0.75</amplitude>
-        <frequency>-0.75</frequency>
+        <frequency>-0.25</frequency>
       </plugin>
     </model>
     <model name='moving_white_cylinder_1'>

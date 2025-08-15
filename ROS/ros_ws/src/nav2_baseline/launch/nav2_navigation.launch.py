@@ -13,7 +13,7 @@ def generate_launch_description():
         nav2_pkg, 'config', 'nav2_params.yaml'
     )
     map_file = os.path.join(
-        nav2_pkg, 'maps', 'map_corridor.yaml'
+        nav2_pkg, 'maps', 'map_maze.yaml'
     )
 
     # # Map server node

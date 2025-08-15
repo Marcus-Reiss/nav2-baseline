@@ -39,5 +39,10 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(pkg, 'launch', 'rviz.launch.py')
             )
-        )
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(pkg, 'launch', 'rosbag_record.launch.py')
+            )
+        ),
     ])

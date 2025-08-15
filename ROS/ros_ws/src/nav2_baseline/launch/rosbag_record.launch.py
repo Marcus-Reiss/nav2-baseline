@@ -9,7 +9,7 @@ def generate_launch_description():
                 'ros2', 'bag', 'record',
                 '-o', 'nav2_benchmark_bag',
                 '/odom', '/tf', '/collision', '/tf_static', '/scan',
-                '/amcl_pose', '/goal_pose', '/cmd_vel'
+                '/amcl_pose', '/goal_pose', '/cmd_vel', '/map'
             ],
             output='screen'
         )
