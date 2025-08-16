@@ -23,14 +23,14 @@ class GoalPublisherNode(Node):
         goal.pose.header.frame_id = "map"
         goal.pose.header.stamp = self.get_clock().now().to_msg()
 
-        goal.pose.pose.position.x = -6.0  # -9.0
-        goal.pose.pose.position.y = 3.0  # 0.0
+        goal.pose.pose.position.x = 9.0  # -9.0
+        goal.pose.pose.position.y = 0.0  # 0.0
 
-        q = quaternion_from_euler(0, 0, pi)
-        goal.pose.pose.orientation.x = q[0]
-        goal.pose.pose.orientation.y = q[1]
-        goal.pose.pose.orientation.z = q[2]
-        goal.pose.pose.orientation.w = q[3]
+        # q = quaternion_from_euler(0, 0, pi)
+        # goal.pose.pose.orientation.x = q[0]
+        # goal.pose.pose.orientation.y = q[1]
+        # goal.pose.pose.orientation.z = q[2]
+        # goal.pose.pose.orientation.w = q[3]
         
         self.get_logger().info('Sending goal...')
         self._action_client.send_goal_async(goal)

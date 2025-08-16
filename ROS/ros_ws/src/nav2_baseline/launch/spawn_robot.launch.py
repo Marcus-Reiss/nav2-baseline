@@ -13,9 +13,9 @@ def generate_launch_description():
             '-entity', 'turtlebot3',
             '-file', '/opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf',
             '-x', '4.5',   # 4.5; 9.0
-            '-y', '-4.5',  # -4.5; 0.0
+            '-y', '0.0',  # -4.5; 0.0
             '-z', '0.01',
-            '-Y', f'0.0'
+            '-Y', f'{pi}'
         ],
         output='screen'
     )
