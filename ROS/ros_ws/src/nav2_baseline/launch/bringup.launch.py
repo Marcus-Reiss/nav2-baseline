@@ -27,22 +27,17 @@ def generate_launch_description():
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(pkg, 'launch', 'goal_pose.launch.py')
-            )
-        ),
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
                 os.path.join(pkg, 'launch', 'nav2_navigation.launch.py')
             )
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(pkg, 'launch', 'rviz.launch.py')
+                os.path.join(pkg, 'launch', 'collision_monitor.launch.py')
             )
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(pkg, 'launch', 'rosbag_record.launch.py')
+                os.path.join(pkg, 'launch', 'goal_pose.launch.py')
             )
         ),
     ])
