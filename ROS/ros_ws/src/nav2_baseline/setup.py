@@ -19,6 +19,8 @@ setup(
         (os.path.join('share', package_name, 'config'), glob('config/*.xml')),
         (os.path.join('share', package_name, 'maps'), glob('maps/*.yaml')),
         (os.path.join('share', package_name, 'maps'), glob('maps/*.pgm')),
+        (os.path.join('share', package_name, 'model_bumper'), glob('model_bumper/*.config')),
+        (os.path.join('share', package_name, 'model_bumper'), glob('model_bumper/*.sdf')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -30,6 +32,7 @@ setup(
     entry_points={
         'console_scripts': [
             'goal_pub_node = nav2_baseline.goal_pub_node:main',
+            'collision_monitor = nav2_baseline.collision_monitor:main',
         ],
     },
 )
