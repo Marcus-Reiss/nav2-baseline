@@ -1,0 +1,27 @@
+records:
+
+rec_1:  SC
+rec_2:  F   (goal failed)
+rec_3:  SC
+rec_4:  F   (goal failed)
+rec_5:  SC
+rec_6:  F   (Tmax)
+rec_7:  SC
+rec_8:  SC
+rec_9:  F   (goal failed)
+rec_10: F   (goal failed)
+rec_11: SA
+rec_12: F   (goal failed)
+rec_13: F   (goal failed)
+rec_14: F   (goal failed)
+rec_15: SC
+rec_16: F   (goal failed)
+rec_17: SC
+rec_18: F   (goal failed)
+rec_19: F   (goal failed)
+rec_20: SC
+rec_21: F   (goal failed)
+rec_22: F   (goal failed)
+rec_23: F   (goal failed)
+rec_24: SC
+rec_25: SA
