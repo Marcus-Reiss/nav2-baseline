@@ -49,6 +49,24 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install numpy 
+
+# System dependencies for ML/visualiaztion
+RUN apt-get update && apt-get install -y \
+    libgl1 \
+    libglib2.0-0 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Python packages for PPO / SB3
+RUN pip install --no-cache-dir \
+    "numpy<2.0" \
+    stable-baselines3[extra] \
+    torch \
+    gymnasium \
+    tensorboard \
+    pandas \
+    pyyaml
+
 # Copy custom entrypoint script and .bashrc configuration from the host to the container
 COPY config/entrypoint.sh /entrypoint.sh
 COPY config/bashrc /home/${USERNAME}/.bashrc
