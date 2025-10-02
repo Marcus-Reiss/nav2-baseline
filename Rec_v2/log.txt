@@ -1,5 +1,0 @@
-records:
-
-rec1: F
-rec2: F
-rec3: F
