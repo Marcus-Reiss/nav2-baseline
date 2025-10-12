@@ -23,7 +23,7 @@ def generate_launch_description():
     # Seleciona o arquivo .world conforme stage (usando PythonExpression)
     world_expr = PythonExpression([
         "'", os.path.join(pkg_share, 'worlds', 'empty.world'), "' if '", stage, "' == '1' else '",
-        os.path.join(pkg_share, 'worlds', 'static.world'), "' if '", stage, "' == '2' else '",
+        os.path.join(pkg_share, 'worlds', 'static_v1.world'), "' if '", stage, "' == '2' else '",
         os.path.join(pkg_share, 'worlds', 'corridor_3x10_dynamic_v2.world'), "'"
     ])
 
@@ -43,8 +43,8 @@ def generate_launch_description():
         arguments=[
             '-entity', 'turtlebot3',
             '-file', tb3_file,
-            '-x', '1.0',  # -4.0
-            '-y', '0.0',
+            '-x', '4.0',  # -0.5
+            '-y', '0.5',
             '-z', '0.01'
         ],
         output='screen'

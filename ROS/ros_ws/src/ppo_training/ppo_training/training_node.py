@@ -30,14 +30,14 @@ class PPOTrainer(Node):
         pkg_share = get_package_share_directory('ppo_training')
         self.pkg_share = pkg_share
 
-        # Carrega arquivo de configuração (yaml)
+        # Carrega arquivo de configuraÃ§Ã£o (yaml)
         if not os.path.exists(config_file):
             raise FileNotFoundError(f"Config file not found: {config_file}")
         with open(config_file, 'r') as f:
             self.config = yaml.safe_load(f) or {}
 
-        # Parâmetros de training
-        # Podemos aceitar timesteps por estágio no YAML (lista) ou um único valor (int)
+        # ParÃ¢metros de training
+        # Podemos aceitar timesteps por estÃ¡gio no YAML (lista) ou um Ãºnico valor (int)
         self.timesteps_per_stage = self.config.get('timesteps_per_stage', None)
         if self.timesteps_per_stage is None:
             # fallback: usa total_timesteps_per_stage se exitir, ou defaults
@@ -74,7 +74,7 @@ class PPOTrainer(Node):
 
         self.vec_env = DummyVecEnv([make_env])
 
-        # Se o YAML contiver parâmetros SB3 aplicáveis, aplique-os ao criar o modelo
+        # Se o YAML contiver parÃ¢metros SB3 aplicÃ¡veis, aplique-os ao criar o modelo
         sb3_kwargs = {}
         # Filtrar chaves conhecidas (para evitar passar timesteps_per_stage, etc.)
         sb3_allowed = [
@@ -86,7 +86,7 @@ class PPOTrainer(Node):
             if k in self.config:
                 sb3_kwargs[k] = self.config[k]
 
-        # Inicialmente, não instanciamos o PPO aqui: isso será feito em train_stage()
+        # Inicialmente, nÃ£o instanciamos o PPO aqui: isso serÃ¡ feito em train_stage()
         self.model = None
         self.sb3_kwargs = sb3_kwargs
 
@@ -123,11 +123,11 @@ class PPOTrainer(Node):
         """
         env = self.vec_env
 
-        # verifica se há modelo anterior a ser carregado
+        # verifica se hÃ¡ modelo anterior a ser carregado
         loaded_model = self._maybe_load_previous(stage_idx, env)
         if loaded_model is not None:
             self.model = loaded_model
-            # Quando continuar treino, não resetar contagem de timesteps
+            # Quando continuar treino, nÃ£o resetar contagem de timesteps
             reset_num_timesteps = False
         else:
             # cria novo modelo
@@ -157,8 +157,8 @@ class PPOTrainer(Node):
         self.get_logger().info(f"Modelo final do stage {stage_idx} salvo em: {save_path}")
 
     def shutdown(self):
-        # Para executor e destrói nós do ambiente
-        self.get_logger().info("Encerrando executor e destruindo nós de ambiente...")
+        # Para executor e destrÃ³i nÃ³s do ambiente
+        self.get_logger().info("Encerrando executor e destruindo nÃ³s de ambiente...")
         try:
             # remover nodes do executor e destruir
             for node in list(self._env_nodes):
@@ -181,10 +181,10 @@ def main(argv=None):
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument('--stage', type=int, default=1, help='Stage atual (1,2,3). Usado para carregar modelo anterior se existir.')
     parser.add_argument('--config', type=str, default='', help='Caminho para ppo_params.yaml (se vazio, usa config/ppo_params.yaml do pacote)')
-    parser.add_argument('--checkpoint_freq', type=int, default=5000, help='Frequência de checkpoint (timesteps)')
+    parser.add_argument('--checkpoint_freq', type=int, default=5000, help='FrequÃªncia de checkpoint (timesteps)')
     args, unknown = parser.parse_known_args(argv)
 
-    # Inicializa rclpy (necessário antes de criar Nodes)
+    # Inicializa rclpy (necessÃ¡rio antes de criar Nodes)
     rclpy.init(args=unknown)
 
     # Determina caminho do config file
@@ -200,7 +200,7 @@ def main(argv=None):
     trainer = PPOTrainer(config_file=config_file, stage=args.stage)
 
     # Determine timesteps para este stage
-    # trainer.timesteps_per_stage é uma lista de 3 valores
+    # trainer.timesteps_per_stage Ã© uma lista de 3 valores
     stage_idx = args.stage
     if stage_idx < 1 or stage_idx > 3:
         trainer.get_logger().warn("Stage inválido, usando 1.")

@@ -31,6 +31,7 @@ setup(
             'robot_spawner = ppo_training.robot_spawner:main',
             'goal_spawner = ppo_training.goal_spawner:main',
             'evaluate = ppo_training.evaluator:main',
+            'test_reward = ppo_training.test_reward:main'
         ],
     },
 )
