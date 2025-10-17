@@ -1,0 +1,6 @@
+# Request: features vector (obs) - pre-processado no plugin
+float64[] obs
+---
+# Response
+float64 linear_x
+float64 angular_z

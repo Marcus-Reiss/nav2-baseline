@@ -67,6 +67,26 @@ RUN pip install --no-cache-dir \
     pandas \
     pyyaml
 
+# Build tools and headers for building C++ plugin
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    cmake \
+    python3-dev \
+    python3-venv \
+    libssl-dev \
+    libffi-dev \
+    zlib1g-dev \
+    libxml2-dev \
+    libjansson-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip/setuptools/wheel before installing heavy Python pkgs
+RUN python3 -m pip install --upgrade pip && pip install "setuptools==70.0.0" wheel
+
+# Install onnx / onnxruntime
+RUN python3 -m pip install --no-cache-dir \
+    onnx \
+    onnxruntime
+
 # Copy custom entrypoint script and .bashrc configuration from the host to the container
 COPY config/entrypoint.sh /entrypoint.sh
 COPY config/bashrc /home/${USERNAME}/.bashrc

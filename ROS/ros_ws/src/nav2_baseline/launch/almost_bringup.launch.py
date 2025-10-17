@@ -45,10 +45,5 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(pkg, 'launch', 'collision_monitor.launch.py')
             )
-        ),
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(pkg, 'launch', 'goal_pose.launch.py')
-            )
         )
     ])

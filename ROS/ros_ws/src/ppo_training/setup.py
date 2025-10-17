@@ -31,7 +31,8 @@ setup(
             'robot_spawner = ppo_training.robot_spawner:main',
             'goal_spawner = ppo_training.goal_spawner:main',
             'evaluate = ppo_training.evaluator:main',
-            'test_reward = ppo_training.test_reward:main'
+            'test_reward = ppo_training.test_reward:main',
+            'rl_infer_node = ppo_training.rl_infer_node:main'
         ],
     },
 )

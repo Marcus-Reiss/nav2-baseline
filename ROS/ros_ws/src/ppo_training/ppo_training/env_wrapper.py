@@ -101,7 +101,7 @@ class PPOEnvironment(Node, gym.Env):
         self.collision_reward = -10.0
 
         # path-clear reward
-        self.k_path_clear = 5.0
+        self.k_path_clear = 20.0
 
         self.reward_clip = 50.0
 
@@ -130,9 +130,9 @@ class PPOEnvironment(Node, gym.Env):
         self.prev_min_obst_for_reward = 10.0  # inicializaÃ§Ã£o
 
         # novo: peso de bloqueio e penalidade linear quando bloqueado
-        self.k_block = 100.0        # penalidade base por bloqueio 20.0
-        self.k_block_lin = 300.0    # penalidade por mover-se (lin_cmd) enquanto bloqueado 35.0
-        self.k_commit = 25.0  # teimosia
+        self.k_block = 80.0        # penalidade base por bloqueio 20.0
+        self.k_block_lin = 70.0    # penalidade por mover-se (lin_cmd) enquanto bloqueado 35.0
+        self.k_commit = 50.0  # teimosia
 
         # permitir curvas mais agressivas (menos puniÃ§Ã£o em ang)
         self.k_omega = 0.01
@@ -145,6 +145,11 @@ class PPOEnvironment(Node, gym.Env):
         self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.goal_sub = self.create_subscription(PoseStamped, '/goal_pose', self.goal_callback, 10)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+
+        # Cliente para o serviço de respawn (robot_spawner)
+        self.respawn_robot_client = self.create_client(Empty, 'respawn_robot')
+        while not self.respawn_robot_client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().warn('Serviço "respawn_robot" não disponível, esperando...')
 
         # optional bumper contact subscription
         if HAVE_BUMPER_MSG:
@@ -611,7 +616,7 @@ class PPOEnvironment(Node, gym.Env):
 
         blocking_factor = 0.0
         # Limiar de distância para considerar um bloqueio sério (ex: 0.7 metros)
-        is_obstacle_in_path = (abs(path_min - curr_min) < 0.1 * curr_min)
+        is_obstacle_in_path = (abs(path_min - curr_min) < 0.4 * curr_min)  # 0.1
         is_dangerously_close = (path_min < curr_dist and path_min < self.front_thresh)
         if is_obstacle_in_path and is_dangerously_close:
             ratio = 1.0 - (path_min / self.front_thresh)
@@ -634,7 +639,8 @@ class PPOEnvironment(Node, gym.Env):
         block_scale = min(1.0, blocking_factor * 1.4)
         r_forward = self.k_forward * lin_cmd * heading_cos * (1.0 - block_scale)
         if front_min < 0.5:
-            r_forward *= max(0.0, (front_min / 0.5))
+            # r_forward *= max(0.0, (front_min / 0.5))
+            r_forward *= 0.0
 
         # update prev min
         self.prev_min_obst_for_reward = curr_min
@@ -726,15 +732,20 @@ class PPOEnvironment(Node, gym.Env):
         self._publish_stop()
 
         # reset Gazebo world
-        reset_client = self.create_client(Empty, '/reset_world')
+        # reset_client = self.create_client(Empty, '/reset_world')
+        # req = Empty.Request()
+        # if reset_client.wait_for_service(timeout_sec=2.0):
+        #     try:
+        #         reset_client.call_async(req)
+        #     except Exception as e:
+        #         self.get_logger().warn(f"/reset_world call failed: {e}")
+        # else:
+        #     self.get_logger().warn("/reset_world service not available")
         req = Empty.Request()
-        if reset_client.wait_for_service(timeout_sec=2.0):
-            try:
-                reset_client.call_async(req)
-            except Exception as e:
-                self.get_logger().warn(f"/reset_world call failed: {e}")
-        else:
-            self.get_logger().warn("/reset_world service not available")
+        future = self.respawn_robot_client.call_async(req)
+        rclpy.spin_until_future_complete(self, future)
+
+        self.get_logger().info("Robô respawnado via serviço.")
 
         # Request a new goal from the GoalSpawner (the goal_spawner node should publish /goal_pose)
         # We will wait for the '/goal_pose' callback to update self.goal (using _last_goal_stamp)

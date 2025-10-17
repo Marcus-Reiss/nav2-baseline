@@ -43,21 +43,21 @@ class GoalSpawnerNode(Node):
         # ]
         
         # static.world
-        # self.goal_candidates = [
-        #     {"x": 0.5, "y": 0.0},
-        #     {"x": 2.0, "y": 0.3},
-        #     {"x": 2.0, "y": -3.0},
-        #     {"x": 2.0, "y": 3.0},
-        #     {"x": 0.0, "y": 1.5},
-        #     {"x": 0.0, "y": 2.0},
-        #     {"x": -2.0, "y": 0.0},
-        #     {"x": -0.5, "y": -1.5},
-        #     {"x": 0.75, "y": -1.75},
-        #     {"x": -1.5, "y": -3.0},
-        #     {"x": -3.5, "y": -1.5},
-        #     {"x": -3.0, "y": 0.0},
-        #     {"x": -4.0, "y": 0.0}
-        # ]
+        self.goal_candidates = [
+            {"x": 0.5, "y": 0.0},
+            {"x": 2.0, "y": 0.3},
+            {"x": 2.0, "y": -3.0},
+            {"x": 2.0, "y": 3.0},
+            {"x": 0.0, "y": 1.5},
+            {"x": 0.0, "y": 2.0},
+            {"x": -2.0, "y": 0.0},
+            {"x": -0.5, "y": -1.5},
+            {"x": 0.75, "y": -1.75},
+            {"x": -1.5, "y": -3.0},
+            {"x": -3.5, "y": -1.5},
+            {"x": -3.0, "y": 0.0},
+            {"x": -4.0, "y": 0.0}
+        ]
 
         # # atrás dos obstáculos + outros normais
         # self.goal_candidates = [
@@ -83,11 +83,11 @@ class GoalSpawnerNode(Node):
         # ]
 
         # corridor_3x10_static.world
-        self.goal_candidates = [
-            {"x": -4.5, "y": 0.0},
-            {"x": -4.5, "y": 0.5},
-            {"x": -4.5, "y": -0.5}
-        ]
+        # self.goal_candidates = [
+        #     {"x": -4.5, "y": 0.0},
+        #     {"x": -4.5, "y": 0.5},
+        #     {"x": -4.5, "y": -0.5}
+        # ]
 
         # Publisher de goal (para os envs)
         self.goal_pose_pub = self.create_publisher(PoseStamped, '/goal_pose', 10)

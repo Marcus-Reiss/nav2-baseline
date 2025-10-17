@@ -35,27 +35,27 @@ def generate_launch_description():
     )
 
     # Spawn do turtlebot3 burger sem imu
-    tb3_file = os.path.join(pkg_share, 'model_bumper', 'model.sdf')
+    # tb3_file = os.path.join(pkg_share, 'model_bumper', 'model.sdf')
 
-    spawn_robot = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        arguments=[
-            '-entity', 'turtlebot3',
-            '-file', tb3_file,
-            '-x', '4.0',   # 4.0, 0.0
-            '-y', '0.0',  # -4.0, 0.0
-            '-z', '0.01'
-        ],
-        output='screen'
-    )
-
-    # robot_spawner = Node(
-    #     package='ppo_training',
-    #     executable='robot_spawner',
-    #     name='robot_spawner_node',
+    # spawn_robot = Node(
+    #     package='gazebo_ros',
+    #     executable='spawn_entity.py',
+    #     arguments=[
+    #         '-entity', 'turtlebot3',
+    #         '-file', tb3_file,
+    #         '-x', '4.0',   # 4.0, 0.0
+    #         '-y', '0.0',  # -4.0, 0.0
+    #         '-z', '0.01'
+    #     ],
     #     output='screen'
     # )
+
+    robot_spawner_node = Node(
+        package='ppo_training',
+        executable='robot_spawner',
+        name='robot_spawner',
+        output='screen'
+    )
 
     # Goal spawner node (serviço spawn_new_goal)
     goal_spawner = Node(
@@ -77,7 +77,7 @@ def generate_launch_description():
     return LaunchDescription([
         stage_arg,
         gazebo,
-        spawn_robot,
+        robot_spawner_node,
         goal_spawner,
         trainer,
     ])

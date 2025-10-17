@@ -1,0 +1,7 @@
+<library path="nav2_rl_controller_plugin">
+  <class name="nav2_rl_controller::RLController"
+         type="nav2_rl_controller::RLController"
+         base_class_type="nav2_core::Controller">
+    <description>RL Controller plugin that delegates inference to a Python service</description>
+  </class>
+</library>
