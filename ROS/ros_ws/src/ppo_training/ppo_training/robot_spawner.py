@@ -24,7 +24,7 @@ class RobotSpawner(Node):
         self.entity_name = "turtlebot3_burger" # Nome completo do modelo no Gazebo
 
         self.pos_candidates = [
-            {"x": 4.0, "y": 0.0}
+            {"x": 1.0, "y": 1.0}
         ]
 
         self.delete_entity_client = self.create_client(DeleteEntity, '/delete_entity')

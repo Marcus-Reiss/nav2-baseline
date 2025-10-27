@@ -1,0 +1,4210 @@
+stamp:
+  sec: 1760895690
+  nanosec: 502954461
+level: 20
+name: nav2_container
+msg: 'Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>'
+file: ./src/component_manager.cpp
+function: create_component_factory
+line: 133
+---
+stamp:
+  sec: 1760895690
+  nanosec: 637919456
+level: 20
+name: robot_spawner
+msg: Serviço "respawn_robot" pronto.
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/robot_spawner.py
+function: __init__
+line: 38
+---
+stamp:
+  sec: 1760895690
+  nanosec: 655817386
+level: 20
+name: nav2_container
+msg: 'Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>'
+file: ./src/component_manager.cpp
+function: create_component_factory
+line: 131
+---
+stamp:
+  sec: 1760895690
+  nanosec: 655873679
+level: 20
+name: nav2_container
+msg: 'Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>'
+file: ./src/component_manager.cpp
+function: create_component_factory
+line: 133
+---
+stamp:
+  sec: 1760895690
+  nanosec: 671209853
+level: 20
+name: goal_spawner_node
+msg: GoalSpawnerNode pronto. Serviço '/spawn_new_goal' disponível.
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/goal_spawner.py
+function: __init__
+line: 106
+---
+stamp:
+  sec: 1760895690
+  nanosec: 283445021
+level: 20
+name: controller_server
+msg: Creating controller server
+file: ./src/controller_server.cpp
+function: ControllerServer
+line: 49
+---
+stamp:
+  sec: 1760895690
+  nanosec: 432251767
+level: 20
+name: behavior_server
+msg: "\n\tbehavior_server lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 763318810
+level: 20
+name: controller_server
+msg: Configuring controller interface
+file: ./src/controller_server.cpp
+function: on_configure
+line: 82
+---
+stamp:
+  sec: 1760895690
+  nanosec: 763592453
+level: 20
+name: controller_server
+msg: getting goal checker plugins..
+file: ./src/controller_server.cpp
+function: on_configure
+line: 91
+---
+stamp:
+  sec: 1760895690
+  nanosec: 763879716
+level: 20
+name: controller_server
+msg: Controller frequency set to 10.0000Hz
+file: ./src/controller_server.cpp
+function: on_configure
+line: 117
+---
+stamp:
+  sec: 1760895690
+  nanosec: 791570833
+level: 20
+name: controller_server
+msg: 'Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker'
+file: ./src/controller_server.cpp
+function: on_configure
+line: 130
+---
+stamp:
+  sec: 1760895690
+  nanosec: 792557010
+level: 20
+name: controller_server
+msg: 'Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker'
+file: ./src/controller_server.cpp
+function: on_configure
+line: 146
+---
+stamp:
+  sec: 1760895690
+  nanosec: 793259696
+level: 20
+name: controller_server
+msg: Controller Server has goal_checker  goal checkers available.
+file: ./src/controller_server.cpp
+function: on_configure
+line: 163
+---
+stamp:
+  sec: 1760895690
+  nanosec: 794475097
+level: 20
+name: controller_server
+msg: 'Created controller : FollowPath of type nav2_rl_controller::RLController'
+file: ./src/controller_server.cpp
+function: on_configure
+line: 172
+---
+stamp:
+  sec: 1760895690
+  nanosec: 867028899
+level: 20
+name: behavior_server
+msg: Configuring
+file: ./src/behavior_server.cpp
+function: on_configure
+line: 70
+---
+stamp:
+  sec: 1760895690
+  nanosec: 328476375
+level: 20
+name: smoother_server
+msg: "\n\tsmoother_server lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 331036874
+level: 20
+name: smoother_server
+msg: Creating smoother server
+file: ./src/nav2_smoother.cpp
+function: SmootherServer
+line: 43
+---
+stamp:
+  sec: 1760895690
+  nanosec: 473908119
+level: 20
+name: bt_navigator
+msg: "\n\tbt_navigator lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/art..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 808150694
+level: 20
+name: smoother_server
+msg: Configuring smoother server
+file: ./src/nav2_smoother.cpp
+function: on_configure
+line: 68
+---
+stamp:
+  sec: 1760895690
+  nanosec: 815329813
+level: 20
+name: smoother_server
+msg: 'Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother'
+file: ./src/nav2_smoother.cpp
+function: loadSmootherPlugins
+line: 133
+---
+stamp:
+  sec: 1760895690
+  nanosec: 816172743
+level: 20
+name: smoother_server
+msg: Smoother Server has simple_smoother  smoothers available.
+file: ./src/nav2_smoother.cpp
+function: loadSmootherPlugins
+line: 152
+---
+stamp:
+  sec: 1760895690
+  nanosec: 361735972
+level: 20
+name: planner_server
+msg: "\n\tplanner_server lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/a..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 874976496
+level: 20
+name: behavior_server
+msg: Creating behavior plugin spin of type nav2_behaviors/Spin
+file: ./src/behavior_server.cpp
+function: loadBehaviorPlugins
+line: 110
+---
+stamp:
+  sec: 1760895690
+  nanosec: 876460721
+level: 20
+name: behavior_server
+msg: Configuring spin
+file: ./include/nav2_behaviors/timed_behavior.hpp
+function: configure
+line: 114
+---
+stamp:
+  sec: 1760895690
+  nanosec: 652124529
+level: 20
+name: velocity_smoother
+msg: "\n\tvelocity_smoother lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.or..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 376188847
+level: 20
+name: global_costmap.global_costmap
+msg: "\n\tglobal_costmap lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/a..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 744027171
+level: 20
+name: lifecycle_manager_navigation
+msg: Creating
+file: ./src/lifecycle_manager.cpp
+function: LifecycleManager
+line: 38
+---
+stamp:
+  sec: 1760895691
+  nanosec: 77796702
+level: 20
+name: velocity_smoother
+msg: Configuring velocity smoother
+file: ./src/velocity_smoother.cpp
+function: on_configure
+line: 49
+---
+stamp:
+  sec: 1760895690
+  nanosec: 794584401
+level: 20
+name: controller_server
+msg: 'Configuring RLController: FollowPath'
+file: /home/ROS/ros_ws/src/nav2_rl_controller/src/rl_controller.cpp
+function: configure
+line: 24
+---
+stamp:
+  sec: 1760895690
+  nanosec: 798741641
+level: 20
+name: controller_server
+msg: Controller Server has FollowPath  controllers available.
+file: ./src/controller_server.cpp
+function: on_configure
+line: 191
+---
+stamp:
+  sec: 1760895691
+  nanosec: 82786745
+level: 20
+name: controller_server
+msg: Activating
+file: ./src/controller_server.cpp
+function: on_activate
+line: 218
+---
+stamp:
+  sec: 1760895690
+  nanosec: 393184760
+level: 20
+name: lifecycle_manager_localization
+msg: Creating
+file: ./src/lifecycle_manager.cpp
+function: LifecycleManager
+line: 38
+---
+stamp:
+  sec: 1760895690
+  nanosec: 397428395
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mCreating and initializing lifecycle service clients\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 293250640
+level: 20
+name: local_costmap.local_costmap
+msg: "\n\tlocal_costmap lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/ar..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 294020864
+level: 20
+name: local_costmap.local_costmap
+msg: Creating Costmap
+file: ./src/costmap_2d_ros.cpp
+function: Costmap2DROS
+line: 127
+---
+stamp:
+  sec: 1760895693
+  nanosec: 648931539
+level: 20
+name: ppo_training_node
+msg: ContactsState subscriber enabled for /bumper_states
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/env_wrapper.py
+function: __init__
+line: 163
+---
+stamp:
+  sec: 1760895693
+  nanosec: 652581932
+level: 20
+name: ppo_training_node
+msg: PPOEnvironment initialized
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/env_wrapper.py
+function: __init__
+line: 181
+---
+stamp:
+  sec: 1760895690
+  nanosec: 364301709
+level: 20
+name: planner_server
+msg: Creating
+file: ./src/planner_server.cpp
+function: PlannerServer
+line: 50
+---
+stamp:
+  sec: 1760895693
+  nanosec: 654915163
+level: 20
+name: ppo_training_node
+msg: Executor iniciado em thread de background (callbacks ROS ativos).
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/training_node.py
+function: __init__
+line: 96
+---
+stamp:
+  sec: 1760895690
+  nanosec: 316266495
+level: 20
+name: map_server
+msg: "\n\tmap_server lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/artic..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 316359525
+level: 20
+name: map_server
+msg: Creating
+file: ./src/map_server/map_server.cpp
+function: MapServer
+line: 68
+---
+stamp:
+  sec: 1760895690
+  nanosec: 345337003
+level: 20
+name: amcl
+msg: "\n\tamcl lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.org/articles/no..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 346024394
+level: 20
+name: amcl
+msg: Creating
+file: ./src/amcl_node.cpp
+function: AmclNode
+line: 65
+---
+stamp:
+  sec: 1760895690
+  nanosec: 747061552
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mCreating and initializing lifecycle service clients\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 423211064
+level: 20
+name: amcl
+msg: Configuring
+file: ./src/amcl_node.cpp
+function: on_configure
+line: 239
+---
+stamp:
+  sec: 1760895690
+  nanosec: 423469132
+level: 20
+name: amcl
+msg: initTransforms
+file: ./src/amcl_node.cpp
+function: initTransforms
+line: 1481
+---
+stamp:
+  sec: 1760895690
+  nanosec: 410561036
+level: 20
+name: map_server
+msg: Configuring
+file: ./src/map_server/map_server.cpp
+function: on_configure
+line: 83
+---
+stamp:
+  sec: 1760895690
+  nanosec: 444220062
+level: 20
+name: amcl
+msg: initPubSub
+file: ./src/amcl_node.cpp
+function: initPubSub
+line: 1523
+---
+stamp:
+  sec: 1760895690
+  nanosec: 463948008
+level: 20
+name: map_server
+msg: Activating
+file: ./src/map_server/map_server.cpp
+function: on_activate
+line: 131
+---
+stamp:
+  sec: 1760895690
+  nanosec: 763093637
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mStarting managed nodes bringup...\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 497336883
+level: 20
+name: waypoint_follower
+msg: "\n\twaypoint_follower lifecycle node launched. \n\tWaiting on external lifecycle transitions to activate\n\tSee https://design.ros2.or..."
+file: ./src/lifecycle_node.cpp
+function: printLifecycleNodeNotification
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 454209926
+level: 20
+name: amcl
+msg: Subscribed to map topic.
+file: ./src/amcl_node.cpp
+function: initPubSub
+line: 1541
+---
+stamp:
+  sec: 1760895690
+  nanosec: 763154191
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring controller_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 886283312
+level: 20
+name: behavior_server
+msg: Creating behavior plugin backup of type nav2_behaviors/BackUp
+file: ./src/behavior_server.cpp
+function: loadBehaviorPlugins
+line: 110
+---
+stamp:
+  sec: 1760895690
+  nanosec: 807959605
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring smoother_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 887504509
+level: 20
+name: behavior_server
+msg: Configuring backup
+file: ./include/nav2_behaviors/timed_behavior.hpp
+function: configure
+line: 114
+---
+stamp:
+  sec: 1760895690
+  nanosec: 895622592
+level: 20
+name: behavior_server
+msg: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+file: ./src/behavior_server.cpp
+function: loadBehaviorPlugins
+line: 110
+---
+stamp:
+  sec: 1760895690
+  nanosec: 896857269
+level: 20
+name: behavior_server
+msg: Configuring drive_on_heading
+file: ./include/nav2_behaviors/timed_behavior.hpp
+function: configure
+line: 114
+---
+stamp:
+  sec: 1760895690
+  nanosec: 904624603
+level: 20
+name: behavior_server
+msg: Creating behavior plugin wait of type nav2_behaviors/Wait
+file: ./src/behavior_server.cpp
+function: loadBehaviorPlugins
+line: 110
+---
+stamp:
+  sec: 1760895690
+  nanosec: 905618602
+level: 20
+name: behavior_server
+msg: Configuring wait
+file: ./include/nav2_behaviors/timed_behavior.hpp
+function: configure
+line: 114
+---
+stamp:
+  sec: 1760895690
+  nanosec: 498020781
+level: 20
+name: waypoint_follower
+msg: Creating
+file: ./src/waypoint_follower.cpp
+function: WaypointFollower
+line: 35
+---
+stamp:
+  sec: 1760895690
+  nanosec: 376934277
+level: 20
+name: global_costmap.global_costmap
+msg: Creating Costmap
+file: ./src/costmap_2d_ros.cpp
+function: Costmap2DROS
+line: 127
+---
+stamp:
+  sec: 1760895691
+  nanosec: 62872041
+level: 20
+name: waypoint_follower
+msg: Configuring
+file: ./src/waypoint_follower.cpp
+function: on_configure
+line: 54
+---
+stamp:
+  sec: 1760895690
+  nanosec: 464335913
+level: 20
+name: amcl
+msg: Received a 207 X 71 map @ 0.050 m/pix
+file: ./src/amcl_node.cpp
+function: handleMapMessage
+line: 1399
+---
+stamp:
+  sec: 1760895690
+  nanosec: 410055725
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mStarting managed nodes bringup...\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 573144162
+level: 20
+name: amcl
+msg: Activating
+file: ./src/amcl_node.cpp
+function: on_activate
+line: 259
+---
+stamp:
+  sec: 1760895690
+  nanosec: 573200385
+level: 20
+name: amcl
+msg: initialPoseReceived
+file: ./src/amcl_node.cpp
+function: initialPoseReceived
+line: 525
+---
+stamp:
+  sec: 1760895690
+  nanosec: 573316324
+level: 20
+name: amcl
+msg: 'Setting pose (1760895690.573315): 0.000 0.000 0.000'
+file: ./src/amcl_node.cpp
+function: handleInitialPose
+line: 588
+---
+stamp:
+  sec: 1760895690
+  nanosec: 823167059
+level: 20
+name: planner_server
+msg: Configuring
+file: ./src/planner_server.cpp
+function: on_configure
+line: 81
+---
+stamp:
+  sec: 1760895690
+  nanosec: 850491433
+level: 20
+name: planner_server
+msg: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+file: ./src/planner_server.cpp
+function: on_configure
+line: 105
+---
+stamp:
+  sec: 1760895690
+  nanosec: 576315085
+level: 20
+name: amcl
+msg: Creating bond (amcl) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: createBond
+line: 58
+---
+stamp:
+  sec: 1760895690
+  nanosec: 850546678
+level: 20
+name: planner_server
+msg: Configuring plugin GridBased of type NavfnPlanner
+file: ./src/navfn_planner.cpp
+function: configure
+line: 78
+---
+stamp:
+  sec: 1760895690
+  nanosec: 763952561
+level: 20
+name: local_costmap.local_costmap
+msg: Configuring
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 164
+---
+stamp:
+  sec: 1760895690
+  nanosec: 769740277
+level: 20
+name: local_costmap.local_costmap
+msg: Using plugin "voxel_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 191
+---
+stamp:
+  sec: 1760895690
+  nanosec: 773239809
+level: 20
+name: local_costmap.local_costmap
+msg: 'Subscribed to Topics: scan'
+file: ./plugins/obstacle_layer.cpp
+function: onInitialize
+line: 106
+---
+stamp:
+  sec: 1760895690
+  nanosec: 851480613
+level: 20
+name: planner_server
+msg: Planner Server has GridBased  planners available.
+file: ./src/planner_server.cpp
+function: on_configure
+line: 122
+---
+stamp:
+  sec: 1760895690
+  nanosec: 780196130
+level: 20
+name: local_costmap.local_costmap
+msg: Initialized plugin "voxel_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 207
+---
+stamp:
+  sec: 1760895690
+  nanosec: 464212432
+level: 20
+name: map_server
+msg: Creating bond (map_server) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: createBond
+line: 58
+---
+stamp:
+  sec: 1760895690
+  nanosec: 474041518
+level: 20
+name: bt_navigator
+msg: Creating
+file: ./src/bt_navigator.cpp
+function: BtNavigator
+line: 35
+---
+stamp:
+  sec: 1760895690
+  nanosec: 410149174
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mConfiguring map_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 780243763
+level: 20
+name: local_costmap.local_costmap
+msg: Using plugin "inflation_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 191
+---
+stamp:
+  sec: 1760895690
+  nanosec: 823231104
+level: 20
+name: global_costmap.global_costmap
+msg: Configuring
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 164
+---
+stamp:
+  sec: 1760895690
+  nanosec: 781293567
+level: 20
+name: local_costmap.local_costmap
+msg: Initialized plugin "inflation_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 207
+---
+stamp:
+  sec: 1760895691
+  nanosec: 82849255
+level: 20
+name: local_costmap.local_costmap
+msg: Activating
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 264
+---
+stamp:
+  sec: 1760895690
+  nanosec: 917414176
+level: 20
+name: bt_navigator
+msg: Configuring
+file: ./src/bt_navigator.cpp
+function: on_configure
+line: 106
+---
+stamp:
+  sec: 1760895690
+  nanosec: 422848162
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mConfiguring amcl\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 463721648
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mActivating map_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 829113386
+level: 20
+name: global_costmap.global_costmap
+msg: Using plugin "static_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 191
+---
+stamp:
+  sec: 1760895691
+  nanosec: 82872931
+level: 20
+name: local_costmap.local_costmap
+msg: Checking transform
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 274
+---
+stamp:
+  sec: 1760895691
+  nanosec: 82901567
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895690
+  nanosec: 572794949
+level: 20
+name: lifecycle_manager_localization
+msg: Server map_server connected with bond.
+file: ./src/lifecycle_manager.cpp
+function: createBondConnection
+line: 205
+---
+stamp:
+  sec: 1760895690
+  nanosec: 572874011
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mActivating amcl\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 830514708
+level: 20
+name: global_costmap.global_costmap
+msg: Subscribing to the map topic (/map) with transient local durability
+file: ./plugins/static_layer.cpp
+function: onInitialize
+line: 83
+---
+stamp:
+  sec: 1760895691
+  nanosec: 582997647
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895692
+  nanosec: 82983865
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895692
+  nanosec: 583050752
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895690
+  nanosec: 710526478
+level: 20
+name: lifecycle_manager_localization
+msg: Server amcl connected with bond.
+file: ./src/lifecycle_manager.cpp
+function: createBondConnection
+line: 205
+---
+stamp:
+  sec: 1760895690
+  nanosec: 710597927
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mManaged nodes are active\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 831376915
+level: 20
+name: global_costmap.global_costmap
+msg: Subscribing to updates
+file: ./plugins/static_layer.cpp
+function: onInitialize
+line: 99
+---
+stamp:
+  sec: 1760895693
+  nanosec: 82978931
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895693
+  nanosec: 582975766
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895691
+  nanosec: 76399502
+level: 20
+name: waypoint_follower
+msg: 'Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint'
+file: ./src/waypoint_follower.cpp
+function: on_configure
+line: 87
+---
+stamp:
+  sec: 1760895690
+  nanosec: 710625654
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mCreating bond timer...\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 822985328
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring planner_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 866805892
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring behavior_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 917187886
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring bt_navigator\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895691
+  nanosec: 62730400
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring waypoint_follower\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895691
+  nanosec: 77580889
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mConfiguring velocity_smoother\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895691
+  nanosec: 82632044
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mActivating controller_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895690
+  nanosec: 832249458
+level: 20
+name: global_costmap.global_costmap
+msg: Initialized plugin "static_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 207
+---
+stamp:
+  sec: 1760895690
+  nanosec: 832297649
+level: 20
+name: global_costmap.global_costmap
+msg: Using plugin "obstacle_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 191
+---
+stamp:
+  sec: 1760895690
+  nanosec: 833393689
+level: 20
+name: global_costmap.global_costmap
+msg: 'Subscribed to Topics: scan'
+file: ./plugins/obstacle_layer.cpp
+function: onInitialize
+line: 106
+---
+stamp:
+  sec: 1760895690
+  nanosec: 837902586
+level: 20
+name: global_costmap.global_costmap
+msg: Initialized plugin "obstacle_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 207
+---
+stamp:
+  sec: 1760895690
+  nanosec: 837953711
+level: 20
+name: global_costmap.global_costmap
+msg: Using plugin "inflation_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 191
+---
+stamp:
+  sec: 1760895690
+  nanosec: 839098501
+level: 20
+name: global_costmap.global_costmap
+msg: Initialized plugin "inflation_layer"
+file: ./src/costmap_2d_ros.cpp
+function: on_configure
+line: 207
+---
+stamp:
+  sec: 1760895690
+  nanosec: 901242895
+level: 20
+name: global_costmap.global_costmap
+msg: 'StaticLayer: Resizing costmap to 207 X 71 at 0.050000 m/pix'
+file: ./plugins/static_layer.cpp
+function: processMap
+line: 201
+---
+stamp:
+  sec: 1760895694
+  nanosec: 83050615
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895694
+  nanosec: 583022726
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895694
+  nanosec: 886038474
+level: 20
+name: ppo_training_node
+msg: Iniciando treinamento do STAGE 1 por 100000 timesteps (checkpoint a cada 5000 steps).
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/training_node.py
+function: train_stage
+line: 143
+---
+stamp:
+  sec: 1760895695
+  nanosec: 82999935
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895695
+  nanosec: 583028340
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895696
+  nanosec: 82982641
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895696
+  nanosec: 582993375
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895697
+  nanosec: 82980712
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895697
+  nanosec: 583045575
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895698
+  nanosec: 83041153
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895698
+  nanosec: 367743478
+level: 20
+name: bumper_plugin
+msg: Publishing contact states to [/bumper_states]
+file: ./src/gazebo_ros_bumper.cpp
+function: Load
+line: 94
+---
+stamp:
+  sec: 1760895698
+  nanosec: 388748565
+level: 20
+name: turtlebot3_imu
+msg: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference...
+file: ./src/gazebo_ros_imu_sensor.cpp
+function: Load
+line: 77
+---
+stamp:
+  sec: 1760895698
+  nanosec: 582998808
+level: 20
+name: local_costmap.local_costmap
+msg: 'Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to can...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895698
+  nanosec: 651057751
+level: 20
+name: turtlebot3_diff_drive
+msg: Wheel pair 1 separation set to [0.160000m]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 319
+---
+stamp:
+  sec: 1760895698
+  nanosec: 651200579
+level: 20
+name: turtlebot3_diff_drive
+msg: Wheel pair 1 diameter set to [0.066000m]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 335
+---
+stamp:
+  sec: 1760895698
+  nanosec: 654142279
+level: 20
+name: turtlebot3_diff_drive
+msg: Subscribed to [/cmd_vel]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 357
+---
+stamp:
+  sec: 1760895698
+  nanosec: 658132875
+level: 20
+name: turtlebot3_diff_drive
+msg: Advertise odometry on [/odom]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 373
+---
+stamp:
+  sec: 1760895698
+  nanosec: 662853744
+level: 20
+name: turtlebot3_diff_drive
+msg: Publishing odom transforms between [odom] and [base_footprint]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 386
+---
+stamp:
+  sec: 1760895698
+  nanosec: 684459128
+level: 20
+name: turtlebot3_joint_state
+msg: Going to publish joint [wheel_left_joint]
+file: ./src/gazebo_ros_joint_state_publisher.cpp
+function: Load
+line: 112
+---
+stamp:
+  sec: 1760895698
+  nanosec: 684598185
+level: 20
+name: turtlebot3_joint_state
+msg: Going to publish joint [wheel_right_joint]
+file: ./src/gazebo_ros_joint_state_publisher.cpp
+function: Load
+line: 112
+---
+stamp:
+  sec: 1760895699
+  nanosec: 83248404
+level: 20
+name: local_costmap.local_costmap
+msg: start
+file: ./src/costmap_2d_ros.cpp
+function: start
+line: 542
+---
+stamp:
+  sec: 1760895699
+  nanosec: 285959937
+level: 20
+name: controller_server
+msg: Activating RLController
+file: /home/ROS/ros_ws/src/nav2_rl_controller/src/rl_controller.cpp
+function: activate
+line: 51
+---
+stamp:
+  sec: 1760895699
+  nanosec: 286072942
+level: 20
+name: controller_server
+msg: Creating bond (controller_server) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: createBond
+line: 58
+---
+stamp:
+  sec: 1760895699
+  nanosec: 388577269
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.443 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895699
+  nanosec: 394340330
+level: 20
+name: lifecycle_manager_navigation
+msg: Server controller_server connected with bond.
+file: ./src/lifecycle_manager.cpp
+function: createBondConnection
+line: 205
+---
+stamp:
+  sec: 1760895699
+  nanosec: 394535680
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mActivating smoother_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895699
+  nanosec: 395028978
+level: 20
+name: smoother_server
+msg: Activating
+file: ./src/nav2_smoother.cpp
+function: on_activate
+line: 162
+---
+stamp:
+  sec: 1760895699
+  nanosec: 395171457
+level: 20
+name: smoother_server
+msg: Creating bond (smoother_server) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: createBond
+line: 58
+---
+stamp:
+  sec: 1760895699
+  nanosec: 504100604
+level: 20
+name: lifecycle_manager_navigation
+msg: Server smoother_server connected with bond.
+file: ./src/lifecycle_manager.cpp
+function: createBondConnection
+line: 205
+---
+stamp:
+  sec: 1760895699
+  nanosec: 504251603
+level: 20
+name: lifecycle_manager_navigation
+msg: "\e[34m\e[1mActivating planner_server\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895699
+  nanosec: 504661300
+level: 20
+name: planner_server
+msg: Activating
+file: ./src/planner_server.cpp
+function: on_activate
+line: 164
+---
+stamp:
+  sec: 1760895699
+  nanosec: 504782127
+level: 20
+name: global_costmap.global_costmap
+msg: Activating
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 264
+---
+stamp:
+  sec: 1760895699
+  nanosec: 504818306
+level: 20
+name: global_costmap.global_costmap
+msg: Checking transform
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 274
+---
+stamp:
+  sec: 1760895699
+  nanosec: 504853576
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895699
+  nanosec: 589447332
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.643 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895699
+  nanosec: 790471677
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.843 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895699
+  nanosec: 991306958
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.043 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895700
+  nanosec: 4937227
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895700
+  nanosec: 147891585
+level: 20
+name: robot_spawner
+msg: Robô spawnado em (4.00, 0.00)
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/robot_spawner.py
+function: respawn_robot_callback
+line: 56
+---
+stamp:
+  sec: 1760895700
+  nanosec: 149066896
+level: 20
+name: ppo_training_node
+msg: Robô respawnado via serviço.
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/env_wrapper.py
+function: reset
+line: 809
+---
+stamp:
+  sec: 1760895700
+  nanosec: 191408054
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.243 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895700
+  nanosec: 391566421
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.443 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895700
+  nanosec: 504957810
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895700
+  nanosec: 691573910
+level: 20
+name: robot_spawner
+msg: Robô spawnado em (4.00, 0.00)
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/robot_spawner.py
+function: respawn_robot_callback
+line: 56
+---
+stamp:
+  sec: 1760895701
+  nanosec: 4957022
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895701
+  nanosec: 504946665
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895702
+  nanosec: 4955305
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895702
+  nanosec: 160903876
+level: 30
+name: ppo_training_node
+msg: Timeout waiting for initial sensors/goal after reset
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/env_wrapper.py
+function: reset
+line: 826
+---
+stamp:
+  sec: 1760895702
+  nanosec: 504965552
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895703
+  nanosec: 4984111
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895703
+  nanosec: 504988212
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895704
+  nanosec: 4948871
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895704
+  nanosec: 504940121
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895704
+  nanosec: 540799189
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.043 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895704
+  nanosec: 888490585
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.243 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895705
+  nanosec: 4982287
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895705
+  nanosec: 60271212
+level: 20
+name: bumper_plugin
+msg: Publishing contact states to [/bumper_states]
+file: ./src/gazebo_ros_bumper.cpp
+function: Load
+line: 94
+---
+stamp:
+  sec: 1760895705
+  nanosec: 74791206
+level: 20
+name: turtlebot3_imu
+msg: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference...
+file: ./src/gazebo_ros_imu_sensor.cpp
+function: Load
+line: 77
+---
+stamp:
+  sec: 1760895705
+  nanosec: 88315384
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.443 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895705
+  nanosec: 289529492
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.643 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895705
+  nanosec: 329591547
+level: 20
+name: turtlebot3_diff_drive
+msg: Wheel pair 1 separation set to [0.160000m]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 319
+---
+stamp:
+  sec: 1760895705
+  nanosec: 329687371
+level: 20
+name: turtlebot3_diff_drive
+msg: Wheel pair 1 diameter set to [0.066000m]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 335
+---
+stamp:
+  sec: 1760895705
+  nanosec: 330744788
+level: 20
+name: turtlebot3_diff_drive
+msg: Subscribed to [/cmd_vel]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 357
+---
+stamp:
+  sec: 1760895705
+  nanosec: 331812751
+level: 20
+name: turtlebot3_diff_drive
+msg: Advertise odometry on [/odom]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 373
+---
+stamp:
+  sec: 1760895705
+  nanosec: 334034653
+level: 20
+name: turtlebot3_diff_drive
+msg: Publishing odom transforms between [odom] and [base_footprint]
+file: ./src/gazebo_ros_diff_drive.cpp
+function: Load
+line: 386
+---
+stamp:
+  sec: 1760895705
+  nanosec: 348407069
+level: 20
+name: turtlebot3_joint_state
+msg: Going to publish joint [wheel_left_joint]
+file: ./src/gazebo_ros_joint_state_publisher.cpp
+function: Load
+line: 112
+---
+stamp:
+  sec: 1760895705
+  nanosec: 348487598
+level: 20
+name: turtlebot3_joint_state
+msg: Going to publish joint [wheel_right_joint]
+file: ./src/gazebo_ros_joint_state_publisher.cpp
+function: Load
+line: 112
+---
+stamp:
+  sec: 1760895705
+  nanosec: 490549857
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 264.843 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895705
+  nanosec: 504940013
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895705
+  nanosec: 524451586
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895705
+  nanosec: 691463292
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.043 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895705
+  nanosec: 891445237
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.243 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895706
+  nanosec: 4962134
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895706
+  nanosec: 91707880
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.443 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895706
+  nanosec: 504984046
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895706
+  nanosec: 871269144
+level: 20
+name: robot_spawner
+msg: Robô spawnado em (4.00, 0.00)
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/robot_spawner.py
+function: respawn_robot_callback
+line: 56
+---
+stamp:
+  sec: 1760895706
+  nanosec: 873078137
+level: 20
+name: ppo_training_node
+msg: Robô respawnado via serviço.
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/env_wrapper.py
+function: reset
+line: 809
+---
+stamp:
+  sec: 1760895707
+  nanosec: 4988148
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895707
+  nanosec: 504983520
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895708
+  nanosec: 4940758
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895708
+  nanosec: 504952194
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895709
+  nanosec: 4961464
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895709
+  nanosec: 155172747
+level: 30
+name: goal_spawner_node
+msg: 'spawn_entity: serviço não disponível ou falhou: call_timeout'
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/goal_spawner.py
+function: spawn_entity
+line: 193
+---
+stamp:
+  sec: 1760895709
+  nanosec: 156121698
+level: 20
+name: goal_spawner_node
+msg: Novo goal spawnado em (-4.20, 0.50)
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/goal_spawner.py
+function: spawn_new_goal_callback
+line: 163
+---
+stamp:
+  sec: 1760895709
+  nanosec: 504931344
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895709
+  nanosec: 658347074
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895709
+  nanosec: 858599311
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895710
+  nanosec: 4943479
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895710
+  nanosec: 59572113
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895710
+  nanosec: 260381972
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895710
+  nanosec: 461111653
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895710
+  nanosec: 504938852
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895710
+  nanosec: 661493098
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895710
+  nanosec: 862351568
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895711
+  nanosec: 4945190
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895711
+  nanosec: 63234343
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895711
+  nanosec: 224451141
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895711
+  nanosec: 263376159
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895711
+  nanosec: 504940004
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895712
+  nanosec: 4936983
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895712
+  nanosec: 504939271
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895713
+  nanosec: 4940930
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895713
+  nanosec: 504941542
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895714
+  nanosec: 4940547
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895714
+  nanosec: 504925235
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895715
+  nanosec: 4946520
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895715
+  nanosec: 358417043
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895715
+  nanosec: 504939380
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895715
+  nanosec: 558724665
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 265.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895715
+  nanosec: 759564836
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895715
+  nanosec: 960400399
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895716
+  nanosec: 4954100
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895716
+  nanosec: 161094739
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895716
+  nanosec: 361510478
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895716
+  nanosec: 504953316
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895716
+  nanosec: 562322573
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 266.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895716
+  nanosec: 763299497
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895716
+  nanosec: 963299881
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895717
+  nanosec: 4979561
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895717
+  nanosec: 504940712
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895718
+  nanosec: 4941674
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895718
+  nanosec: 504933906
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895719
+  nanosec: 4949256
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895719
+  nanosec: 504948682
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895720
+  nanosec: 4937841
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895720
+  nanosec: 162959481
+level: 30
+name: goal_spawner_node
+msg: 'spawn_entity: serviço não disponível ou falhou: call_timeout'
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/goal_spawner.py
+function: spawn_entity
+line: 193
+---
+stamp:
+  sec: 1760895720
+  nanosec: 163817497
+level: 20
+name: goal_spawner_node
+msg: Novo goal spawnado em (-4.20, 0.50)
+file: /home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/goal_spawner.py
+function: spawn_new_goal_callback
+line: 163
+---
+stamp:
+  sec: 1760895720
+  nanosec: 468947104
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895720
+  nanosec: 504937686
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895720
+  nanosec: 669569787
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895720
+  nanosec: 870153986
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895721
+  nanosec: 4901842
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895721
+  nanosec: 70211991
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895721
+  nanosec: 270975965
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895721
+  nanosec: 471680364
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895721
+  nanosec: 504923618
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895721
+  nanosec: 672354171
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895721
+  nanosec: 873225493
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 4936035
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895722
+  nanosec: 73450632
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 174810730
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 274396616
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 375506957
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.704 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 474941494
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 504924776
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895722
+  nanosec: 576471309
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 267.904 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 675615302
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 777134082
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.104 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 876714800
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895722
+  nanosec: 978294622
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.304 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 4932933
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895723
+  nanosec: 77300396
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 178319383
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 278433977
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 378900300
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.704 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 478553095
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 504937039
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895723
+  nanosec: 579753603
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 268.904 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 679073389
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 780921616
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.104 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 879896520
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895723
+  nanosec: 981569163
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.304 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 4945616
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895724
+  nanosec: 81057130
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 182202462
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 281720043
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 382501844
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.704 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 482381418
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 504958802
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895724
+  nanosec: 583554408
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 269.904 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 682734439
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 784406035
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.104 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 883704379
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895724
+  nanosec: 984208417
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.304 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 4944959
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895725
+  nanosec: 84559918
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 184433975
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 284296857
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 384250535
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.704 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 484610207
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 504948787
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895725
+  nanosec: 584267333
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 270.904 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 684443040
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.704 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 786683713
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.104 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 884490360
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.904 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895725
+  nanosec: 988158546
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.304 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 4951078
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895726
+  nanosec: 86852403
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.104 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 189065558
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 288298810
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.304 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 390314799
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.704 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 489193111
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.504 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 504940937
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895726
+  nanosec: 591495036
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 271.904 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 690489984
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 792384587
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.104 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 891595629
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895726
+  nanosec: 992289079
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.304 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 4949794
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895727
+  nanosec: 92585754
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 193021974
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 292451762
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 393663864
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.704 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 493170549
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 504960815
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895727
+  nanosec: 594187510
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 272.904 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 693684068
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 794760116
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.104 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 894260097
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895727
+  nanosec: 995358355
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.304 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 4956821
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895728
+  nanosec: 94963448
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 195359369
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.504 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 295447634
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 397040936
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.705 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 495346119
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 504951011
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895728
+  nanosec: 597879363
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 273.905 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 697179524
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 799116661
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.105 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 898076619
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895728
+  nanosec: 999360868
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.305 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 4959379
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895729
+  nanosec: 99255109
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 199861746
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.505 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 299514402
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 400931142
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.705 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 500089592
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 504933455
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895729
+  nanosec: 601931465
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 274.905 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 701057717
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 802739650
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.105 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895729
+  nanosec: 902028636
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 3113205
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.305 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 4924433
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895730
+  nanosec: 102812237
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 203204736
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.505 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 303239850
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 402921281
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.705 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 503317552
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 504959132
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895730
+  nanosec: 604121982
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 275.905 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 703047507
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 806155346
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.105 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895730
+  nanosec: 904305549
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 4925036
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895731
+  nanosec: 6674174
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.305 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 106280525
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 207083069
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.505 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 306804172
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 408326095
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.705 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 504939342
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895731
+  nanosec: 507201333
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 608398279
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 276.905 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 708413279
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 808746132
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.105 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895731
+  nanosec: 908518918
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895732
+  nanosec: 4926339
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895732
+  nanosec: 9903950
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.305 for reason ''discarding message because the queue is full'''
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895732
+  nanosec: 28941851
+level: 20
+name: velocity_smoother
+msg: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+file: ./src/lifecycle_node.cpp
+function: on_rcl_preshutdown
+line: 92
+---
+stamp:
+  sec: 1760895732
+  nanosec: 29358881
+level: 20
+name: velocity_smoother
+msg: Cleaning up
+file: ./src/velocity_smoother.cpp
+function: on_cleanup
+line: 168
+---
+stamp:
+  sec: 1760895732
+  nanosec: 29478661
+level: 20
+name: velocity_smoother
+msg: Destroying bond (velocity_smoother) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: destroyBond
+line: 113
+---
+stamp:
+  sec: 1760895732
+  nanosec: 29569317
+level: 20
+name: waypoint_follower
+msg: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+file: ./src/lifecycle_node.cpp
+function: on_rcl_preshutdown
+line: 92
+---
+stamp:
+  sec: 1760895732
+  nanosec: 29625261
+level: 20
+name: waypoint_follower
+msg: Cleaning up
+file: ./src/waypoint_follower.cpp
+function: on_cleanup
+line: 135
+---
+stamp:
+  sec: 1760895732
+  nanosec: 47329797
+level: 20
+name: waypoint_follower
+msg: Destroying bond (waypoint_follower) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: destroyBond
+line: 113
+---
+stamp:
+  sec: 1760895732
+  nanosec: 47438053
+level: 20
+name: bt_navigator
+msg: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+file: ./src/lifecycle_node.cpp
+function: on_rcl_preshutdown
+line: 92
+---
+stamp:
+  sec: 1760895732
+  nanosec: 47480936
+level: 20
+name: bt_navigator
+msg: Cleaning up
+file: ./src/bt_navigator.cpp
+function: on_cleanup
+line: 183
+---
+stamp:
+  sec: 1760895732
+  nanosec: 108892124
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 279.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895732
+  nanosec: 121916369
+level: 20
+name: bt_navigator
+msg: Completed Cleaning up
+file: ./src/bt_navigator.cpp
+function: on_cleanup
+line: 196
+---
+stamp:
+  sec: 1760895732
+  nanosec: 122063527
+level: 20
+name: bt_navigator
+msg: Destroying bond (bt_navigator) to lifecycle manager.
+file: ./src/lifecycle_node.cpp
+function: destroyBond
+line: 113
+---
+stamp:
+  sec: 1760895732
+  nanosec: 122110601
+level: 20
+name: lifecycle_manager_localization
+msg: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+file: ./src/lifecycle_manager.cpp
+function: onRclPreshutdown
+line: 386
+---
+stamp:
+  sec: 1760895732
+  nanosec: 122169688
+level: 20
+name: lifecycle_manager_localization
+msg: "\e[34m\e[1mTerminating bond timer...\e[0m\e[0m"
+file: ./src/lifecycle_manager.cpp
+function: message
+line: 504
+---
+stamp:
+  sec: 1760895732
+  nanosec: 152501415
+level: 20
+name: lifecycle_manager_navigation
+msg: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+file: ./src/lifecycle_manager.cpp
+function: onRclPreshutdown
+line: 386
+---
+stamp:
+  sec: 1760895732
+  nanosec: 310126070
+level: 20
+name: local_costmap.local_costmap
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 279.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895732
+  nanosec: 504986391
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895733
+  nanosec: 4966614
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895733
+  nanosec: 504949142
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895734
+  nanosec: 4979791
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895734
+  nanosec: 504977684
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895735
+  nanosec: 5000581
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895735
+  nanosec: 504996030
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895736
+  nanosec: 4954393
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895736
+  nanosec: 203953376
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895736
+  nanosec: 403447614
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895736
+  nanosec: 505247651
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895736
+  nanosec: 604929781
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 277.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895736
+  nanosec: 806876820
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895737
+  nanosec: 5075478
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895737
+  nanosec: 7082474
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895737
+  nanosec: 207714936
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.505 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895737
+  nanosec: 408876317
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.705 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895737
+  nanosec: 504971262
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895737
+  nanosec: 608787026
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 278.905 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895737
+  nanosec: 809163165
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 279.105 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895738
+  nanosec: 4989271
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895738
+  nanosec: 10235077
+level: 20
+name: amcl
+msg: 'Message Filter dropping message: frame ''base_scan'' at time 279.305 for reason ''the timestamp on the message is earlier than all ...'
+file: /opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp
+function: signalFailure
+line: 706
+---
+stamp:
+  sec: 1760895738
+  nanosec: 505114418
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895739
+  nanosec: 4960963
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895739
+  nanosec: 505031774
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895740
+  nanosec: 4956054
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895740
+  nanosec: 504982514
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895741
+  nanosec: 5154666
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895741
+  nanosec: 504978514
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895742
+  nanosec: 4997781
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---
+stamp:
+  sec: 1760895742
+  nanosec: 504955237
+level: 20
+name: global_costmap.global_costmap
+msg: 'Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTr...'
+file: ./src/costmap_2d_ros.cpp
+function: on_activate
+line: 280
+---

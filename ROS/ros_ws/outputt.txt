@@ -1,0 +1,1388 @@
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.IncludeLaunchDescription'
+[INFO] [launch]: All log files can be found below /home/ros_ws/.ros/log/2025-10-23-20-08-14-820190-marcus-168678
+[INFO] [launch]: Default logging verbosity is set to DEBUG
+[DEBUG] [launch]: processing event: '<launch.events.include_launch_description.IncludeLaunchDescription object at 0x7c57030a16f0>'
+[DEBUG] [launch]: processing event: '<launch.events.include_launch_description.IncludeLaunchDescription object at 0x7c57030a16f0>' ✓ '<launch.event_handlers.on_include_launch_description.OnIncludeLaunchDescription object at 0x7c570307e0b0>'
+[DEBUG] [launch.launch_description_source]: Traceback (most recent call last):
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_description_source.py", line 68, in try_get_launch_description_without_context
+    perform_substitutions(context, self.__location)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in perform_substitutions
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in <listcomp>
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_context.py", line 240, in perform_substitution
+    return substitution.perform(self)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/substitutions/this_launch_file_dir.py", line 56, in perform
+    raise SubstitutionFailure(
+launch.substitutions.substitution_failure.SubstitutionFailure: ThisLaunchFileDir used outside of a launch file (in a script)
+
+[DEBUG] [launch.launch_description_source]: Failed to load the launch file without a context: ThisLaunchFileDir used outside of a launch file (in a script)
+[DEBUG] [launch.launch_description_source]: Traceback (most recent call last):
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_description_source.py", line 68, in try_get_launch_description_without_context
+    perform_substitutions(context, self.__location)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in perform_substitutions
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in <listcomp>
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_context.py", line 240, in perform_substitution
+    return substitution.perform(self)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/substitutions/this_launch_file_dir.py", line 56, in perform
+    raise SubstitutionFailure(
+launch.substitutions.substitution_failure.SubstitutionFailure: ThisLaunchFileDir used outside of a launch file (in a script)
+
+[DEBUG] [launch.launch_description_source]: Failed to load the launch file without a context: ThisLaunchFileDir used outside of a launch file (in a script)
+[DEBUG] [launch.launch_description_source]: Traceback (most recent call last):
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_description_source.py", line 68, in try_get_launch_description_without_context
+    perform_substitutions(context, self.__location)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in perform_substitutions
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in <listcomp>
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_context.py", line 240, in perform_substitution
+    return substitution.perform(self)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/substitutions/this_launch_file_dir.py", line 56, in perform
+    raise SubstitutionFailure(
+launch.substitutions.substitution_failure.SubstitutionFailure: ThisLaunchFileDir used outside of a launch file (in a script)
+
+[DEBUG] [launch.launch_description_source]: Failed to load the launch file without a context: ThisLaunchFileDir used outside of a launch file (in a script)
+[DEBUG] [launch.launch_description_source]: Traceback (most recent call last):
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_description_source.py", line 68, in try_get_launch_description_without_context
+    perform_substitutions(context, self.__location)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in perform_substitutions
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in <listcomp>
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_context.py", line 240, in perform_substitution
+    return substitution.perform(self)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/substitutions/this_launch_file_dir.py", line 56, in perform
+    raise SubstitutionFailure(
+launch.substitutions.substitution_failure.SubstitutionFailure: ThisLaunchFileDir used outside of a launch file (in a script)
+
+[DEBUG] [launch.launch_description_source]: Failed to load the launch file without a context: ThisLaunchFileDir used outside of a launch file (in a script)
+[DEBUG] [launch.launch_description_source]: Traceback (most recent call last):
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_description_source.py", line 68, in try_get_launch_description_without_context
+    perform_substitutions(context, self.__location)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in perform_substitutions
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in <listcomp>
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_context.py", line 240, in perform_substitution
+    return substitution.perform(self)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/substitutions/this_launch_file_dir.py", line 56, in perform
+    raise SubstitutionFailure(
+launch.substitutions.substitution_failure.SubstitutionFailure: ThisLaunchFileDir used outside of a launch file (in a script)
+
+[DEBUG] [launch.launch_description_source]: Failed to load the launch file without a context: ThisLaunchFileDir used outside of a launch file (in a script)
+[DEBUG] [launch.launch_description_source]: Traceback (most recent call last):
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_description_source.py", line 68, in try_get_launch_description_without_context
+    perform_substitutions(context, self.__location)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in perform_substitutions
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/utilities/perform_substitutions_impl.py", line 26, in <listcomp>
+    return ''.join([context.perform_substitution(sub) for sub in subs])
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/launch_context.py", line 240, in perform_substitution
+    return substitution.perform(self)
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/substitutions/this_launch_file_dir.py", line 56, in perform
+    raise SubstitutionFailure(
+launch.substitutions.substitution_failure.SubstitutionFailure: ThisLaunchFileDir used outside of a launch file (in a script)
+
+[DEBUG] [launch.launch_description_source]: Failed to load the launch file without a context: ThisLaunchFileDir used outside of a launch file (in a script)
+urdf_file_name : turtlebot3_burger.urdf
+[INFO] [gzserver-1]: process started with pid [168704]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [gzclient-2]: process started with pid [168708]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [robot_spawner-3]: process started with pid [168710]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [robot_state_publisher-4]: process started with pid [168712]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [hlds_laser_publisher-5]: process started with pid [168714]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [turtlebot3_ros-6]: process started with pid [168716]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [component_container_isolated-7]: process started with pid [168718]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [goal_spawner-8]: process started with pid [168720]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[INFO] [train-9]: process started with pid [168722]
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessStarted'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c57017d20e0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c5701530a90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c57015308e0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c5701532f20>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c5701533820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c57015307f0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c5701530ac0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c5701530b50>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_started.ProcessStarted object at 0x7c57015333d0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57015315a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57015315a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701692590>'
+[hlds_laser_publisher-5] [INFO] [1761260895.955058732] [hlds_laser_publisher]: Init hlds_laser_publisher Node Main
+[hlds_laser_publisher-5] [INFO] [1761260895.955199884] [hlds_laser_publisher]: port : /dev/ttyUSB0 frame_id : base_scan
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701691780>'
+[turtlebot3_ros-6] [INFO] [1761260895.961490357] [turtlebot3_node]: Init TurtleBot3 Node Main
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701691780>'
+[turtlebot3_ros-6] [INFO] [1761260895.961795082] [turtlebot3_node]: Init DynamixelSDKWrapper
+[turtlebot3_ros-6] [ERROR] [1761260895.961878055] [DynamixelSDKWrapper]: Failed to open the port(/dev/ttyACM0)!
+[turtlebot3_ros-6] [ERROR] [1761260895.961886227] [DynamixelSDKWrapper]: Failed to initialize SDK handlers
+[turtlebot3_ros-6] [ERROR] [1761260895.961905853] [turtlebot3_node]: Failed connection with Devices
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c5701531090>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c5701531090>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701691780>'
+[turtlebot3_ros-6] [PortHandlerLinux::SetupPort] Error opening serial port!
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701530ac0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701530ac0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701691780>'
+[turtlebot3_ros-6] [INFO] [1761260895.962731885] [turtlebot3_node]: Add Motors
+[turtlebot3_ros-6] [INFO] [1761260895.962812065] [turtlebot3_node]: Add Wheels
+[turtlebot3_ros-6] [INFO] [1761260895.962832599] [turtlebot3_node]: Add Sensors
+[turtlebot3_ros-6] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[turtlebot3_ros-6]   what():  could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701645990>'
+[robot_state_publisher-4] [INFO] [1761260896.006030867] [robot_state_publisher]: got segment base_footprint
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701645990>'
+[robot_state_publisher-4] [INFO] [1761260896.006205404] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-4] [INFO] [1761260896.006219303] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-4] [INFO] [1761260896.006230199] [robot_state_publisher]: got segment caster_back_link
+[robot_state_publisher-4] [INFO] [1761260896.006240675] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-4] [INFO] [1761260896.006251710] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-4] [INFO] [1761260896.006262606] [robot_state_publisher]: got segment wheel_right_link
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_map_server', plugin_name='nav2_map_server::MapServer', node_name='map_server', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static'], parameters=[rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='yaml_filename', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='/home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.yaml', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[]))], extra_arguments=[])'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701533820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701533820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.015367050] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.030025473] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-7] [INFO] [1761260896.030111869] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-7] [INFO] [1761260896.030125209] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1761260896.030137711] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/map_server', unique_id=1)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_amcl', plugin_name='nav2_amcl::AmclNode', node_name='amcl', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static'], parameters=[rcl_interfaces.msg.Parameter(name='alpha1', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.2, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='alpha2', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.2, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='alpha3', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.2, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='alpha4', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.2, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='always_reset_initial_pose', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='base_frame_id', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='base_footprint', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='beam_skip_distance', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.5, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='beam_skip_error_threshold', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.9, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='beam_skip_threshold', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.3, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='do_beamskip', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='first_map_only', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='global_frame_id', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='map', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='lambda_short', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.1, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='laser_likelihood_max_dist', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=2.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='laser_max_range', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=100.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='laser_min_range', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=-1.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='laser_model_type', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='likelihood_field', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='map_topic', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='map', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='max_beams', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=60, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='max_particles', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=8000, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='min_particles', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=500, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='odom_frame_id', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='odom', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='pf_err', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.05, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='pf_z', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.99, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='recovery_alpha_fast', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='recovery_alpha_slow', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='resample_interval', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=1, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='robot_model_type', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='nav2_amcl::DifferentialMotionModel', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='save_pose_rate', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.5, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='scan_topic', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='scan', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='set_initial_pose', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='sigma_hit', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.2, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='tf_broadcast', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='transform_tolerance', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=6.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='update_min_a', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.2, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='update_min_d', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.25, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='z_hit', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.5, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='z_max', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.05, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='z_rand', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.5, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='z_short', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.05, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[]))], extra_arguments=[])'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.043291159] [map_server]: 
+[component_container_isolated-7] 	map_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761260896.043379370] [map_server]: Creating
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701531510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701531510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.048001226] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.051624467] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.051693751] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.073217036] [amcl]: 
+[component_container_isolated-7] 	amcl lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.073811120] [amcl]: Creating
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/amcl', unique_id=2)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_lifecycle_manager', plugin_name='nav2_lifecycle_manager::LifecycleManager', node_name='lifecycle_manager_localization', node_namespace='/', log_level=0, remap_rules=[], parameters=[rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='autostart', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='node_names', value=rcl_interfaces.msg.ParameterValue(type=9, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=('map_server', 'amcl')))], extra_arguments=[])'
+[ERROR] [hlds_laser_publisher-5]: process has died [pid 168714, exit code 255, cmd '/opt/ros/humble/lib/hls_lfcd_lds_driver/hlds_laser_publisher --ros-args -r __node:=hlds_laser_publisher -r __ns:=/ --params-file /tmp/launch_params_o0urt5u0'].
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessExited'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7c5701692b90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7c57016929e0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.090008252] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-7] [INFO] [1761260896.090754175] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1761260896.090793776] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[ERROR] [turtlebot3_ros-6]: process has died [pid 168716, exit code -6, cmd '/opt/ros/humble/lib/turtlebot3_node/turtlebot3_ros -i /dev/ttyACM0 --ros-args -r __ns:=/ --params-file /opt/ros/humble/share/turtlebot3_bringup/param/humble/burger.yaml --params-file /tmp/launch_params_vco_yvmo'].
+[DEBUG] [launch.launch_context]: emitting event: 'launch.events.process.ProcessExited'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7c57016922f0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_exited.ProcessExited object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_exit.OnProcessExit object at 0x7c57016917e0>'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.117020841] [lifecycle_manager_localization]: Creating
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.125169415] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/lifecycle_manager_localization', unique_id=3)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701693010>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701693010>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.133814153] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1761260896.133874777] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-7] [INFO] [1761260896.134082141] [map_server]: Configuring
+[component_container_isolated-7] [INFO] [1761260896.134174194] [map_io]: Loading yaml file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.yaml
+[component_container_isolated-7] [INFO] [1761260896.134486182] [map_io]: resolution: 0.05
+[component_container_isolated-7] [INFO] [1761260896.134500360] [map_io]: origin[0]: -0.627
+[component_container_isolated-7] [INFO] [1761260896.134508043] [map_io]: origin[1]: -1.86
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.134516703] [map_io]: origin[2]: 0
+[component_container_isolated-7] [INFO] [1761260896.134525643] [map_io]: free_thresh: 0.25
+[component_container_isolated-7] [INFO] [1761260896.134534234] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-7] [INFO] [1761260896.134542894] [map_io]: mode: trinary
+[component_container_isolated-7] [INFO] [1761260896.134551485] [map_io]: negate: 0
+[component_container_isolated-7] [INFO] [1761260896.134782316] [map_io]: Loading image_file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.pgm
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57017d20e0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.139805768] [map_io]: Read map /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.pgm: 207 X 71 map @ 0.05 m/cell
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.149876838] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-7] [INFO] [1761260896.150056824] [amcl]: Configuring
+[component_container_isolated-7] [INFO] [1761260896.150173182] [amcl]: initTransforms
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_controller', plugin_name='nav2_controller::ControllerServer', node_name='controller_server', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav'], parameters=[], extra_arguments=[])'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.167627208] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-7] [INFO] [1761260896.170289830] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1761260896.170356669] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.184835177] [amcl]: initPubSub
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.199167015] [amcl]: Subscribed to map topic.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701692fe0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701692fe0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.213265089] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-7] [INFO] [1761260896.213477970] [map_server]: Activating
+[component_container_isolated-7] [INFO] [1761260896.213686102] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761260896.213839966] [amcl]: Received a 207 X 71 map @ 0.050 m/pix
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.224453366] [controller_server]: 
+[component_container_isolated-7] 	controller_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701693010>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701693010>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.232607318] [controller_server]: Creating controller server
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.247358074] [local_costmap.local_costmap]: 
+[component_container_isolated-7] 	local_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.247935535] [local_costmap.local_costmap]: Creating Costmap
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/controller_server', unique_id=4)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_smoother', plugin_name='nav2_smoother::SmootherServer', node_name='smoother_server', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav'], parameters=[], extra_arguments=[])'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.253885104] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161de70>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161de70>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.255174894] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1761260896.255227905] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.267004469] [smoother_server]: 
+[component_container_isolated-7] 	smoother_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.268897492] [smoother_server]: Creating smoother server
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/smoother_server', unique_id=5)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_planner', plugin_name='nav2_planner::PlannerServer', node_name='planner_server', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav'], parameters=[rcl_interfaces.msg.Parameter(name='GridBased.allow_unknown', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='GridBased.plugin', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='nav2_navfn_planner/NavfnPlanner', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='GridBased.tolerance', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=0.5, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='GridBased.use_astar', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='expected_planner_frequency', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=10.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='planner_plugins', value=rcl_interfaces.msg.ParameterValue(type=9, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=('GridBased',))), rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='wait_for_transform_timeout', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=3.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[]))], extra_arguments=[])'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.271922319] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.272688007] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1761260896.272735849] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.286778956] [planner_server]: 
+[component_container_isolated-7] 	planner_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.288599482] [planner_server]: Creating
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.304451730] [global_costmap.global_costmap]: 
+[component_container_isolated-7] 	global_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161faf0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161faf0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.305031846] [global_costmap.global_costmap]: Creating Costmap
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/planner_server', unique_id=6)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_behaviors', plugin_name='behavior_server::BehaviorServer', node_name='behavior_server', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav'], parameters=[], extra_arguments=[])'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e500>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e500>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.309108088] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.312802500] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1761260896.312865219] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.327990681] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-7] [INFO] [1761260896.328051654] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.328227728] [amcl]: Activating
+[component_container_isolated-7] [INFO] [1761260896.328270542] [amcl]: initialPoseReceived
+[component_container_isolated-7] [INFO] [1761260896.328345064] [amcl]: Setting pose (0.000000): 0.000 0.000 0.000
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.330258411] [behavior_server]: 
+[component_container_isolated-7] 	behavior_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761260896.330290609] [amcl]: Creating bond (amcl) to lifecycle manager.
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/behavior_server', unique_id=7)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_bt_navigator', plugin_name='nav2_bt_navigator::BtNavigator', node_name='bt_navigator', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav'], parameters=[rcl_interfaces.msg.Parameter(name='bt_loop_duration', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=10, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='default_nav_to_pose_bt_xml', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='/home/ROS/ros_ws/src/nav2_baseline/config/behavior.xml', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='default_server_timeout', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=20, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='global_frame', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='map', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='odom_topic', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='/odom', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='plugin_lib_names', value=rcl_interfaces.msg.ParameterValue(type=9, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=('nav2_compute_path_to_pose_action_bt_node', 'nav2_compute_path_through_poses_action_bt_node', 'nav2_smooth_path_action_bt_node', 'nav2_follow_path_action_bt_node', 'nav2_spin_action_bt_node', 'nav2_wait_action_bt_node', 'nav2_assisted_teleop_action_bt_node', 'nav2_back_up_action_bt_node', 'nav2_drive_on_heading_bt_node', 'nav2_clear_costmap_service_bt_node', 'nav2_is_stuck_condition_bt_node', 'nav2_goal_reached_condition_bt_node', 'nav2_goal_updated_condition_bt_node', 'nav2_globally_updated_goal_condition_bt_node', 'nav2_is_path_valid_condition_bt_node', 'nav2_initial_pose_received_condition_bt_node', 'nav2_reinitialize_global_localization_service_bt_node', 'nav2_rate_controller_bt_node', 'nav2_distance_controller_bt_node', 'nav2_speed_controller_bt_node', 'nav2_truncate_path_action_bt_node', 'nav2_truncate_path_local_action_bt_node', 'nav2_goal_updater_node_bt_node', 'nav2_recovery_node_bt_node', 'nav2_pipeline_sequence_bt_node', 'nav2_round_robin_node_bt_node', 'nav2_transform_available_condition_bt_node', 'nav2_time_expired_condition_bt_node', 'nav2_path_expiring_timer_condition', 'nav2_distance_traveled_condition_bt_node', 'nav2_single_trigger_bt_node', 'nav2_goal_updated_controller_bt_node', 'nav2_is_battery_low_condition_bt_node', 'nav2_navigate_through_poses_action_bt_node', 'nav2_navigate_to_pose_action_bt_node', 'nav2_remove_passed_goals_action_bt_node', 'nav2_planner_selector_bt_node', 'nav2_controller_selector_bt_node', 'nav2_goal_checker_selector_bt_node', 'nav2_controller_cancel_bt_node', 'nav2_path_longer_on_approach_bt_node', 'nav2_wait_cancel_bt_node', 'nav2_spin_cancel_bt_node', 'nav2_back_up_cancel_bt_node', 'nav2_assisted_teleop_cancel_bt_node', 'nav2_drive_on_heading_cancel_bt_node', 'nav2_is_battery_charging_condition_bt_node'))), rcl_interfaces.msg.Parameter(name='robot_base_frame', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='base_footprint', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[]))], extra_arguments=[])'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.336399141] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.338369480] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1761260896.338461323] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761260896.355653368] [robot_spawner]: Serviço "respawn_robot" pronto.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/bt_navigator', unique_id=8)'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_waypoint_follower', plugin_name='nav2_waypoint_follower::WaypointFollower', node_name='waypoint_follower', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav'], parameters=[rcl_interfaces.msg.Parameter(name='action_server_result_timeout', value=rcl_interfaces.msg.ParameterValue(type=3, bool_value=False, integer_value=0, double_value=900.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='loop_rate', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=20, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='stop_on_failure', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='wait_at_waypoint.enabled', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='wait_at_waypoint.plugin', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='nav2_waypoint_follower::WaitAtWaypoint', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='wait_at_waypoint.waypoint_pause_duration', value=rcl_interfaces.msg.ParameterValue(type=2, bool_value=False, integer_value=200, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='waypoint_task_executor_plugin', value=rcl_interfaces.msg.ParameterValue(type=4, bool_value=False, integer_value=0, double_value=0.0, string_value='wait_at_waypoint', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[]))], extra_arguments=[])'
+[component_container_isolated-7] [INFO] [1761260896.357477735] [bt_navigator]: 
+[component_container_isolated-7] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.357585503] [bt_navigator]: Creating
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.361002568] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6f0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6f0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.361828181] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1761260896.361887827] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.377311310] [waypoint_follower]: 
+[component_container_isolated-7] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/waypoint_follower', unique_id=9)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_velocity_smoother', plugin_name='nav2_velocity_smoother::VelocitySmoother', node_name='velocity_smoother', node_namespace='/', log_level=0, remap_rules=['/tf:=tf', '/tf_static:=tf_static', 'cmd_vel:=cmd_vel_nav', 'cmd_vel_smoothed:=cmd_vel_smoothed_nav2'], parameters=[], extra_arguments=[])'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.377938150] [waypoint_follower]: Creating
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.381317360] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.382107004] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1761260896.382159317] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/velocity_smoother', unique_id=10)'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Calling the '/nav2_container/_container/load_node' service with request 'composition_interfaces.srv.LoadNode_Request(package_name='nav2_lifecycle_manager', plugin_name='nav2_lifecycle_manager::LifecycleManager', node_name='lifecycle_manager_navigation', node_namespace='/', log_level=0, remap_rules=[], parameters=[rcl_interfaces.msg.Parameter(name='use_sim_time', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='autostart', value=rcl_interfaces.msg.ParameterValue(type=1, bool_value=True, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=[])), rcl_interfaces.msg.Parameter(name='node_names', value=rcl_interfaces.msg.ParameterValue(type=9, bool_value=False, integer_value=0, double_value=0.0, string_value='', byte_array_value=[], bool_array_value=[], integer_array_value=[], double_array_value=[], string_array_value=('controller_server', 'smoother_server', 'planner_server', 'behavior_server', 'bt_navigator', 'waypoint_follower', 'velocity_smoother')))], extra_arguments=[])'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.397121976] [velocity_smoother]: 
+[component_container_isolated-7] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e500>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e500>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.400258621] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1761260896.400334331] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.434760118] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-7] [INFO] [1761260896.434832265] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.434861879] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.501169563] [lifecycle_manager_navigation]: Creating
+[DEBUG] [launch_ros.actions.load_composable_nodes]: Received response 'composition_interfaces.srv.LoadNode_Response(success=True, error_message='', full_node_name='/lifecycle_manager_navigation', unique_id=11)'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.517311101] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.578744867] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1761260896.578796411] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.578961520] [controller_server]: Configuring controller interface
+[component_container_isolated-7] [INFO] [1761260896.579304588] [controller_server]: getting goal checker plugins..
+[component_container_isolated-7] [INFO] [1761260896.579669378] [controller_server]: Controller frequency set to 20.0000Hz
+[component_container_isolated-7] [INFO] [1761260896.579734332] [local_costmap.local_costmap]: Configuring
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.584363241] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761260896.585756608] [goal_spawner_node]: GoalSpawnerNode pronto. Serviço '/spawn_new_goal' disponível.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.587444432] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.594151308] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1761260896.594196566] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.595237365] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.604097220] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.605019356] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.605711779] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.611932059] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161ffa0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161ffa0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260896.613567990] [controller_server]: Setting transform_tolerance to 0.100000
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [ERROR] [1761260896.627843115] [controller_server]: Couldn't load critics! Caught exception: No critics defined for FollowPath
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [ERROR] [1761260896.636565030] [controller_server]: Caught exception in callback for transition 10
+[component_container_isolated-7] [ERROR] [1761260896.636641927] [controller_server]: Original error: No critics defined for FollowPath
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [WARN] [1761260896.636731605] [controller_server]: Callback returned ERROR during the transition: configure
+[component_container_isolated-7] [FATAL] [1761260896.636762127] [controller_server]: Lifecycle node controller_server does not have error state implemented
+[component_container_isolated-7] [ERROR] [1761260896.637178809] [lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [ERROR] [1761260896.637234055] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-1] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-1] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-1] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [WARN] [1761260898.340600461] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761260898.448486401] [ppo_training_node]: ContactsState subscriber enabled for /bumper_states
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761260898.449619113] [ppo_training_node]: PPOEnvironment initialized
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761260898.451115428] [ppo_training_node]: Executor iniciado em thread de background (callbacks ROS ativos).
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761260899.288971833] [ppo_training_node]: Iniciando treinamento do STAGE 1 por 100000 timesteps (checkpoint a cada 5000 steps).
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.199136902] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.215846468] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.436218447] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761260904.436299325] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.438504126] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.441680791] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.446605764] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260904.462301352] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761260904.462369029] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260904.668231493] [amcl]: createLaserObject
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761260905.865340610] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761260905.866288728] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761260906.396824452] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [WARN] [1761260907.876179305] [ppo_training_node]: Timeout waiting for initial sensors/goal after reset
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] Using cpu device
+[train-9] Logging to tb_logs/PPO_119
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761260909.870828800] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260910.844968566] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260910.854177422] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a12a0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260911.061576187] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761260911.061635344] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260911.062803536] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260911.064199905] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260911.065911964] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761260911.077033887] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761260911.077093043] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761260912.586581223] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761260912.588429825] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761260914.873131021] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761260919.883284625] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761260925.887405947] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761260930.889726207] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761260935.899680795] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c570179e620>'
+[component_container_isolated-7] [INFO] [1761260938.454299816] [amcl]: Message Filter dropping message: frame 'base_scan' at time 264.055 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.399155583] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1060>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.408932218] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.618485688] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261122.618556369] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dd50>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.619379533] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.620356491] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.621888139] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261122.631539128] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261122.631587878] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261124.128863434] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261124.130357786] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261126.933351110] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261126.942982612] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261127.147771893] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261127.147838104] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261127.148545958] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261127.149337903] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261127.150710939] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261127.161503923] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261127.161551625] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261128.135651858] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261128.839076941] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261128.841212797] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261133.137897888] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] -----------------------------
+[train-9] | time/              |      |
+[train-9] |    fps             | 8    |
+[train-9] |    iterations      | 1    |
+[train-9] |    time_elapsed    | 234  |
+[train-9] |    total_timesteps | 2048 |
+[train-9] -----------------------------
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261138.147014266] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261144.150611739] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261149.152743105] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261154.162639445] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.707984375] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.716536784] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.922132499] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.922284755] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.923721203] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.925094444] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.926953229] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261339.936433704] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261339.936501242] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261341.443933283] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261341.445904095] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.247909492] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.257696085] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691510>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.460776137] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261344.460842906] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.461745898] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.462957803] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.464186121] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261344.473279878] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261344.473349161] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261345.450873751] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261346.155542747] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57016914b0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261346.157180202] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701691f30>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261350.452976644] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261355.464469922] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] ------------------------------------------
+[train-9] | time/                   |              |
+[train-9] |    fps                  | 8            |
+[train-9] |    iterations           | 2            |
+[train-9] |    time_elapsed         | 456          |
+[train-9] |    total_timesteps      | 4096         |
+[train-9] | train/                  |              |
+[train-9] |    approx_kl            | 0.0053129173 |
+[train-9] |    clip_fraction        | 0.0536       |
+[train-9] |    clip_range           | 0.2          |
+[train-9] |    entropy_loss         | -2.85        |
+[train-9] |    explained_variance   | -1.41e-05    |
+[train-9] |    learning_rate        | 0.0003       |
+[train-9] |    loss                 | 9.12e+04     |
+[train-9] |    n_updates            | 10           |
+[train-9] |    policy_gradient_loss | -0.0027      |
+[train-9] |    std                  | 1.01         |
+[train-9] |    value_loss           | 1.84e+05     |
+[train-9] ------------------------------------------
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261361.468027765] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c5701645cc0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261366.470108780] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261371.481555113] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261556.849489363] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261556.859523039] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a1b10>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261557.064929150] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261557.064995989] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261557.065776267] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261557.066744490] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261557.068260904] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261557.078275025] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261557.078334391] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261558.633625828] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261558.634524488] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.590697289] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.600196602] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.803098792] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261561.803174990] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161ffa0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161ffa0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.804026995] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.805401630] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.806642448] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261561.815651259] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261561.815705177] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261562.638788592] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261563.342860615] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261563.344422008] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261567.640463805] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261572.651040094] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] -----------------------------------------
+[train-9] | time/                   |             |
+[train-9] |    fps                  | 9           |
+[train-9] |    iterations           | 3           |
+[train-9] |    time_elapsed         | 678         |
+[train-9] |    total_timesteps      | 6144        |
+[train-9] | train/                  |             |
+[train-9] |    approx_kl            | 0.004013285 |
+[train-9] |    clip_fraction        | 0.0188      |
+[train-9] |    clip_range           | 0.2         |
+[train-9] |    entropy_loss         | -2.86       |
+[train-9] |    explained_variance   | -0.000694   |
+[train-9] |    learning_rate        | 0.0003      |
+[train-9] |    loss                 | 3.67e+05    |
+[train-9] |    n_updates            | 20          |
+[train-9] |    policy_gradient_loss | -0.0032     |
+[train-9] |    std                  | 1.01        |
+[train-9] |    value_loss           | 7.34e+05    |
+[train-9] -----------------------------------------
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261578.655456529] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261583.657577474] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261588.668483003] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.179238476] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.188915456] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.391518329] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261774.391605702] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.392680293] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.394240008] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.395745735] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261774.404922226] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261774.404982360] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261775.929590018] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261775.931232216] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261779.935035036] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261784.937048077] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261789.948055066] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57030a3ca0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c57030a3ca0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] -----------------------------------------
+[train-9] | time/                   |             |
+[train-9] |    fps                  | 9           |
+[train-9] |    iterations           | 4           |
+[train-9] |    time_elapsed         | 896         |
+[train-9] |    total_timesteps      | 8192        |
+[train-9] | train/                  |             |
+[train-9] |    approx_kl            | 0.004552493 |
+[train-9] |    clip_fraction        | 0.0295      |
+[train-9] |    clip_range           | 0.2         |
+[train-9] |    entropy_loss         | -2.86       |
+[train-9] |    explained_variance   | 1.79e-05    |
+[train-9] |    learning_rate        | 0.0003      |
+[train-9] |    loss                 | 1.15e+05    |
+[train-9] |    n_updates            | 30          |
+[train-9] |    policy_gradient_loss | -0.00218    |
+[train-9] |    std                  | 1.01        |
+[train-9] |    value_loss           | 2.15e+05    |
+[train-9] -----------------------------------------
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.546980810] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.556577952] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.762504166] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261986.762564439] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161d6c0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.763686662] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161ffa0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161ffa0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.765030564] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.766340872] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261986.775425862] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261986.775474193] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261988.445328489] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261988.446861383] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.282519677] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.292309304] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.495588848] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761261991.495678735] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.496501545] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f850>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.497609101] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.499231044] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761261991.508919888] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761261991.508994689] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761261992.451132518] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761261993.155453326] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761261993.157006195] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761261997.452678610] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262002.463115873] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761262008.467065080] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262013.468838197] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] ------------------------------------------
+[train-9] | time/                   |              |
+[train-9] |    fps                  | 9            |
+[train-9] |    iterations           | 5            |
+[train-9] |    time_elapsed         | 1118         |
+[train-9] |    total_timesteps      | 10240        |
+[train-9] | train/                  |              |
+[train-9] |    approx_kl            | 0.0051972456 |
+[train-9] |    clip_fraction        | 0.0315       |
+[train-9] |    clip_range           | 0.2          |
+[train-9] |    entropy_loss         | -2.86        |
+[train-9] |    explained_variance   | 8.14e-05     |
+[train-9] |    learning_rate        | 0.0003       |
+[train-9] |    loss                 | 3.33e+05     |
+[train-9] |    n_updates            | 40           |
+[train-9] |    policy_gradient_loss | -0.00222     |
+[train-9] |    std                  | 1.01         |
+[train-9] |    value_loss           | 7.06e+05     |
+[train-9] ------------------------------------------
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262018.478106762] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262203.874400684] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262203.884197640] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262204.090927971] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761262204.091006124] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262204.092223471] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161f820>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262204.094006678] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262204.096593209] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262204.108472645] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761262204.108526982] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761262205.660062325] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761262205.661446594] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.627824971] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161e200>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.638582673] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.846309928] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761262208.846401491] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dc90>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.847360632] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.848504575] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.850655990] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701623e20>'
+[gzserver-1] [INFO] [1761262208.862086690] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761262208.862153459] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761262209.666621321] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57016460b0>'
+[robot_spawner-3] [INFO] [1761262210.371002089] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] [INFO] [1761262210.373112716] [ppo_training_node]: Robô respawnado via serviço.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262214.668180974] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262219.677245526] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fc40>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [INFO] [1761262225.681645659] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161fd60>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262230.683284425] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStderr'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stderr.ProcessStderr object at 0x7c570161dae0>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c57014bc700>'
+[goal_spawner-8] [WARN] [1761262235.692175333] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[DEBUG] [launch.launch_context]: emitting event synchronously: 'launch.events.process.ProcessStdout'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c570161fc40>'
+[DEBUG] [launch]: processing event: '<launch.events.process.process_stdout.ProcessStdout object at 0x7c570161fc40>' ✓ '<launch.event_handlers.on_process_io.OnProcessIO object at 0x7c5701531d80>'
+[train-9] ------------------------------------------
+[train-9] | time/                   |              |
+[train-9] |    fps                  | 9            |
+[train-9] |    iterations           | 6            |
+[train-9] |    time_elapsed         | 1340         |
+[train-9] |    total_timesteps      | 12288        |
+[train-9] | train/                  |              |
+[train-9] |    approx_kl            | 0.0016366288 |
+[train-9] |    clip_fraction        | 0.00752      |
+[train-9] |    clip_range           | 0.2          |
+[train-9] |    entropy_loss         | -2.86        |
+[train-9] |    explained_variance   | 2.07e-05     |
+[train-9] |    learning_rate        | 0.0003       |
+[train-9] |    loss                 | 9.95e+04     |
+[train-9] |    n_updates            | 50           |
+[train-9] |    policy_gradient_loss | -0.000822    |
+[train-9] |    std                  | 1.01         |
+[train-9] |    value_loss           | 1.9e+05      |
+[train-9] ------------------------------------------

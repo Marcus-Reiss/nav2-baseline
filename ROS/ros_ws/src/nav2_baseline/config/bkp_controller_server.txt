@@ -94,3 +94,19 @@ controller_server:
       rl_service_name: "/rl_infer"
       controller_timeout_ms: 150.0
       lookahead_distance: 0.8
+
+
+===========================
+===========================
+
+controller_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 10.0
+    controller_plugins: ["FollowPath"]
+
+    FollowPath:
+      plugin: "nav2_rl_controller::RLController"
+      rl_service_name: "/rl_infer"
+      controller_timeout_ms: 150.0
+      lookahead_distance: 0.8

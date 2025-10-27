@@ -1,0 +1,463 @@
+[INFO] [launch]: All log files can be found below /home/ros_ws/.ros/log/2025-10-23-18-19-49-090917-marcus-100580
+[INFO] [launch]: Default logging verbosity is set to INFO
+urdf_file_name : turtlebot3_burger.urdf
+[INFO] [gzserver-1]: process started with pid [100615]
+[INFO] [gzclient-2]: process started with pid [100617]
+[INFO] [robot_spawner-3]: process started with pid [100619]
+[INFO] [robot_state_publisher-4]: process started with pid [100621]
+[INFO] [hlds_laser_publisher-5]: process started with pid [100623]
+[INFO] [turtlebot3_ros-6]: process started with pid [100625]
+[INFO] [component_container_isolated-7]: process started with pid [100627]
+[INFO] [goal_spawner-8]: process started with pid [100629]
+[INFO] [train-9]: process started with pid [100631]
+[hlds_laser_publisher-5] [INFO] [1761254390.842607513] [hlds_laser_publisher]: Init hlds_laser_publisher Node Main
+[hlds_laser_publisher-5] [INFO] [1761254390.842831777] [hlds_laser_publisher]: port : /dev/ttyUSB0 frame_id : base_scan
+[turtlebot3_ros-6] [INFO] [1761254390.846304284] [turtlebot3_node]: Init TurtleBot3 Node Main
+[turtlebot3_ros-6] [INFO] [1761254390.846700082] [turtlebot3_node]: Init DynamixelSDKWrapper
+[turtlebot3_ros-6] [ERROR] [1761254390.846819792] [DynamixelSDKWrapper]: Failed to open the port(/dev/ttyACM0)!
+[turtlebot3_ros-6] [ERROR] [1761254390.846831595] [DynamixelSDKWrapper]: Failed to initialize SDK handlers
+[turtlebot3_ros-6] [ERROR] [1761254390.846854155] [turtlebot3_node]: Failed connection with Devices
+[turtlebot3_ros-6] [PortHandlerLinux::SetupPort] Error opening serial port!
+[turtlebot3_ros-6] [INFO] [1761254390.847889991] [turtlebot3_node]: Add Motors
+[turtlebot3_ros-6] [INFO] [1761254390.847994056] [turtlebot3_node]: Add Wheels
+[turtlebot3_ros-6] [INFO] [1761254390.848017104] [turtlebot3_node]: Add Sensors
+[turtlebot3_ros-6] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[turtlebot3_ros-6]   what():  could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[robot_state_publisher-4] [INFO] [1761254390.900754443] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-4] [INFO] [1761254390.901011534] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-4] [INFO] [1761254390.901031579] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-4] [INFO] [1761254390.901047503] [robot_state_publisher]: got segment caster_back_link
+[robot_state_publisher-4] [INFO] [1761254390.901064265] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-4] [INFO] [1761254390.901079910] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-4] [INFO] [1761254390.901095764] [robot_state_publisher]: got segment wheel_right_link
+[ERROR] [hlds_laser_publisher-5]: process has died [pid 100623, exit code 255, cmd '/opt/ros/humble/lib/hls_lfcd_lds_driver/hlds_laser_publisher --ros-args -r __node:=hlds_laser_publisher -r __ns:=/ --params-file /tmp/launch_params_3t71mtu7'].
+[component_container_isolated-7] [INFO] [1761254391.040197995] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[ERROR] [turtlebot3_ros-6]: process has died [pid 100625, exit code -6, cmd '/opt/ros/humble/lib/turtlebot3_node/turtlebot3_ros -i /dev/ttyACM0 --ros-args -r __ns:=/ --params-file /opt/ros/humble/share/turtlebot3_bringup/param/humble/burger.yaml --params-file /tmp/launch_params_huv_wtxg'].
+[component_container_isolated-7] [INFO] [1761254391.069316858] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1761254391.069423298] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-7] [INFO] [1761254391.135450504] [controller_server]: 
+[component_container_isolated-7] 	controller_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.142616289] [controller_server]: Creating controller server
+[component_container_isolated-7] [INFO] [1761254391.155183075] [local_costmap.local_costmap]: 
+[component_container_isolated-7] 	local_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.156181335] [local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-7] [INFO] [1761254391.157663885] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.170517794] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-7] [INFO] [1761254391.170610545] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-7] [INFO] [1761254391.170626120] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1761254391.170645327] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-7] [INFO] [1761254391.183216373] [map_server]: 
+[component_container_isolated-7] 	map_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.183335176] [map_server]: Creating
+[component_container_isolated-7] [INFO] [1761254391.184008109] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.186119173] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1761254391.186206965] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-7] [INFO] [1761254391.197939132] [smoother_server]: 
+[component_container_isolated-7] 	smoother_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.200755606] [smoother_server]: Creating smoother server
+[component_container_isolated-7] [INFO] [1761254391.201909336] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.205022083] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1761254391.205116929] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-7] [INFO] [1761254391.217828639] [amcl]: 
+[component_container_isolated-7] 	amcl lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.218604940] [amcl]: Creating
+[component_container_isolated-7] [INFO] [1761254391.222766513] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-7] [INFO] [1761254391.223971718] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-7] [INFO] [1761254391.224010970] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.238676457] [planner_server]: 
+[component_container_isolated-7] 	planner_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.241349055] [planner_server]: Creating
+[component_container_isolated-7] [INFO] [1761254391.255189422] [global_costmap.global_costmap]: 
+[component_container_isolated-7] 	global_costmap lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.255919697] [global_costmap.global_costmap]: Creating Costmap
+[component_container_isolated-7] [INFO] [1761254391.258596206] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-7] [INFO] [1761254391.259563108] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1761254391.259608505] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.273541553] [lifecycle_manager_localization]: Creating
+[component_container_isolated-7] [INFO] [1761254391.277934865] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.278095642] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[component_container_isolated-7] [INFO] [1761254391.282808065] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1761254391.282888524] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-7] [INFO] [1761254391.287865091] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.287944642] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.288246851] [map_server]: Configuring
+[component_container_isolated-7] [INFO] [1761254391.288419572] [map_io]: Loading yaml file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.yaml
+[component_container_isolated-7] [INFO] [1761254391.288925302] [map_io]: resolution: 0.05
+[component_container_isolated-7] [INFO] [1761254391.288947303] [map_io]: origin[0]: -0.627
+[component_container_isolated-7] [INFO] [1761254391.288957779] [map_io]: origin[1]: -1.86
+[component_container_isolated-7] [INFO] [1761254391.288968675] [map_io]: origin[2]: 0
+[component_container_isolated-7] [INFO] [1761254391.288980199] [map_io]: free_thresh: 0.25
+[component_container_isolated-7] [INFO] [1761254391.288990186] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-7] [INFO] [1761254391.289002129] [map_io]: mode: trinary
+[component_container_isolated-7] [INFO] [1761254391.289014980] [map_io]: negate: 0
+[component_container_isolated-7] [INFO] [1761254391.289402258] [map_io]: Loading image_file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.pgm
+[component_container_isolated-7] [INFO] [1761254391.293032957] [map_io]: Read map /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/map_corr_3x10.pgm: 207 X 71 map @ 0.05 m/cell
+[component_container_isolated-7] [INFO] [1761254391.301638548] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.301890680] [amcl]: Configuring
+[component_container_isolated-7] [INFO] [1761254391.302082957] [amcl]: initTransforms
+[component_container_isolated-7] [INFO] [1761254391.312136246] [behavior_server]: 
+[component_container_isolated-7] 	behavior_server lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.319650965] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-7] [INFO] [1761254391.320158372] [amcl]: initPubSub
+[component_container_isolated-7] [INFO] [1761254391.322307150] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1761254391.322396479] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-7] [INFO] [1761254391.328539628] [amcl]: Subscribed to map topic.
+[component_container_isolated-7] [INFO] [1761254391.335215397] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.335393985] [map_server]: Activating
+[component_container_isolated-7] [INFO] [1761254391.335540514] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254391.335611614] [amcl]: Received a 207 X 71 map @ 0.050 m/pix
+[component_container_isolated-7] [INFO] [1761254391.347454272] [bt_navigator]: 
+[component_container_isolated-7] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.347553169] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.350231774] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-7] [INFO] [1761254391.351110953] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1761254391.351168503] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-7] [INFO] [1761254391.369279258] [waypoint_follower]: 
+[component_container_isolated-7] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-7] [INFO] [1761254391.369931938] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.372592942] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-7] [INFO] [1761254391.373438457] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1761254391.373479455] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-7] [INFO] [1761254391.390133222] [velocity_smoother]: 
+[component_container_isolated-7] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-7] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.392519257] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1761254391.392569823] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-7] [INFO] [1761254391.442745333] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-7] [INFO] [1761254391.442821671] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.443055714] [amcl]: Activating
+[component_container_isolated-7] [INFO] [1761254391.443105721] [amcl]: initialPoseReceived
+[component_container_isolated-7] [INFO] [1761254391.443214117] [amcl]: Setting pose (0.000000): 0.000 0.000 0.000
+[component_container_isolated-7] [INFO] [1761254391.446438821] [amcl]: Creating bond (amcl) to lifecycle manager.
+[robot_spawner-3] [INFO] [1761254391.501579515] [robot_spawner]: Serviço "respawn_robot" pronto.
+[component_container_isolated-7] [INFO] [1761254391.520817949] [lifecycle_manager_navigation]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-7] [INFO] [1761254391.544853106] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.585722993] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-7] [INFO] [1761254391.585812182] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.585843681] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[goal_spawner-8] [INFO] [1761254391.704130710] [goal_spawner_node]: GoalSpawnerNode pronto. Serviço '/spawn_new_goal' disponível.
+[component_container_isolated-7] [INFO] [1761254391.734630013] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.734702440] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.734937740] [controller_server]: Configuring controller interface
+[component_container_isolated-7] [INFO] [1761254391.735465750] [controller_server]: getting goal checker plugins..
+[component_container_isolated-7] [INFO] [1761254391.736095521] [controller_server]: Controller frequency set to 10.0000Hz
+[component_container_isolated-7] [INFO] [1761254391.736197421] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1761254391.741691802] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1761254391.745763558] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1761254391.757899555] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-7] [INFO] [1761254391.757954870] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1761254391.759531428] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1761254391.772628110] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-7] [INFO] [1761254391.773817321] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-7] [INFO] [1761254391.774692030] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-7] [INFO] [1761254391.775942911] [controller_server]: Created controller : FollowPath of type nav2_rl_controller::RLController
+[component_container_isolated-7] [INFO] [1761254391.776044672] [controller_server]: Configuring RLController: FollowPath
+[component_container_isolated-7] [INFO] [1761254391.781359627] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-7] [INFO] [1761254391.794490043] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.794691120] [smoother_server]: Configuring smoother server
+[component_container_isolated-7] [INFO] [1761254391.802318774] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-7] [INFO] [1761254391.803487032] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-7] [INFO] [1761254391.810596314] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.810799696] [planner_server]: Configuring
+[component_container_isolated-7] [INFO] [1761254391.810877222] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-7] [INFO] [1761254391.817734791] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-7] [INFO] [1761254391.819567671] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-7] [INFO] [1761254391.820568656] [global_costmap.global_costmap]: Subscribing to updates
+[component_container_isolated-7] [INFO] [1761254391.821674055] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-7] [INFO] [1761254391.821726996] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1761254391.823155138] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-7] [INFO] [1761254391.829954738] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-7] [INFO] [1761254391.830047769] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1761254391.831662251] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-7] [INFO] [1761254391.843454063] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-7] [INFO] [1761254391.843514198] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1761254391.844729530] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-7] [INFO] [1761254391.864150113] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.864401268] [behavior_server]: Configuring
+[component_container_isolated-7] [INFO] [1761254391.871419196] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-7] [INFO] [1761254391.872458873] [behavior_server]: Configuring spin
+[component_container_isolated-7] [INFO] [1761254391.879919673] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-7] [INFO] [1761254391.880953903] [behavior_server]: Configuring backup
+[component_container_isolated-7] [INFO] [1761254391.889374830] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-7] [INFO] [1761254391.890511240] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 207 X 71 at 0.050000 m/pix
+[component_container_isolated-7] [INFO] [1761254391.890513125] [behavior_server]: Configuring drive_on_heading
+[component_container_isolated-7] [INFO] [1761254391.898967088] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-7] [INFO] [1761254391.900039591] [behavior_server]: Configuring wait
+[component_container_isolated-7] [INFO] [1761254391.908582603] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1761254391.908774740] [bt_navigator]: Configuring
+[component_container_isolated-7] [INFO] [1761254392.085803131] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1761254392.085995058] [waypoint_follower]: Configuring
+[component_container_isolated-7] [INFO] [1761254392.102066897] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-7] [INFO] [1761254392.103185427] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1761254392.103345297] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-7] [INFO] [1761254392.108664023] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254392.108846103] [controller_server]: Activating
+[component_container_isolated-7] [INFO] [1761254392.108901209] [local_costmap.local_costmap]: Activating
+[component_container_isolated-7] [INFO] [1761254392.108938924] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1761254392.108967978] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gzserver-1] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-1] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-1] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-1] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[component_container_isolated-7] [INFO] [1761254392.609048953] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254393.109057222] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254393.609043769] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254394.109042607] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254394.609089637] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[train-9] [WARN] [1761254394.837935816] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[train-9] [INFO] [1761254394.993617152] [ppo_training_node]: ContactsState subscriber enabled for /bumper_states
+[train-9] [INFO] [1761254394.995411269] [ppo_training_node]: PPOEnvironment initialized
+[train-9] [INFO] [1761254394.997241845] [ppo_training_node]: Executor iniciado em thread de background (callbacks ROS ativos).
+[component_container_isolated-7] [INFO] [1761254395.109084144] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254395.609087869] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254396.109096134] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[train-9] [INFO] [1761254396.140314467] [ppo_training_node]: Iniciando treinamento do STAGE 1 por 100000 timesteps (checkpoint a cada 5000 steps).
+[component_container_isolated-7] [INFO] [1761254396.609096017] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254397.109056160] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gzserver-1] [INFO] [1761254397.280596103] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1761254397.305484458] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1761254397.569832276] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761254397.569920907] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1761254397.571867840] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1761254397.575407954] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1761254397.579982646] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1761254397.601596778] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761254397.601652093] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[component_container_isolated-7] [INFO] [1761254397.609048079] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[component_container_isolated-7] [INFO] [1761254397.807330420] [amcl]: createLaserObject
+[component_container_isolated-7] [INFO] [1761254398.109194002] [local_costmap.local_costmap]: start
+[component_container_isolated-7] [INFO] [1761254398.310878935] [controller_server]: Activating RLController
+[component_container_isolated-7] [INFO] [1761254398.310963166] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254398.417798305] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-7] [INFO] [1761254398.417851805] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254398.418120978] [smoother_server]: Activating
+[component_container_isolated-7] [INFO] [1761254398.418174897] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254398.524577990] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-7] [INFO] [1761254398.524659497] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254398.525062489] [planner_server]: Activating
+[component_container_isolated-7] [INFO] [1761254398.525154541] [global_costmap.global_costmap]: Activating
+[component_container_isolated-7] [INFO] [1761254398.525189742] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-7] [INFO] [1761254398.525266639] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation at time 262.410000, but only time 268.236000 is in the buffer, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254399.025371004] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation at time 262.410000, but only time 268.236000 is in the buffer, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254399.525336451] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation at time 262.410000, but only time 268.236000 is in the buffer, when looking up transform from frame [base_footprint] to frame [map]
+[gzserver-1] [INFO] [1761254399.732754906] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1761254399.745928694] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1761254400.002653048] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761254400.002716884] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1761254400.003585796] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1761254400.004537472] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1761254400.006520234] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1761254400.020595761] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761254400.020652962] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[component_container_isolated-7] [INFO] [1761254400.025315447] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation at time 262.410000, but only time 268.236000 is in the buffer, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254400.525386076] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 264.511000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254401.025348867] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.021000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[robot_spawner-3] [INFO] [1761254401.514011259] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[robot_spawner-3] [INFO] [1761254401.515424455] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[train-9] [INFO] [1761254401.515693908] [ppo_training_node]: Robô respawnado via serviço.
+[component_container_isolated-7] [INFO] [1761254401.525375983] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254402.025366571] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254402.525372243] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254403.025403897] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254403.525344755] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[train-9] [WARN] [1761254403.527128955] [ppo_training_node]: Timeout waiting for initial sensors/goal after reset
+[train-9] Using cpu device
+[train-9] Logging to tb_logs/PPO_111
+[component_container_isolated-7] [INFO] [1761254404.025323886] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254404.525373906] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254405.025321537] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[goal_spawner-8] [INFO] [1761254405.520835207] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[component_container_isolated-7] [INFO] [1761254405.525368623] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254406.025346634] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[gzserver-1] [INFO] [1761254406.414982987] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1761254406.430204212] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[component_container_isolated-7] [INFO] [1761254406.525350416] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[gzserver-1] [INFO] [1761254406.681696720] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761254406.681760416] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1761254406.682676542] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1761254406.683758265] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1761254406.685971578] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1761254406.698923406] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761254406.698978302] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[component_container_isolated-7] [INFO] [1761254407.025346935] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254407.525348132] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254408.025352052] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[robot_spawner-3] [INFO] [1761254408.239276205] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[train-9] [INFO] [1761254408.241182420] [ppo_training_node]: Robô respawnado via serviço.
+[component_container_isolated-7] [INFO] [1761254408.525387261] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254409.025419048] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254409.525360666] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254410.025380858] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[goal_spawner-8] [WARN] [1761254410.523840694] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[goal_spawner-8] [INFO] [1761254410.525181463] [goal_spawner_node]: Enviando goal para navigate_to_pose...
+[component_container_isolated-7] [INFO] [1761254410.525365498] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 265.497000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254411.025363968] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 266.003000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254411.525342391] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 266.513000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254412.025325494] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 266.989000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254412.525355809] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254413.025355114] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254413.525319567] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254414.025383824] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254414.525332491] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254415.025337032] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254415.525366366] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254416.025321736] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254416.525350021] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[goal_spawner-8] [INFO] [1761254416.530820516] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[component_container_isolated-7] [INFO] [1761254417.025423634] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254417.525406241] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254418.025426284] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254418.525330107] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254419.025349520] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254419.525382131] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254420.025380590] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254420.525339657] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254421.025380090] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254421.525372400] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 267.499000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[goal_spawner-8] [WARN] [1761254421.533096367] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[goal_spawner-8] [INFO] [1761254421.534485537] [goal_spawner_node]: Enviando goal para navigate_to_pose...
+[component_container_isolated-7] [INFO] [1761254422.008885970] [amcl]: Message Filter dropping message: frame 'base_scan' at time 262.036 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[component_container_isolated-7] [INFO] [1761254422.025337332] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 268.009000 but the earliest data is at time 268.236000, when looking up transform from frame [base_footprint] to frame [map]
+[component_container_isolated-7] [INFO] [1761254422.525471352] [global_costmap.global_costmap]: start
+[component_container_isolated-7] [INFO] [1761254423.527322653] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-7] [INFO] [1761254423.529465495] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[goal_spawner-8] [WARN] [1761254423.537433422] [goal_spawner_node]: Goal REJEITADO pelo servidor. (navigate_to_pose)
+[goal_spawner-8] [WARN] [1761254423.539387968] [goal_spawner_node]: Goal REJEITADO pelo servidor. (navigate_to_pose)
+[component_container_isolated-7] [INFO] [1761254423.636390307] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-7] [INFO] [1761254423.636477959] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-7] [INFO] [1761254423.636885281] [behavior_server]: Activating
+[component_container_isolated-7] [INFO] [1761254423.636927187] [behavior_server]: Activating spin
+[component_container_isolated-7] [INFO] [1761254423.636964413] [behavior_server]: Activating backup
+[component_container_isolated-7] [INFO] [1761254423.636986344] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-7] [INFO] [1761254423.637015887] [behavior_server]: Activating wait
+[component_container_isolated-7] [INFO] [1761254423.637040681] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254423.744142125] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-7] [INFO] [1761254423.744247377] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-7] [INFO] [1761254423.744793477] [bt_navigator]: Activating
+[component_container_isolated-7] [INFO] [1761254423.851415241] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254423.960352428] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-7] [INFO] [1761254423.960443503] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-7] [INFO] [1761254423.960958313] [waypoint_follower]: Activating
+[component_container_isolated-7] [INFO] [1761254423.961023127] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254424.070818261] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-7] [INFO] [1761254424.070875881] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-7] [INFO] [1761254424.071201697] [velocity_smoother]: Activating
+[component_container_isolated-7] [INFO] [1761254424.071286556] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-7] [INFO] [1761254424.180214384] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-7] [INFO] [1761254424.180303364] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-7] [INFO] [1761254424.180337307] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-7] [WARN] [1761254505.525661106] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[gzserver-1] [INFO] [1761254618.711105610] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1761254618.724584814] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1761254618.982918092] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761254618.982978436] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1761254618.984282537] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1761254618.985658366] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1761254618.987798553] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1761254618.999922252] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761254618.999975193] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[robot_spawner-3] [INFO] [1761254620.483289623] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[train-9] [INFO] [1761254620.484611324] [ppo_training_node]: Robô respawnado via serviço.
+[gzserver-1] [INFO] [1761254623.342516327] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1761254623.356468086] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1761254623.613742269] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1761254623.613889497] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1761254623.614890760] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1761254623.616555459] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1761254623.619284210] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1761254623.632108290] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1761254623.632176945] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[component_container_isolated-7] [INFO] [1761254624.490276203] [bt_navigator]: Begin navigating from current location (2.37, 0.69) to (8.00, 0.00)
+[goal_spawner-8] [INFO] [1761254624.490430835] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, 0.00)
+[component_container_isolated-7] [WARN] [1761254624.491881326] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1761254624.491948724] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (8.00, 0.00)
+[component_container_isolated-7] [WARN] [1761254624.491969467] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1761254624.510914973] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1761254624.532063943] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1761254624.532161164] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (8.00, 0.00)
+[component_container_isolated-7] [WARN] [1761254624.532185958] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1761254624.550698369] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-7] [INFO] [1761254624.551336451] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [INFO] [1761254624.552127838] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1761254624.552231205] [behavior_server]: Turning 1.57 for spin behavior.
+[robot_spawner-3] [INFO] [1761254625.195290873] [robot_spawner]: Robô spawnado em (4.00, 0.00)
+[train-9] [INFO] [1761254625.197356189] [ppo_training_node]: Robô respawnado via serviço.
+[goal_spawner-8] [WARN] [1761254629.492288091] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[goal_spawner-8] [INFO] [1761254629.493321203] [goal_spawner_node]: Enviando goal para navigate_to_pose...
+[component_container_isolated-7] [INFO] [1761254629.500653489] [bt_navigator]: Received goal preemption request
+[component_container_isolated-7] [INFO] [1761254629.501093078] [bt_navigator]: Begin navigating from current location (2.37, 0.69) to (8.00, 0.00)
+[component_container_isolated-7] [WARN] [1761254629.552831364] [behavior_server]: Collision Ahead - Exiting Spin
+[component_container_isolated-7] [WARN] [1761254629.552899530] [behavior_server]: spin failed
+[component_container_isolated-7] [WARN] [1761254629.552938991] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-7] [WARN] [1761254629.590575286] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [ERROR] [1761254629.590859545] [bt_navigator]: Goal failed
+[train-9] -----------------------------
+[train-9] | time/              |      |
+[train-9] |    fps             | 8    |
+[train-9] |    iterations      | 1    |
+[train-9] |    time_elapsed    | 233  |
+[train-9] |    total_timesteps | 2048 |
+[train-9] -----------------------------
+[component_container_isolated-7] [INFO] [1761254635.498713157] [bt_navigator]: Begin navigating from current location (2.37, 0.68) to (8.00, -0.75)
+[goal_spawner-8] [INFO] [1761254635.499113704] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (8.00, -0.75)
+[component_container_isolated-7] [WARN] [1761254635.499553642] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1761254635.499645905] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (8.00, -0.75)
+[component_container_isolated-7] [WARN] [1761254635.499685855] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1761254635.519254356] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-7] [WARN] [1761254635.530280478] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-7] [WARN] [1761254635.530373368] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (8.00, -0.75)
+[component_container_isolated-7] [WARN] [1761254635.530409128] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [INFO] [1761254635.549375446] [behavior_server]: Running spin
+[component_container_isolated-7] [INFO] [1761254635.549495575] [behavior_server]: Turning 1.57 for spin behavior.
+[goal_spawner-8] [WARN] [1761254640.501267637] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[goal_spawner-8] [INFO] [1761254640.502409075] [goal_spawner_node]: Enviando goal para navigate_to_pose...
+[component_container_isolated-7] [INFO] [1761254640.509243243] [bt_navigator]: Received goal preemption request
+[component_container_isolated-7] [INFO] [1761254640.509434053] [bt_navigator]: Begin navigating from current location (2.37, 0.68) to (8.00, -0.75)
+[goal_spawner-8] [INFO] [1761254642.505850134] [goal_spawner_node]: Goal ACEITO. Aguardando resultado...
+[goal_spawner-8] [INFO] [1761254642.508078602] [goal_spawner_node]: Resultado da navegação: status=6
+[goal_spawner-8] [INFO] [1761254642.508715986] [goal_spawner_node]: Goal ACEITO. Aguardando resultado...
+[component_container_isolated-7] [WARN] [1761254642.525632074] [nav2_costmap_2d]: Robot is out of bounds of the costmap!
+[component_container_isolated-7] [WARN] [1761254642.525671745] [global_costmap.global_costmap]: Sensor origin at (2.28, 1.72) is out of map bounds (-0.63, -1.86) to (9.70, 1.67). The costmap cannot raytrace for it.
+[component_container_isolated-7] [WARN] [1761254645.549632403] [behavior_server]: Exceeded time allowance before reaching the Spin goal - Exiting Spin
+[component_container_isolated-7] [WARN] [1761254645.549684296] [behavior_server]: spin failed
+[component_container_isolated-7] [WARN] [1761254645.549703503] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-7] [WARN] [1761254645.578988577] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-7] [ERROR] [1761254645.579219057] [bt_navigator]: Goal failed
+[goal_spawner-8] [INFO] [1761254645.581307211] [goal_spawner_node]: Resultado da navegação: status=6
