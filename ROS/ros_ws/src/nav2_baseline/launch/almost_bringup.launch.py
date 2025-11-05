@@ -10,7 +10,7 @@ def generate_launch_description():
     pkg = get_package_share_directory('nav2_baseline')
     turtlebot3_pkg = get_package_share_directory('turtlebot3_bringup')
 
-    default_world = 'corridor_3x10_dynamic_v0.world'
+    default_world = 'empty_bkp.world'
     world_name = LaunchConfiguration('world_name')
 
     return LaunchDescription([

@@ -29,5 +29,5 @@ def generate_launch_description():
     return LaunchDescription([
         rl_bridge,
         TimerAction(period=5.0, actions=[almost_bringup]),
-        TimerAction(period=12.0, actions=[goal_pose])
+        TimerAction(period=10.0, actions=[goal_pose])
     ])

@@ -16,8 +16,8 @@ class GoalPublisherNode(Node):
         super().__init__('goal_pub_node')
 
         # Parâmetros simples para não “engessar” o objetivo
-        self.declare_parameter('target_x', 9.0)
-        self.declare_parameter('target_y', 0.0)
+        self.declare_parameter('target_x', -1.5)
+        self.declare_parameter('target_y', -1.5)
         self.declare_parameter('target_yaw', 0.0)  # rad
         self.declare_parameter('frame_id', 'map')
         self.declare_parameter('once', True)       # envia só 1 goal

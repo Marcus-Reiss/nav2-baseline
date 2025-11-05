@@ -38,34 +38,29 @@ def generate_launch_description():
         os.path.join(pkg_share, 'worlds', 'corridor_3x10_static.world'), "'"
     ])
 
+    use_sim_time_arg = DeclareLaunchArgument(
+    'use_sim_time',
+    default_value='true',
+    description='Use simulated clock (Gazebo /clock topic)'
+    )
+    use_sim_time = LaunchConfiguration('use_sim_time')
+
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(gazebo_share, 'launch', 'gazebo.launch.py')
         ),
-        launch_arguments={'world': world_expr}.items()
+        launch_arguments={
+            'world': world_expr,
+            'use_sim_time': use_sim_time
+        }.items()
     )
-
-    # Spawn do turtlebot3 burger sem imu
-    # tb3_file = os.path.join(pkg_share, 'model_bumper', 'model.sdf')
-
-    # spawn_robot = Node(
-    #     package='gazebo_ros',
-    #     executable='spawn_entity.py',
-    #     arguments=[
-    #         '-entity', 'turtlebot3',
-    #         '-file', tb3_file,
-    #         '-x', '4.0',   # 4.0, 0.0
-    #         '-y', '0.0',  # -4.0, 0.0
-    #         '-z', '0.01'
-    #     ],
-    #     output='screen'
-    # )
 
     robot_spawner_node = Node(
         package='ppo_training',
         executable='robot_spawner',
         name='robot_spawner',
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
 
     tb3_features = IncludeLaunchDescription(
@@ -74,23 +69,14 @@ def generate_launch_description():
         )
     )
 
-    # nav2_core = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(
-    #         os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py')
-    #     ),
-    #     launch_arguments={
-    #         'map': map_file,
-    #         'params_file': nav2_params_file
-    #     }.items()
-    # )
-
     nav2_custom = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_share, 'launch', 'bringup_custom.launch.py')
         ),
         launch_arguments={
             'map': map_file,
-            'params_file': nav2_params_file
+            'params_file': nav2_params_file,
+            'use_sim_time': use_sim_time
         }.items()
     )
 
@@ -99,7 +85,8 @@ def generate_launch_description():
         package='ppo_training',
         executable='goal_spawner',
         name='goal_spawner_node',
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
 
     # Trainer node (training_node), passa --stage arg para que o trainer saiba o stage
@@ -108,11 +95,13 @@ def generate_launch_description():
         executable='train',
         name='ppo_training_node',
         output='screen',
+        parameters=[{'use_sim_time': use_sim_time}],
         arguments=['--stage', stage]
     )
 
     return LaunchDescription([
         stage_arg,
+        use_sim_time_arg,
         gazebo,
         robot_spawner_node,
         tb3_features,

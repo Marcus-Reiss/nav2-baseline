@@ -1,0 +1,605 @@
+[INFO] [launch]: All log files can be found below /home/ros_ws/.ros/log/2025-10-29-17-00-15-235096-marcus-5721
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [rl_infer_node-1]: process started with pid [5723]
+[rl_infer_node-1] [INFO] [1761768019.409491279] [rl_infer]: Modelo PPO carregado: /home/ROS/ros_ws/install/ppo_training/share/ppo_training/models/ppo_stage1.zip
+urdf_file_name : turtlebot3_burger.urdf
+[INFO] [gzserver-2]: process started with pid [5839]
+[INFO] [gzclient-3]: process started with pid [5842]
+[INFO] [spawn_entity.py-4]: process started with pid [5844]
+[INFO] [robot_state_publisher-5]: process started with pid [5846]
+[INFO] [hlds_laser_publisher-6]: process started with pid [5848]
+[INFO] [turtlebot3_ros-7]: process started with pid [5850]
+[INFO] [map_server-8]: process started with pid [5854]
+[INFO] [amcl-9]: process started with pid [5856]
+[INFO] [component_container_isolated-10]: process started with pid [5858]
+[INFO] [collision_monitor-11]: process started with pid [5860]
+[hlds_laser_publisher-6] [INFO] [1761768022.057592769] [hlds_laser_publisher]: Init hlds_laser_publisher Node Main
+[hlds_laser_publisher-6] [INFO] [1761768022.057968873] [hlds_laser_publisher]: port : /dev/ttyUSB0 frame_id : base_scan
+[turtlebot3_ros-7] [INFO] [1761768022.075118495] [turtlebot3_node]: Init TurtleBot3 Node Main
+[turtlebot3_ros-7] [INFO] [1761768022.075968831] [turtlebot3_node]: Init DynamixelSDKWrapper
+[turtlebot3_ros-7] [ERROR] [1761768022.076201687] [DynamixelSDKWrapper]: Failed to open the port(/dev/ttyACM0)!
+[turtlebot3_ros-7] [ERROR] [1761768022.076214957] [DynamixelSDKWrapper]: Failed to initialize SDK handlers
+[turtlebot3_ros-7] [ERROR] [1761768022.076250088] [turtlebot3_node]: Failed connection with Devices
+[turtlebot3_ros-7] [PortHandlerLinux::SetupPort] Error opening serial port!
+[turtlebot3_ros-7] [INFO] [1761768022.079721625] [turtlebot3_node]: Add Motors
+[turtlebot3_ros-7] [INFO] [1761768022.079901959] [turtlebot3_node]: Add Wheels
+[turtlebot3_ros-7] [INFO] [1761768022.079937090] [turtlebot3_node]: Add Sensors
+[turtlebot3_ros-7] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+[turtlebot3_ros-7]   what():  could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[map_server-8] [INFO] [1761768022.100115865] [map_server]: 
+[map_server-8] 	map_server lifecycle node launched. 
+[map_server-8] 	Waiting on external lifecycle transitions to activate
+[map_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-8] [INFO] [1761768022.100386436] [map_server]: Creating
+[amcl-9] [INFO] [1761768022.100608327] [amcl]: 
+[amcl-9] 	amcl lifecycle node launched. 
+[amcl-9] 	Waiting on external lifecycle transitions to activate
+[amcl-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-9] [INFO] [1761768022.101770092] [amcl]: Creating
+[robot_state_publisher-5] [INFO] [1761768022.138913755] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-5] [INFO] [1761768022.139239292] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-5] [INFO] [1761768022.139258429] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-5] [INFO] [1761768022.139273096] [robot_state_publisher]: got segment caster_back_link
+[robot_state_publisher-5] [INFO] [1761768022.139287484] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-5] [INFO] [1761768022.139301802] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-5] [INFO] [1761768022.139315910] [robot_state_publisher]: got segment wheel_right_link
+[ERROR] [hlds_laser_publisher-6]: process has died [pid 5848, exit code 255, cmd '/opt/ros/humble/lib/hls_lfcd_lds_driver/hlds_laser_publisher --ros-args -r __node:=hlds_laser_publisher -r __ns:=/ --params-file /tmp/launch_params_3641ns0w'].
+[component_container_isolated-10] [INFO] [1761768022.242710227] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[component_container_isolated-10] [INFO] [1761768022.251663656] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[component_container_isolated-10] [INFO] [1761768022.252674002] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[ERROR] [turtlebot3_ros-7]: process has died [pid 5850, exit code -6, cmd '/opt/ros/humble/lib/turtlebot3_node/turtlebot3_ros -i /dev/ttyACM0 --ros-args -r __ns:=/ --params-file /opt/ros/humble/share/turtlebot3_bringup/param/humble/burger.yaml --params-file /tmp/launch_params_xkehk6ew'].
+[component_container_isolated-10] [INFO] [1761768022.280547778] [controller_server]: 
+[component_container_isolated-10] 	controller_server lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.291005412] [controller_server]: Creating controller server
+[component_container_isolated-10] [INFO] [1761768022.322703640] [local_costmap.local_costmap]: 
+[component_container_isolated-10] 	local_costmap lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.323513747] [local_costmap.local_costmap]: Creating Costmap
+[component_container_isolated-10] [INFO] [1761768022.328260614] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.344069045] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[component_container_isolated-10] [INFO] [1761768022.344136233] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[component_container_isolated-10] [INFO] [1761768022.344153834] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-10] [INFO] [1761768022.344170526] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[component_container_isolated-10] [INFO] [1761768022.382415820] [map_server]: 
+[component_container_isolated-10] 	map_server lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.382519467] [map_server]: Creating
+[component_container_isolated-10] [INFO] [1761768022.383216149] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[WARNING] [/nav2_container]: there are now at least 2 nodes with the name /map_server created within this launch context
+[component_container_isolated-10] [INFO] [1761768022.385077669] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[component_container_isolated-10] [INFO] [1761768022.385147931] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.399233130] [smoother_server]: 
+[component_container_isolated-10] 	smoother_server lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.401566020] [smoother_server]: Creating smoother server
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.402409372] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[component_container_isolated-10] [INFO] [1761768022.405122276] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-10] [INFO] [1761768022.405236259] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[component_container_isolated-10] [INFO] [1761768022.421655745] [amcl]: 
+[component_container_isolated-10] 	amcl lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.422283841] [amcl]: Creating
+[WARNING] [/nav2_container]: there are now at least 2 nodes with the name /amcl created within this launch context
+[component_container_isolated-10] [INFO] [1761768022.426534265] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[component_container_isolated-10] [INFO] [1761768022.427393192] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[component_container_isolated-10] [INFO] [1761768022.427436145] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.444315755] [planner_server]: 
+[component_container_isolated-10] 	planner_server lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.446778902] [planner_server]: Creating
+[component_container_isolated-10] [INFO] [1761768022.480889361] [global_costmap.global_costmap]: 
+[component_container_isolated-10] 	global_costmap lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.481591910] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.489357173] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[component_container_isolated-10] [INFO] [1761768022.490247320] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-10] [INFO] [1761768022.490281613] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-10] [INFO] [1761768022.524799186] [lifecycle_manager_localization]: Creating
+[component_container_isolated-10] [INFO] [1761768022.536161145] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.536266677] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.545786042] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-10] [INFO] [1761768022.545857142] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[component_container_isolated-10] [INFO] [1761768022.566814944] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.566888489] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.567201384] [map_server]: Configuring
+[component_container_isolated-10] [INFO] [1761768022.567301609] [map_io]: Loading yaml file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/empty_bkp.yaml
+[component_container_isolated-10] [INFO] [1761768022.567664861] [map_io]: resolution: 0.05
+[component_container_isolated-10] [INFO] [1761768022.567693078] [map_io]: origin[0]: -3.08
+[component_container_isolated-10] [INFO] [1761768022.567704951] [map_io]: origin[1]: -3.13
+[component_container_isolated-10] [INFO] [1761768022.567714519] [map_io]: origin[2]: 0
+[component_container_isolated-10] [INFO] [1761768022.567724996] [map_io]: free_thresh: 0.25
+[component_container_isolated-10] [INFO] [1761768022.567734425] [map_io]: occupied_thresh: 0.65
+[component_container_isolated-10] [INFO] [1761768022.567745949] [map_io]: mode: trinary
+[component_container_isolated-10] [INFO] [1761768022.567757473] [map_io]: negate: 0
+[map_server-8] [INFO] [1761768022.567496330] [map_server]: Configuring
+[map_server-8] [INFO] [1761768022.567593412] [map_io]: Loading yaml file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/empty_bkp.yaml
+[map_server-8] [INFO] [1761768022.567948772] [map_io]: resolution: 0.05
+[map_server-8] [INFO] [1761768022.567971192] [map_io]: origin[0]: -3.08
+[map_server-8] [INFO] [1761768022.567979363] [map_io]: origin[1]: -3.13
+[map_server-8] [INFO] [1761768022.567989211] [map_io]: origin[2]: 0
+[map_server-8] [INFO] [1761768022.568000246] [map_io]: free_thresh: 0.25
+[map_server-8] [INFO] [1761768022.568010374] [map_io]: occupied_thresh: 0.65
+[map_server-8] [INFO] [1761768022.568021129] [map_io]: mode: trinary
+[map_server-8] [INFO] [1761768022.568031676] [map_io]: negate: 0
+[component_container_isolated-10] [INFO] [1761768022.568057378] [map_io]: Loading image_file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/empty_bkp.pgm
+[map_server-8] [INFO] [1761768022.568289326] [map_io]: Loading image_file: /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/empty_bkp.pgm
+[map_server-8] [INFO] [1761768022.572471443] [map_io]: Read map /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/empty_bkp.pgm: 129 X 128 map @ 0.05 m/cell
+[component_container_isolated-10] [INFO] [1761768022.575672828] [map_io]: Read map /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/maps/empty_bkp.pgm: 129 X 128 map @ 0.05 m/cell
+[component_container_isolated-10] [INFO] [1761768022.591393048] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.591625065] [amcl]: Configuring
+[component_container_isolated-10] [INFO] [1761768022.591753367] [amcl]: initTransforms
+[amcl-9] [INFO] [1761768022.593007115] [amcl]: Configuring
+[amcl-9] [INFO] [1761768022.593390203] [amcl]: initTransforms
+[amcl-9] [INFO] [1761768022.612257819] [amcl]: initPubSub
+[amcl-9] [INFO] [1761768022.618887438] [amcl]: Subscribed to map topic.
+[collision_monitor-11] [INFO] [1761768022.627745112] [collision_monitor]: CollisionMonitor ouvindo /bumper_states | publicando /collision, /collision_event, /collision_count | debounce=1.500s
+[component_container_isolated-10] [INFO] [1761768022.628244558] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-8] [INFO] [1761768022.628754131] [map_server]: Activating
+[map_server-8] [INFO] [1761768022.629177099] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-9] [INFO] [1761768022.629940202] [amcl]: Received a 129 X 128 map @ 0.050 m/pix
+[component_container_isolated-10] [INFO] [1761768022.631089745] [map_server]: Activating
+[component_container_isolated-10] [INFO] [1761768022.631258625] [map_server]: Creating bond (map_server) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768022.683140168] [behavior_server]: 
+[component_container_isolated-10] 	behavior_server lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.693626437] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[component_container_isolated-10] [INFO] [1761768022.695894652] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[component_container_isolated-10] [INFO] [1761768022.695997531] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[spawn_entity.py-4] [INFO] [1761768022.706383715] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1761768022.707156316] [spawn_entity]: Loading entity XML from file /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/model_bumper/model.sdf
+[spawn_entity.py-4] [INFO] [1761768022.708607790] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-4] [INFO] [1761768022.709247340] [spawn_entity]: Waiting for service /spawn_entity
+[component_container_isolated-10] [INFO] [1761768022.724529366] [amcl]: initPubSub
+[component_container_isolated-10] [INFO] [1761768022.733205030] [amcl]: Subscribed to map topic.
+[component_container_isolated-10] [INFO] [1761768022.740281434] [lifecycle_manager_localization]: Server map_server connected with bond.
+[component_container_isolated-10] [INFO] [1761768022.740334863] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-9] [INFO] [1761768022.740648318] [amcl]: Activating
+[amcl-9] [INFO] [1761768022.740728707] [amcl]: initialPoseReceived
+[amcl-9] [INFO] [1761768022.740822157] [amcl]: Setting pose (1761768022.740821): 0.000 0.000 0.000
+[component_container_isolated-10] [INFO] [1761768022.740651182] [bt_navigator]: 
+[component_container_isolated-10] 	bt_navigator lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.740749241] [bt_navigator]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.742918000] [amcl]: Activating
+[component_container_isolated-10] [INFO] [1761768022.742976598] [amcl]: initialPoseReceived
+[component_container_isolated-10] [INFO] [1761768022.743094423] [amcl]: Setting pose (1761768022.743093): 0.000 0.000 0.000
+[amcl-9] [INFO] [1761768022.743808146] [amcl]: Creating bond (amcl) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768022.744804105] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[component_container_isolated-10] [INFO] [1761768022.745738322] [amcl]: Creating bond (amcl) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768022.745755294] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-10] [INFO] [1761768022.745859639] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[component_container_isolated-10] [INFO] [1761768022.749379996] [amcl]: Received a 129 X 128 map @ 0.050 m/pix
+[component_container_isolated-10] [INFO] [1761768022.767762833] [waypoint_follower]: 
+[component_container_isolated-10] 	waypoint_follower lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[component_container_isolated-10] [INFO] [1761768022.768412650] [waypoint_follower]: Creating
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.771017298] [nav2_container]: Load Library: /opt/ros/humble/lib/libvelocity_smoother_core.so
+[component_container_isolated-10] [INFO] [1761768022.771893616] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-10] [INFO] [1761768022.771942017] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[component_container_isolated-10] [INFO] [1761768022.793004164] [velocity_smoother]: 
+[component_container_isolated-10] 	velocity_smoother lifecycle node launched. 
+[component_container_isolated-10] 	Waiting on external lifecycle transitions to activate
+[component_container_isolated-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.795428338] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-10] [INFO] [1761768022.795475202] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[component_container_isolated-10] [INFO] [1761768022.821963088] [amcl]: Received a 129 X 128 map @ 0.050 m/pix
+[component_container_isolated-10] [INFO] [1761768022.851543543] [lifecycle_manager_localization]: Server amcl connected with bond.
+[component_container_isolated-10] [INFO] [1761768022.851606960] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.851630707] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.907576194] [lifecycle_manager_navigation]: Creating
+[component_container_isolated-10] [INFO] [1761768022.911987675] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+[component_container_isolated-10] [INFO] [1761768022.933097105] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.933157659] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.933362927] [controller_server]: Configuring controller interface
+[component_container_isolated-10] [INFO] [1761768022.933753698] [controller_server]: getting goal checker plugins..
+[component_container_isolated-10] [INFO] [1761768022.934166049] [controller_server]: Controller frequency set to 10.0000Hz
+[component_container_isolated-10] [INFO] [1761768022.934244064] [local_costmap.local_costmap]: Configuring
+[component_container_isolated-10] [INFO] [1761768022.940058827] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[component_container_isolated-10] [INFO] [1761768022.945076684] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[component_container_isolated-10] [INFO] [1761768022.954224346] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[component_container_isolated-10] [INFO] [1761768022.954280010] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-10] [INFO] [1761768022.955702080] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-10] [INFO] [1761768022.967862900] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[component_container_isolated-10] [INFO] [1761768022.969016703] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[component_container_isolated-10] [INFO] [1761768022.969801946] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[component_container_isolated-10] [INFO] [1761768022.972431458] [controller_server]: Created controller : FollowPath of type nav2_rl_controller::RLController
+[component_container_isolated-10] [INFO] [1761768022.972538457] [controller_server]: Configuring RLController: FollowPath
+[component_container_isolated-10] [INFO] [1761768022.983775676] [controller_server]: Controller Server has FollowPath  controllers available.
+[component_container_isolated-10] [INFO] [1761768022.994584060] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768022.994803157] [smoother_server]: Configuring smoother server
+[component_container_isolated-10] [INFO] [1761768023.003028964] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[component_container_isolated-10] [INFO] [1761768023.004382099] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[component_container_isolated-10] [INFO] [1761768023.014575028] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768023.014750473] [planner_server]: Configuring
+[component_container_isolated-10] [INFO] [1761768023.014817871] [global_costmap.global_costmap]: Configuring
+[component_container_isolated-10] [INFO] [1761768023.021285176] [global_costmap.global_costmap]: Using plugin "static_layer"
+[component_container_isolated-10] [INFO] [1761768023.023101857] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[component_container_isolated-10] [INFO] [1761768023.024440395] [global_costmap.global_costmap]: Subscribing to updates
+[component_container_isolated-10] [INFO] [1761768023.025551314] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[component_container_isolated-10] [INFO] [1761768023.025605233] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[component_container_isolated-10] [INFO] [1761768023.027072141] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[component_container_isolated-10] [INFO] [1761768023.032910581] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[component_container_isolated-10] [INFO] [1761768023.032968062] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[component_container_isolated-10] [INFO] [1761768023.034449218] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[component_container_isolated-10] [INFO] [1761768023.047395700] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 129 X 128 at 0.050000 m/pix
+[component_container_isolated-10] [INFO] [1761768023.047832288] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[component_container_isolated-10] [INFO] [1761768023.047880410] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[component_container_isolated-10] [INFO] [1761768023.049051394] [planner_server]: Planner Server has GridBased  planners available.
+[component_container_isolated-10] [INFO] [1761768023.068274370] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768023.068448488] [behavior_server]: Configuring
+[amcl-9] [INFO] [1761768023.076908059] [amcl]: Received a 129 X 128 map @ 0.050 m/pix
+[component_container_isolated-10] [INFO] [1761768023.078867988] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[component_container_isolated-10] [INFO] [1761768023.079939097] [behavior_server]: Configuring spin
+[component_container_isolated-10] [INFO] [1761768023.089072511] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[component_container_isolated-10] [INFO] [1761768023.090231622] [behavior_server]: Configuring backup
+[component_container_isolated-10] [INFO] [1761768023.099295054] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[component_container_isolated-10] [INFO] [1761768023.100413447] [behavior_server]: Configuring drive_on_heading
+[component_container_isolated-10] [INFO] [1761768023.111567483] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[component_container_isolated-10] [INFO] [1761768023.112580972] [behavior_server]: Configuring wait
+[component_container_isolated-10] [INFO] [1761768023.121750146] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[component_container_isolated-10] [INFO] [1761768023.121971687] [bt_navigator]: Configuring
+[component_container_isolated-10] [INFO] [1761768023.223705421] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[component_container_isolated-10] [INFO] [1761768023.223889038] [waypoint_follower]: Configuring
+[component_container_isolated-10] [INFO] [1761768023.238588435] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[component_container_isolated-10] [INFO] [1761768023.239643550] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[component_container_isolated-10] [INFO] [1761768023.239854755] [velocity_smoother]: Configuring velocity smoother
+[component_container_isolated-10] [INFO] [1761768023.244981147] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768023.245156802] [controller_server]: Activating
+[component_container_isolated-10] [INFO] [1761768023.245208974] [local_costmap.local_costmap]: Activating
+[component_container_isolated-10] [INFO] [1761768023.245232022] [local_costmap.local_costmap]: Checking transform
+[component_container_isolated-10] [INFO] [1761768023.245258982] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gzserver-2] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-2] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-2] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-2] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-2] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-2] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-2] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-2] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-2] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[spawn_entity.py-4] [INFO] [1761768023.466957449] [spawn_entity]: Calling service /spawn_entity
+[component_container_isolated-10] [INFO] [1761768023.745372677] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[gzserver-2] [INFO] [1761768023.783208761] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-2] [INFO] [1761768023.803772650] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[spawn_entity.py-4] [INFO] [1761768023.947329864] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [turtlebot3]
+[gzserver-2] [INFO] [1761768024.077136008] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-2] [INFO] [1761768024.077205501] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-2] [INFO] [1761768024.079418121] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-2] [INFO] [1761768024.083310671] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-2] [INFO] [1761768024.087892499] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-2] [INFO] [1761768024.108951921] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-2] [INFO] [1761768024.109133792] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 5844]
+[component_container_isolated-10] [INFO] [1761768024.245491470] [local_costmap.local_costmap]: start
+[amcl-9] [INFO] [1761768024.316926486] [amcl]: createLaserObject
+[component_container_isolated-10] [INFO] [1761768024.317155501] [amcl]: createLaserObject
+[component_container_isolated-10] [INFO] [1761768024.497364406] [controller_server]: Activating RLController
+[component_container_isolated-10] [INFO] [1761768024.497464141] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768024.605461448] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[component_container_isolated-10] [INFO] [1761768024.605522910] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768024.605895102] [smoother_server]: Activating
+[component_container_isolated-10] [INFO] [1761768024.605967250] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768024.712699634] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[component_container_isolated-10] [INFO] [1761768024.712754949] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768024.713042143] [planner_server]: Activating
+[component_container_isolated-10] [INFO] [1761768024.713102976] [global_costmap.global_costmap]: Activating
+[component_container_isolated-10] [INFO] [1761768024.713121903] [global_costmap.global_costmap]: Checking transform
+[component_container_isolated-10] [INFO] [1761768024.713166603] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 337.780000 but the earliest data is at time 339.402000, when looking up transform from frame [base_link] to frame [map]
+[component_container_isolated-10] [INFO] [1761768025.213261301] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 338.290000 but the earliest data is at time 339.402000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [goal_pub_node-12]: process started with pid [6186]
+[component_container_isolated-10] [INFO] [1761768025.713257939] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 338.766000 but the earliest data is at time 339.402000, when looking up transform from frame [base_link] to frame [map]
+[amcl-9] [INFO] [1761768025.961522167] [amcl]: Message Filter dropping message: frame 'base_scan' at time 337.202 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[component_container_isolated-10] [INFO] [1761768025.962010368] [amcl]: Message Filter dropping message: frame 'base_scan' at time 337.202 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[component_container_isolated-10] [INFO] [1761768026.213233276] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 339.276000 but the earliest data is at time 339.402000, when looking up transform from frame [base_link] to frame [map]
+[goal_pub_node-12] [INFO] [1761768026.672494027] [goal_pub_node]: Aguardando o servidor de ação navigate_to_pose...
+[component_container_isolated-10] [INFO] [1761768026.713358216] [global_costmap.global_costmap]: start
+[goal_pub_node-12] [INFO] [1761768027.141432267] [goal_pub_node]: Enviando goal para navigate_to_pose...
+[goal_pub_node-12] [WARN] [1761768027.143378017] [goal_pub_node]: Goal REJEITADO pelo servidor. Voltando a tentar...
+[goal_pub_node-12] [INFO] [1761768027.390416853] [goal_pub_node]: Enviando goal para navigate_to_pose...
+[goal_pub_node-12] [WARN] [1761768027.392252531] [goal_pub_node]: Goal REJEITADO pelo servidor. Voltando a tentar...
+[component_container_isolated-10] [INFO] [1761768027.714961790] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[component_container_isolated-10] [INFO] [1761768027.717231541] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768027.824448215] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[component_container_isolated-10] [INFO] [1761768027.824530071] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[component_container_isolated-10] [INFO] [1761768027.824988729] [behavior_server]: Activating
+[component_container_isolated-10] [INFO] [1761768027.825048235] [behavior_server]: Activating spin
+[component_container_isolated-10] [INFO] [1761768027.825091188] [behavior_server]: Activating backup
+[component_container_isolated-10] [INFO] [1761768027.825121780] [behavior_server]: Activating drive_on_heading
+[component_container_isolated-10] [INFO] [1761768027.825150415] [behavior_server]: Activating wait
+[component_container_isolated-10] [INFO] [1761768027.825184708] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[goal_pub_node-12] [INFO] [1761768027.891281428] [goal_pub_node]: Enviando goal para navigate_to_pose...
+[goal_pub_node-12] [WARN] [1761768027.893138688] [goal_pub_node]: Goal REJEITADO pelo servidor. Voltando a tentar...
+[component_container_isolated-10] [INFO] [1761768027.932547004] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[component_container_isolated-10] [INFO] [1761768027.932604764] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[component_container_isolated-10] [INFO] [1761768027.933026475] [bt_navigator]: Activating
+[component_container_isolated-10] [INFO] [1761768028.031343918] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768028.140820147] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[component_container_isolated-10] [INFO] [1761768028.140887895] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[component_container_isolated-10] [INFO] [1761768028.141331815] [waypoint_follower]: Activating
+[component_container_isolated-10] [INFO] [1761768028.141408712] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768028.249861185] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[component_container_isolated-10] [INFO] [1761768028.249941225] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[component_container_isolated-10] [INFO] [1761768028.250306503] [velocity_smoother]: Activating
+[component_container_isolated-10] [INFO] [1761768028.250371387] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[component_container_isolated-10] [INFO] [1761768028.359156591] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[component_container_isolated-10] [INFO] [1761768028.359217983] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[component_container_isolated-10] [INFO] [1761768028.359235793] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[goal_pub_node-12] [INFO] [1761768028.390880592] [goal_pub_node]: Enviando goal para navigate_to_pose...
+[component_container_isolated-10] [INFO] [1761768028.390939190] [bt_navigator]: Begin navigating from current location (0.00, -0.00) to (1.50, 2.00)
+[component_container_isolated-10] [INFO] [1761768028.391475932] [bt_navigator]: Received goal preemption request
+[component_container_isolated-10] [INFO] [1761768028.391726737] [bt_navigator]: Begin navigating from current location (0.00, -0.00) to (1.50, 2.00)
+[goal_pub_node-12] [INFO] [1761768028.393549914] [goal_pub_node]: Goal ACEITO. Aguardando resultado...
+[component_container_isolated-10] [INFO] [1761768028.411670980] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-10] [WARN] [1761768028.411755490] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded goal_checker . This warning will appear once.
+[component_container_isolated-10] [INFO] [1761768028.411893779] [controller_server]: RLController::setPlan called — plan size=99
+[rl_infer_node-1] [INFO] [1761768028.415898845] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.81, path_min=2.83, goal=(1.50,2.00), robot=(0.00,-0.00), yaw=0.00
+[rl_infer_node-1] [INFO] [1761768028.417906127] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.052
+[component_container_isolated-10] [INFO] [1761768028.418893076] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.052
+[rl_infer_node-1] [INFO] [1761768028.514579051] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.81, path_min=2.83, goal=(1.50,2.00), robot=(0.00,-0.00), yaw=0.00
+[rl_infer_node-1] [INFO] [1761768028.516225805] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.052
+[component_container_isolated-10] [INFO] [1761768028.516612245] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.052
+[rl_infer_node-1] [INFO] [1761768028.614875490] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.79, path_min=2.82, goal=(1.50,2.00), robot=(0.01,-0.00), yaw=-0.00
+[rl_infer_node-1] [INFO] [1761768028.616641955] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.051
+[component_container_isolated-10] [INFO] [1761768028.617101590] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.051
+[rl_infer_node-1] [INFO] [1761768028.714371810] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.79, path_min=2.82, goal=(1.50,2.00), robot=(0.02,-0.00), yaw=-0.00
+[rl_infer_node-1] [INFO] [1761768028.716092877] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.052
+[component_container_isolated-10] [INFO] [1761768028.716462695] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.052
+[rl_infer_node-1] [INFO] [1761768028.814741096] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.76, path_min=2.84, goal=(1.50,2.00), robot=(0.05,-0.00), yaw=-0.00
+[rl_infer_node-1] [INFO] [1761768028.816268628] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.051
+[component_container_isolated-10] [INFO] [1761768028.816753895] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.051
+[rl_infer_node-1] [INFO] [1761768028.914927253] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.76, path_min=2.84, goal=(1.50,2.00), robot=(0.09,-0.00), yaw=-0.00
+[rl_infer_node-1] [INFO] [1761768028.916462468] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.051
+[component_container_isolated-10] [INFO] [1761768028.916869721] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.051
+[rl_infer_node-1] [INFO] [1761768029.014344161] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.68, path_min=2.81, goal=(1.50,2.00), robot=(0.14,-0.00), yaw=0.00
+[rl_infer_node-1] [INFO] [1761768029.015861846] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.050
+[component_container_isolated-10] [INFO] [1761768029.016304021] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.050
+[rl_infer_node-1] [INFO] [1761768029.114906213] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.68, path_min=2.81, goal=(1.50,2.00), robot=(0.19,0.00), yaw=0.01
+[rl_infer_node-1] [INFO] [1761768029.116394354] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=0.050
+[component_container_isolated-10] [INFO] [1761768029.116889190] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=0.050
+[rl_infer_node-1] [INFO] [1761768029.214369357] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.59, path_min=2.76, goal=(1.50,2.00), robot=(0.24,0.00), yaw=0.01
+[rl_infer_node-1] [INFO] [1761768029.215824183] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.019
+[component_container_isolated-10] [INFO] [1761768029.216431257] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.019
+[rl_infer_node-1] [INFO] [1761768029.314365053] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.59, path_min=2.76, goal=(1.50,2.00), robot=(0.29,0.00), yaw=0.02
+[rl_infer_node-1] [INFO] [1761768029.315797460] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.020
+[component_container_isolated-10] [INFO] [1761768029.316279026] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.020
+[rl_infer_node-1] [INFO] [1761768029.414562805] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.49, path_min=2.77, goal=(1.50,2.00), robot=(0.34,0.00), yaw=0.01
+[rl_infer_node-1] [INFO] [1761768029.416150402] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.023
+[component_container_isolated-10] [INFO] [1761768029.416662768] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.023
+[component_container_isolated-10] [INFO] [1761768029.512030540] [controller_server]: Passing new path to controller.
+[component_container_isolated-10] [INFO] [1761768029.512470201] [controller_server]: RLController::setPlan called — plan size=93
+[rl_infer_node-1] [INFO] [1761768029.515236814] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.49, path_min=2.77, goal=(1.50,2.00), robot=(0.39,0.00), yaw=0.01
+[rl_infer_node-1] [INFO] [1761768029.516672084] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.020
+[component_container_isolated-10] [INFO] [1761768029.517186895] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.020
+[rl_infer_node-1] [INFO] [1761768029.614268889] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.38, path_min=2.76, goal=(1.50,2.00), robot=(0.44,0.00), yaw=0.01
+[rl_infer_node-1] [INFO] [1761768029.615820866] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.029
+[component_container_isolated-10] [INFO] [1761768029.616222881] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.029
+[rl_infer_node-1] [INFO] [1761768029.714347837] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.38, path_min=2.76, goal=(1.50,2.00), robot=(0.50,0.00), yaw=0.01
+[rl_infer_node-1] [INFO] [1761768029.716118772] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.029
+[component_container_isolated-10] [INFO] [1761768029.716620243] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.029
+[rl_infer_node-1] [INFO] [1761768029.815349200] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.29, path_min=2.77, goal=(1.50,2.00), robot=(0.55,0.00), yaw=0.00
+[rl_infer_node-1] [INFO] [1761768029.817113499] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.031
+[component_container_isolated-10] [INFO] [1761768029.817619999] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.031
+[rl_infer_node-1] [INFO] [1761768029.914634036] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.29, path_min=2.77, goal=(1.50,2.00), robot=(0.58,0.00), yaw=0.00
+[rl_infer_node-1] [INFO] [1761768029.916353077] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.032
+[component_container_isolated-10] [INFO] [1761768029.916815716] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.032
+[rl_infer_node-1] [INFO] [1761768030.014321446] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.19, path_min=2.76, goal=(1.50,2.00), robot=(0.63,0.00), yaw=-0.00
+[rl_infer_node-1] [INFO] [1761768030.015895703] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.057
+[component_container_isolated-10] [INFO] [1761768030.016406184] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.057
+[rl_infer_node-1] [INFO] [1761768030.114805832] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.19, path_min=2.76, goal=(1.50,2.00), robot=(0.68,0.00), yaw=-0.01
+[rl_infer_node-1] [INFO] [1761768030.116357250] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.058
+[component_container_isolated-10] [INFO] [1761768030.116876462] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.058
+[rl_infer_node-1] [INFO] [1761768030.214433736] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.09, path_min=2.76, goal=(1.50,2.00), robot=(0.73,0.00), yaw=-0.01
+[rl_infer_node-1] [INFO] [1761768030.215939267] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.080
+[component_container_isolated-10] [INFO] [1761768030.216506321] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.080
+[rl_infer_node-1] [INFO] [1761768030.315340042] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=2.09, path_min=2.76, goal=(1.50,2.00), robot=(0.78,0.00), yaw=-0.02
+[rl_infer_node-1] [INFO] [1761768030.317118520] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.081
+[component_container_isolated-10] [INFO] [1761768030.317585279] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.081
+[rl_infer_node-1] [INFO] [1761768030.414440144] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.99, path_min=2.76, goal=(1.50,2.00), robot=(0.84,0.00), yaw=-0.03
+[rl_infer_node-1] [INFO] [1761768030.415969841] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.084
+[component_container_isolated-10] [INFO] [1761768030.416417603] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.084
+[component_container_isolated-10] [INFO] [1761768030.512028847] [controller_server]: Passing new path to controller.
+[component_container_isolated-10] [INFO] [1761768030.512210508] [controller_server]: RLController::setPlan called — plan size=84
+[rl_infer_node-1] [INFO] [1761768030.514833036] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.99, path_min=2.76, goal=(1.50,2.00), robot=(0.89,-0.00), yaw=-0.03
+[rl_infer_node-1] [INFO] [1761768030.516487892] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.076
+[component_container_isolated-10] [INFO] [1761768030.517037624] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.076
+[rl_infer_node-1] [INFO] [1761768030.614275298] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.88, path_min=2.76, goal=(1.50,2.00), robot=(0.94,-0.00), yaw=-0.04
+[rl_infer_node-1] [INFO] [1761768030.615730822] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.078
+[component_container_isolated-10] [INFO] [1761768030.616204985] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.078
+[rl_infer_node-1] [INFO] [1761768030.714808155] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.88, path_min=2.76, goal=(1.50,2.00), robot=(0.99,-0.00), yaw=-0.05
+[rl_infer_node-1] [INFO] [1761768030.716590054] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.080
+[component_container_isolated-10] [INFO] [1761768030.717109056] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.080
+[rl_infer_node-1] [INFO] [1761768030.814401207] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.79, path_min=2.76, goal=(1.50,2.00), robot=(1.04,-0.01), yaw=-0.06
+[rl_infer_node-1] [INFO] [1761768030.815745332] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.097
+[component_container_isolated-10] [INFO] [1761768030.816131702] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.097
+[rl_infer_node-1] [INFO] [1761768030.914779642] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.79, path_min=2.76, goal=(1.50,2.00), robot=(1.09,-0.01), yaw=-0.07
+[rl_infer_node-1] [INFO] [1761768030.916399506] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.099
+[component_container_isolated-10] [INFO] [1761768030.916829668] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.099
+[rl_infer_node-1] [INFO] [1761768031.014345874] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.69, path_min=2.77, goal=(1.50,2.00), robot=(1.14,-0.01), yaw=-0.08
+[rl_infer_node-1] [INFO] [1761768031.015800490] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.101
+[component_container_isolated-10] [INFO] [1761768031.016304825] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.101
+[rl_infer_node-1] [INFO] [1761768031.114738277] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.69, path_min=2.77, goal=(1.50,2.00), robot=(1.19,-0.02), yaw=-0.09
+[rl_infer_node-1] [INFO] [1761768031.116351716] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.104
+[component_container_isolated-10] [INFO] [1761768031.116772100] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.104
+[rl_infer_node-1] [INFO] [1761768031.214226146] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.59, path_min=2.76, goal=(1.50,2.00), robot=(1.24,-0.02), yaw=-0.10
+[rl_infer_node-1] [INFO] [1761768031.215931289] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.107
+[component_container_isolated-10] [INFO] [1761768031.216302014] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.107
+[rl_infer_node-1] [INFO] [1761768031.314467829] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.59, path_min=2.76, goal=(1.50,2.00), robot=(1.28,-0.03), yaw=-0.11
+[rl_infer_node-1] [INFO] [1761768031.316546490] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.109
+[component_container_isolated-10] [INFO] [1761768031.316980075] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.109
+[rl_infer_node-1] [INFO] [1761768031.414391307] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.49, path_min=2.80, goal=(1.50,2.00), robot=(1.33,-0.03), yaw=-0.12
+[rl_infer_node-1] [INFO] [1761768031.415962282] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.112
+[component_container_isolated-10] [INFO] [1761768031.416515646] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.112
+[component_container_isolated-10] [INFO] [1761768031.512035256] [controller_server]: Passing new path to controller.
+[component_container_isolated-10] [INFO] [1761768031.512298983] [controller_server]: RLController::setPlan called — plan size=82
+[rl_infer_node-1] [INFO] [1761768031.514963207] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.49, path_min=2.80, goal=(1.50,2.00), robot=(1.38,-0.04), yaw=-0.13
+[rl_infer_node-1] [INFO] [1761768031.516586493] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.102
+[component_container_isolated-10] [INFO] [1761768031.517115552] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.102
+[rl_infer_node-1] [INFO] [1761768031.614301193] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.39, path_min=2.80, goal=(1.50,2.00), robot=(1.43,-0.05), yaw=-0.14
+[rl_infer_node-1] [INFO] [1761768031.615705173] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.105
+[component_container_isolated-10] [INFO] [1761768031.616204759] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.105
+[rl_infer_node-1] [INFO] [1761768031.714362960] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.39, path_min=2.80, goal=(1.50,2.00), robot=(1.48,-0.05), yaw=-0.15
+[rl_infer_node-1] [INFO] [1761768031.715925903] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.107
+[component_container_isolated-10] [INFO] [1761768031.716440644] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.107
+[rl_infer_node-1] [INFO] [1761768031.814399375] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.29, path_min=2.82, goal=(1.50,2.00), robot=(1.53,-0.06), yaw=-0.16
+[rl_infer_node-1] [INFO] [1761768031.815882277] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.112
+[component_container_isolated-10] [INFO] [1761768031.816516171] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.112
+[rl_infer_node-1] [INFO] [1761768031.914632187] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.29, path_min=2.82, goal=(1.50,2.00), robot=(1.58,-0.07), yaw=-0.17
+[rl_infer_node-1] [INFO] [1761768031.916227327] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.114
+[component_container_isolated-10] [INFO] [1761768031.916835029] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.114
+[rl_infer_node-1] [INFO] [1761768032.014430926] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.19, path_min=2.83, goal=(1.50,2.00), robot=(1.63,-0.08), yaw=-0.18
+[rl_infer_node-1] [INFO] [1761768032.015917950] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.118
+[component_container_isolated-10] [INFO] [1761768032.016308511] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.118
+[rl_infer_node-1] [INFO] [1761768032.114375358] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.19, path_min=2.83, goal=(1.50,2.00), robot=(1.68,-0.09), yaw=-0.19
+[rl_infer_node-1] [INFO] [1761768032.116069046] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.120
+[component_container_isolated-10] [INFO] [1761768032.116552149] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.120
+[rl_infer_node-1] [INFO] [1761768032.214490974] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.09, path_min=2.85, goal=(1.50,2.00), robot=(1.73,-0.10), yaw=-0.21
+[rl_infer_node-1] [INFO] [1761768032.215900262] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.124
+[component_container_isolated-10] [INFO] [1761768032.216319459] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.124
+[rl_infer_node-1] [INFO] [1761768032.314482689] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=1.09, path_min=2.85, goal=(1.50,2.00), robot=(1.78,-0.11), yaw=-0.22
+[rl_infer_node-1] [INFO] [1761768032.315977116] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.127
+[component_container_isolated-10] [INFO] [1761768032.316465317] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.127
+[rl_infer_node-1] [INFO] [1761768032.414055068] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.99, path_min=2.88, goal=(1.50,2.00), robot=(1.83,-0.12), yaw=-0.23
+[rl_infer_node-1] [INFO] [1761768032.415456464] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.132
+[component_container_isolated-10] [INFO] [1761768032.415829424] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.132
+[rl_infer_node-1] [INFO] [1761768032.518499262] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.99, path_min=2.88, goal=(1.50,2.00), robot=(1.88,-0.13), yaw=-0.24
+[rl_infer_node-1] [INFO] [1761768032.519984469] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.118
+[component_container_isolated-10] [INFO] [1761768032.520582743] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.118
+[component_container_isolated-10] [INFO] [1761768032.612035686] [controller_server]: Passing new path to controller.
+[component_container_isolated-10] [INFO] [1761768032.612398170] [controller_server]: RLController::setPlan called — plan size=88
+[rl_infer_node-1] [INFO] [1761768032.614976138] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.89, path_min=2.89, goal=(1.50,2.00), robot=(1.93,-0.14), yaw=-0.26
+[rl_infer_node-1] [INFO] [1761768032.616526858] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.123
+[component_container_isolated-10] [INFO] [1761768032.616937184] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.123
+[rl_infer_node-1] [INFO] [1761768032.714539577] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.89, path_min=2.89, goal=(1.50,2.00), robot=(1.96,-0.15), yaw=-0.27
+[rl_infer_node-1] [INFO] [1761768032.716208540] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.124
+[component_container_isolated-10] [INFO] [1761768032.716702399] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.124
+[rl_infer_node-1] [INFO] [1761768032.814373726] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.80, path_min=2.92, goal=(1.50,2.00), robot=(2.01,-0.17), yaw=-0.28
+[rl_infer_node-1] [INFO] [1761768032.815719108] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.129
+[component_container_isolated-10] [INFO] [1761768032.816437930] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.129
+[rl_infer_node-1] [INFO] [1761768032.914380877] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.80, path_min=2.92, goal=(1.50,2.00), robot=(2.06,-0.18), yaw=-0.29
+[rl_infer_node-1] [INFO] [1761768032.916143639] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.132
+[component_container_isolated-10] [INFO] [1761768032.916617662] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.132
+[rl_infer_node-1] [INFO] [1761768033.014411075] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.70, path_min=2.95, goal=(1.50,2.00), robot=(2.11,-0.20), yaw=-0.30
+[rl_infer_node-1] [INFO] [1761768033.016106858] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.137
+[component_container_isolated-10] [INFO] [1761768033.016587517] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.137
+[rl_infer_node-1] [INFO] [1761768033.114378764] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.70, path_min=2.95, goal=(1.50,2.00), robot=(2.16,-0.21), yaw=-0.32
+[rl_infer_node-1] [INFO] [1761768033.115941427] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.139
+[component_container_isolated-10] [INFO] [1761768033.116471324] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.139
+[rl_infer_node-1] [INFO] [1761768033.214352530] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.60, path_min=2.96, goal=(1.50,2.00), robot=(2.21,-0.23), yaw=-0.33
+[rl_infer_node-1] [INFO] [1761768033.215728922] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.145
+[component_container_isolated-10] [INFO] [1761768033.216145394] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.145
+[rl_infer_node-1] [INFO] [1761768033.314548325] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.60, path_min=2.96, goal=(1.50,2.00), robot=(2.25,-0.24), yaw=-0.35
+[rl_infer_node-1] [INFO] [1761768033.316187047] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.148
+[component_container_isolated-10] [INFO] [1761768033.316594510] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.148
+[rl_infer_node-1] [INFO] [1761768033.414403777] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.51, path_min=3.00, goal=(1.50,2.00), robot=(2.30,-0.26), yaw=-0.36
+[rl_infer_node-1] [INFO] [1761768033.415986625] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.155
+[component_container_isolated-10] [INFO] [1761768033.416572257] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.155
+[rl_infer_node-1] [INFO] [1761768033.514675981] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.51, path_min=3.00, goal=(1.50,2.00), robot=(2.35,-0.28), yaw=-0.38
+[rl_infer_node-1] [INFO] [1761768033.516155321] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.158
+[component_container_isolated-10] [INFO] [1761768033.516709873] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.158
+[component_container_isolated-10] [INFO] [1761768033.612037276] [controller_server]: Passing new path to controller.
+[component_container_isolated-10] [INFO] [1761768033.612281027] [controller_server]: RLController::setPlan called — plan size=99
+[rl_infer_node-1] [INFO] [1761768033.614699055] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.41, path_min=3.05, goal=(1.50,2.00), robot=(2.40,-0.30), yaw=-0.39
+[rl_infer_node-1] [INFO] [1761768033.616059523] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.153
+[component_container_isolated-10] [INFO] [1761768033.616461678] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.153
+[rl_infer_node-1] [INFO] [1761768033.714292038] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.41, path_min=3.05, goal=(1.50,2.00), robot=(2.44,-0.32), yaw=-0.41
+[rl_infer_node-1] [INFO] [1761768033.715911902] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.155
+[component_container_isolated-10] [INFO] [1761768033.716399754] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.155
+[rl_infer_node-1] [INFO] [1761768033.814183668] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.32, path_min=3.08, goal=(1.50,2.00), robot=(2.49,-0.34), yaw=-0.42
+[rl_infer_node-1] [INFO] [1761768033.815774617] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.160
+[component_container_isolated-10] [INFO] [1761768033.816391958] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.160
+[rl_infer_node-1] [INFO] [1761768033.914448119] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.32, path_min=3.08, goal=(1.50,2.00), robot=(2.54,-0.36), yaw=-0.44
+[rl_infer_node-1] [INFO] [1761768033.916011970] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.163
+[component_container_isolated-10] [INFO] [1761768033.916442830] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.163
+[rl_infer_node-1] [INFO] [1761768034.014193080] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.23, path_min=3.14, goal=(1.50,2.00), robot=(2.58,-0.38), yaw=-0.46
+[rl_infer_node-1] [INFO] [1761768034.015547751] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.168
+[component_container_isolated-10] [INFO] [1761768034.015920711] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.168
+[rl_infer_node-1] [INFO] [1761768034.114385244] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.23, path_min=3.14, goal=(1.50,2.00), robot=(2.61,-0.40), yaw=-0.47
+[rl_infer_node-1] [INFO] [1761768034.115996866] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.169
+[component_container_isolated-10] [INFO] [1761768034.116493100] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.169
+[rl_infer_node-1] [INFO] [1761768034.214519368] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.14, path_min=3.16, goal=(1.50,2.00), robot=(2.66,-0.42), yaw=-0.49
+[rl_infer_node-1] [INFO] [1761768034.216078260] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.175
+[component_container_isolated-10] [INFO] [1761768034.216544111] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.175
+[rl_infer_node-1] [INFO] [1761768034.314501654] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.14, path_min=3.16, goal=(1.50,2.00), robot=(2.70,-0.45), yaw=-0.50
+[rl_infer_node-1] [INFO] [1761768034.316006837] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.177
+[component_container_isolated-10] [INFO] [1761768034.316374769] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.177
+[rl_infer_node-1] [INFO] [1761768034.414775604] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.22, path_min=3.20, goal=(1.50,2.00), robot=(2.71,-0.45), yaw=-0.51
+[rl_infer_node-1] [INFO] [1761768034.416266609] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.178
+[component_container_isolated-10] [INFO] [1761768034.416762283] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.178
+[rl_infer_node-1] [INFO] [1761768034.514635596] [rl_infer]: [RLInfer] obs.shape=(44,), front_min=0.22, path_min=3.20, goal=(1.50,2.00), robot=(2.71,-0.45), yaw=-0.48
+[rl_infer_node-1] [INFO] [1761768034.516123248] [rl_infer]: [RLInfer] model.predict → lin=0.700, ang=-0.177
+[component_container_isolated-10] [INFO] [1761768034.516534412] [controller_server]: [RLController] RLInfer result: lin=0.700, ang=-0.177
+[component_container_isolated-10] [WARN] [1761768034.571919970] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-10] [WARN] [1761768034.572009578] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.50, 2.00)
+[component_container_isolated-10] [WARN] [1761768034.572042474] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-10] [INFO] [1761768034.591477772] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-10] [INFO] [1761768034.612019031] [controller_server]: Passing new path to controller.
+[component_container_isolated-10] [ERROR] [1761768034.612213893] [controller_server]: Invalid path, Path is empty.
+[component_container_isolated-10] [WARN] [1761768034.612277589] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[component_container_isolated-10] [INFO] [1761768034.641368446] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-10] [INFO] [1761768034.642219202] [controller_server]: Received a goal, begin computing control effort.
+[component_container_isolated-10] [ERROR] [1761768034.642307483] [controller_server]: Invalid path, Path is empty.
+[component_container_isolated-10] [WARN] [1761768034.642365592] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[component_container_isolated-10] [ERROR] [1761768034.681753095] [bt_navigator_navigate_to_pose_rclcpp_node]: Failed to get result for compute_path_to_pose in node halt!
+[component_container_isolated-10] [INFO] [1761768034.682104125] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[component_container_isolated-10] [INFO] [1761768034.682572840] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[component_container_isolated-10] [INFO] [1761768034.683326025] [behavior_server]: Running spin
+[component_container_isolated-10] [WARN] [1761768034.683395100] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[component_container_isolated-10] [INFO] [1761768034.683506359] [behavior_server]: Turning 1.57 for spin behavior.
+[component_container_isolated-10] [WARN] [1761768034.722339241] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[component_container_isolated-10] [WARN] [1761768034.722442189] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (1.50, 2.00)
+[component_container_isolated-10] [INFO] [1761768034.722477460] [planner_server]: [compute_path_to_pose] [ActionServer] Client requested to cancel the goal. Cancelling.
+[component_container_isolated-10] [WARN] [1761768034.784089503] [behavior_server]: Collision Ahead - Exiting Spin
+[component_container_isolated-10] [WARN] [1761768034.784152711] [behavior_server]: spin failed
+[component_container_isolated-10] [WARN] [1761768034.784184490] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[component_container_isolated-10] [WARN] [1761768034.817954326] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[component_container_isolated-10] [ERROR] [1761768034.818383091] [bt_navigator]: Goal failed
+[goal_pub_node-12] [INFO] [1761768034.820723523] [goal_pub_node]: Resultado da navegação: status=6
+[rl_infer_node-1] Traceback (most recent call last):
+[rl_infer_node-1]   File "/home/ROS/ros_ws/install/ppo_training/lib/ppo_training/rl_infer_node", line 33, in <module>
+[rl_infer_node-1]     sys.exit(load_entry_point('ppo-training==0.0.0', 'console_scripts', 'rl_infer_node')())
+[rl_infer_node-1]   File "/home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/rl_infer_node.py", line 220, in main
+[rl_infer_node-1]     rclpy.spin(node)
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[rl_infer_node-1]     executor.spin_once()
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 751, in spin_once
+[rl_infer_node-1]     self._spin_once_impl(timeout_sec)
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 748, in _spin_once_impl
+[rl_infer_node-1]     raise handler.exception()
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254, in __call__
+[rl_infer_node-1]     self._handler.send(None)
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 447, in handler
+[rl_infer_node-1]     await call_coroutine(entity, arg)
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 372, in _execute_subscription
+[rl_infer_node-1]     await await_or_execute(sub.callback, msg)
+[rl_infer_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+[rl_infer_node-1]     return callback(*args)
+[rl_infer_node-1]   File "/home/ROS/ros_ws/install/ppo_training/lib/python3.10/site-packages/ppo_training/rl_infer_node.py", line 148, in scan_cb
+[rl_infer_node-1]     self.path_min = np.min(sectors[s0:s1])
+[rl_infer_node-1]   File "/usr/local/lib/python3.10/dist-packages/numpy/core/fromnumeric.py", line 2953, in min
+[rl_infer_node-1]     return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+[rl_infer_node-1]   File "/usr/local/lib/python3.10/dist-packages/numpy/core/fromnumeric.py", line 88, in _wrapreduction
+[rl_infer_node-1]     return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+[rl_infer_node-1] ValueError: zero-size array to reduction operation minimum which has no identity
+[ERROR] [rl_infer_node-1]: process has died [pid 5723, exit code 1, cmd '/home/ROS/ros_ws/install/ppo_training/lib/ppo_training/rl_infer_node --ros-args -r __node:=rl_infer --params-file /tmp/launch_params_6gtd4hx7'].
