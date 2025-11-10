@@ -68,6 +68,8 @@ private:
   float last_front_min_{10.0f};
   float last_path_min_{10.0f};
   geometry_msgs::msg::Pose robot_pose_;
+  geometry_msgs::msg::Twist last_robot_twist_;
+  std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
 
   // parameters
   int n_sectors_{36};

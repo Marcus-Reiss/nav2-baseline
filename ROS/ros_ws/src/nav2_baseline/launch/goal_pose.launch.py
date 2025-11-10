@@ -1,7 +1,18 @@
+import random
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
+    # goal_candidates = [
+    #     {'x': -2.2, 'y': -2.2},
+    #     {'x': 0.0, 'y': -2.2},
+    #     {'x': 0.0, 'y': 2.2},
+    #     {'x': -2.0, 'y': 1.5},
+    #     {'x': 0.0, 'y': 0.0}
+    # ]
+
+    #random.choice(goal_candidates)['x']
+
     return LaunchDescription([
         Node(
             package='nav2_baseline',
@@ -10,8 +21,8 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 # Ajuste se quiser
-                'target_x': -1.5,
-                'target_y': -1.5,
+                'target_x': -2.0,
+                'target_y': -2.0,
                 'target_yaw': 0.0,
                 'frame_id': 'map',
                 'once': True,

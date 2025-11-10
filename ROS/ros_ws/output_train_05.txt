@@ -1,0 +1,100 @@
+[INFO] [launch]: All log files can be found below /home/ros_ws/.ros/log/2025-11-05-17-56-11-572578-marcus-12226
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [12571]
+[INFO] [gzclient-2]: process started with pid [12573]
+[INFO] [robot_spawner-3]: process started with pid [12575]
+[INFO] [goal_spawner-4]: process started with pid [12577]
+[INFO] [static_transform_publisher-5]: process started with pid [12579]
+[INFO] [train-6]: process started with pid [12581]
+[static_transform_publisher-5] [WARN] [1762376203.958175793] []: Old-style arguments are deprecated; see --help for new-style arguments
+[static_transform_publisher-5] [INFO] [1762376203.986546153] [static_map_odom_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-5] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-5] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-5] from 'map' to 'odom'
+[ERROR] [gzserver-1]: process has died [pid 12571, exit code 255, cmd 'gzserver /home/ROS/ros_ws/install/nav2_baseline/share/nav2_baseline/worlds/empty_bkp.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so'].
+[robot_spawner-3] [INFO] [1762376204.508188325] [robot_spawner]: Serviço "respawn_robot" pronto.
+[goal_spawner-4] [INFO] [1762376204.679060024] [goal_spawner_node]: GoalSpawnerNode pronto. Serviço '/spawn_new_goal' disponível.
+[goal_spawner-4] [INFO] [1762376204.679630803] [goal_spawner_node]: Aguardando navigate_to_pose...
+[train-6] [WARN] [1762376207.301088204] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[train-6] [INFO] [1762376207.405363005] [ppo_training_node]: Aguardando serviço 'respawn_robot'...
+[train-6] [INFO] [1762376207.406135847] [ppo_training_node]: ✅ Serviço 'respawn_robot' encontrado.
+[train-6] [INFO] [1762376207.408545524] [ppo_training_node]: Aguardando serviço 'spawn_new_goal'...
+[train-6] [INFO] [1762376207.409187266] [ppo_training_node]: ✅ Serviço 'spawn_new_goal' encontrado.
+[train-6] [INFO] [1762376207.410804473] [ppo_training_node]: Aguardando serviço '/local_costmap/clear_entirely'...
+[train-6] [WARN] [1762376207.912853360] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376208.416397720] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376208.919831430] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376209.422390819] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376209.924625063] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376210.427671339] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[robot_spawner-3] [INFO] [1762376210.778311087] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-6] [WARN] [1762376210.930588668] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376211.432758304] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376211.935582383] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376212.438059473] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376212.439723545] [ppo_training_node]: Demorou para encontrar '/local_costmap/clear_entirely'. Continuando sem ele.
+[train-6] [INFO] [1762376212.440336231] [ppo_training_node]: Cliente de clear_local_costmap pronto (se disponível).
+[train-6] [INFO] [1762376212.442704347] [ppo_training_node]: Aguardando serviço '/global_costmap/clear_entirely'...
+[train-6] [WARN] [1762376212.944286286] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376213.446820153] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376213.950254392] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376214.452581929] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376214.954987406] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376215.458035883] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376215.960792469] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376216.463273095] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376216.966821375] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376217.469794965] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-6] [WARN] [1762376217.471246566] [ppo_training_node]: Demorou para encontrar '/global_costmap/clear_entirely'. Continuando sem ele.
+[train-6] [INFO] [1762376217.471831733] [ppo_training_node]: Cliente de clear_global_costmap pronto (se disponível).
+[train-6] [INFO] [1762376217.478768308] [ppo_training_node]: ✅ PPOEnvironment initialized
+[train-6] [INFO] [1762376217.492021298] [ppo_training_node]: Executor iniciado em thread de background (callbacks ROS ativos).
+[train-6] [INFO] [1762376220.422493727] [ppo_training_node]: Iniciando treinamento do STAGE 1 por 100000 timesteps (checkpoint a cada 5000 steps).
+[train-6] [INFO] [1762376220.485661770] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[goal_spawner-4] [WARN] [1762376224.713479425] [goal_spawner_node]: navigate_to_pose NÃO disponível após timeout estendido.
+[robot_spawner-3] [INFO] [1762376224.990544223] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-6] [INFO] [1762376224.992018452] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-6] [INFO] [1762376224.992697211] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762376228.996372159] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[train-6] [INFO] [1762376228.996832929] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[goal_spawner-4] [WARN] [1762376233.998950419] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-6] [WARN] [1762376234.010405836] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[train-6] [WARN] [1762376239.214867035] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-6] [INFO] [1762376239.215762593] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[train-6] Using cpu device
+[train-6] Logging to tb_logs/PPO_156
+[train-6] [INFO] [1762376239.386361501] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[robot_spawner-3] [INFO] [1762376243.890396408] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-6] [INFO] [1762376243.891543687] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-6] [INFO] [1762376243.892168244] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762376247.895210425] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[train-6] [WARN] [1762376247.896263133] [ppo_training_node]: Timeout esperando goal/publicação. Tentar novamente.
+[train-6] [INFO] [1762376248.097963520] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 2)
+[train-6] [INFO] [1762376248.100352508] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[goal_spawner-4] [WARN] [1762376252.897795625] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-6] [WARN] [1762376253.112072342] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[train-6] [WARN] [1762376258.318749556] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-6] [INFO] [1762376258.319399326] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[train-6] [INFO] [1762376258.489748153] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[goal_spawner-4] [INFO] [1762376258.903160714] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[robot_spawner-3] [INFO] [1762376262.993684107] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-6] [INFO] [1762376262.995605267] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-6] [INFO] [1762376262.996872887] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[train-6] [INFO] [1762376262.997768232] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[goal_spawner-4] [WARN] [1762376263.906018521] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-6] [WARN] [1762376268.001542968] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762376269.910725012] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, -2.20)
+[train-6] [WARN] [1762376273.209110826] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-6] [INFO] [1762376273.210213051] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[train-6] [INFO] [1762376273.380208186] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[goal_spawner-4] [WARN] [1762376274.913043220] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[robot_spawner-3] [INFO] [1762376277.883861848] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-6] [INFO] [1762376277.885212650] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-6] [INFO] [1762376277.885967815] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762376281.888719183] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (-2.20, 0.00)
+[train-6] [INFO] [1762376281.889919049] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[goal_spawner-4] [WARN] [1762376286.891202331] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-6] [WARN] [1762376286.907813478] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[train-6] [WARN] [1762376292.115404404] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-6] [INFO] [1762376292.115986491] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[train-6] [INFO] [1762376292.282476247] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)

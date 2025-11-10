@@ -1,0 +1,618 @@
+[INFO] [launch]: All log files can be found below /home/ros_ws/.ros/log/2025-11-06-20-28-12-826334-marcus-139991
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [140113]
+[INFO] [gzclient-2]: process started with pid [140115]
+[INFO] [robot_spawner-3]: process started with pid [140117]
+[INFO] [goal_spawner-4]: process started with pid [140119]
+[INFO] [map_server-5]: process started with pid [140121]
+[INFO] [planner_server-6]: process started with pid [140123]
+[INFO] [bt_navigator-7]: process started with pid [140125]
+[INFO] [lifecycle_manager-8]: process started with pid [140127]
+[INFO] [static_transform_publisher-9]: process started with pid [140129]
+[INFO] [train-10]: process started with pid [140131]
+[static_transform_publisher-9] [WARN] [1762471713.785632655] []: Old-style arguments are deprecated; see --help for new-style arguments
+[lifecycle_manager-8] [INFO] [1762471713.814304568] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-8] [INFO] [1762471713.818939245] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[static_transform_publisher-9] [INFO] [1762471713.821282109] [static_map_odom_tf]: Spinning until stopped - publishing transform
+[static_transform_publisher-9] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-9] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-9] from 'map' to 'odom'
+[planner_server-6] [INFO] [1762471713.823194408] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1762471713.825720884] [planner_server]: Creating
+[bt_navigator-7] [INFO] [1762471713.833795128] [bt_navigator]: 
+[bt_navigator-7] 	bt_navigator lifecycle node launched. 
+[bt_navigator-7] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-7] [INFO] [1762471713.833981602] [bt_navigator]: Creating
+[map_server-5] [INFO] [1762471713.840282669] [map_server]: 
+[map_server-5] 	map_server lifecycle node launched. 
+[map_server-5] 	Waiting on external lifecycle transitions to activate
+[map_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-5] [INFO] [1762471713.840483320] [map_server]: Creating
+[planner_server-6] [INFO] [1762471713.841971968] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1762471713.842657311] [global_costmap.global_costmap]: Creating Costmap
+[gzserver-1] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-1] ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-1] ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-1] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-1] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[robot_spawner-3] [INFO] [1762471715.215387493] [robot_spawner]: Serviço "respawn_robot" pronto.
+[goal_spawner-4] [INFO] [1762471715.263360981] [goal_spawner_node]: GoalSpawnerNode pronto. Serviço '/spawn_new_goal' disponível.
+[goal_spawner-4] [INFO] [1762471715.263896657] [goal_spawner_node]: Aguardando navigate_to_pose...
+[lifecycle_manager-8] [INFO] [1762471715.839710092] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471716.518426062] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[train-10] [INFO] [1762471716.598516554] [ppo_training_node]: Aguardando serviço 'respawn_robot'...
+[train-10] [INFO] [1762471716.599077302] [ppo_training_node]: ✅ Serviço 'respawn_robot' encontrado.
+[train-10] [INFO] [1762471716.600614209] [ppo_training_node]: Aguardando serviço 'spawn_new_goal'...
+[train-10] [INFO] [1762471716.601083047] [ppo_training_node]: ✅ Serviço 'spawn_new_goal' encontrado.
+[train-10] [INFO] [1762471716.602576933] [ppo_training_node]: Aguardando serviço '/local_costmap/clear_entirely'...
+[train-10] [WARN] [1762471717.104885427] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471717.607473856] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[lifecycle_manager-8] [INFO] [1762471717.839921331] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471718.110881167] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471718.613691775] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471719.116623001] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471719.619504724] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[lifecycle_manager-8] [INFO] [1762471719.840165465] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471720.122083833] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471720.624231201] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[gzserver-1] [INFO] [1762471720.882569298] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471720.897956390] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[robot_spawner-3] [INFO] [1762471720.989915637] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[gzserver-1] [INFO] [1762471721.116112946] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471721.116198361] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471721.118254950] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471721.121306626] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471721.125163840] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[train-10] [WARN] [1762471721.126866409] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[gzserver-1] [INFO] [1762471721.141545810] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471721.141593371] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[train-10] [WARN] [1762471721.629804109] [ppo_training_node]: Serviço '/local_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471721.631231855] [ppo_training_node]: Demorou para encontrar '/local_costmap/clear_entirely'. Continuando sem ele.
+[train-10] [INFO] [1762471721.631684212] [ppo_training_node]: Cliente de clear_local_costmap pronto (se disponível).
+[train-10] [INFO] [1762471721.633711748] [ppo_training_node]: Aguardando serviço '/global_costmap/clear_entirely'...
+[lifecycle_manager-8] [INFO] [1762471721.840423005] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471722.135823520] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471722.638327807] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471723.140965634] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471723.643006547] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[lifecycle_manager-8] [INFO] [1762471723.840639476] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471724.145238270] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471724.647605774] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471725.150588647] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471725.652854132] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[lifecycle_manager-8] [INFO] [1762471725.840908255] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471726.155391370] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471726.657724617] [ppo_training_node]: Serviço '/global_costmap/clear_entirely' não disponível, esperando...
+[train-10] [WARN] [1762471726.658812102] [ppo_training_node]: Demorou para encontrar '/global_costmap/clear_entirely'. Continuando sem ele.
+[train-10] [INFO] [1762471726.659421948] [ppo_training_node]: Cliente de clear_global_costmap pronto (se disponível).
+[train-10] [INFO] [1762471726.665756961] [ppo_training_node]: ✅ PPOEnvironment initialized
+[train-10] [INFO] [1762471726.680630171] [ppo_training_node]: Executor iniciado em thread de background (callbacks ROS ativos).
+[lifecycle_manager-8] [INFO] [1762471727.841182756] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [INFO] [1762471729.177145908] [ppo_training_node]: Iniciando treinamento do STAGE 1 por 100000 timesteps (checkpoint a cada 5000 steps).
+[train-10] [INFO] [1762471729.238630673] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471729.841448244] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471731.841707512] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471731.872109180] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471731.882051380] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471732.091822349] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471732.091900151] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471732.093134720] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471732.094328712] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471732.096311830] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471732.108695792] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471732.108744400] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[robot_spawner-3] [INFO] [1762471733.741440582] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471733.743068493] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471733.743558702] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471733.841953294] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471735.293945879] [goal_spawner_node]: navigate_to_pose NÃO disponível após timeout estendido.
+[lifecycle_manager-8] [INFO] [1762471735.842200189] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471737.751887728] [ppo_training_node]: Timeout esperando goal/publicação. Tentar novamente.
+[lifecycle_manager-8] [INFO] [1762471737.842494638] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [INFO] [1762471737.953201061] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 2)
+[goal_spawner-4] [INFO] [1762471739.297423507] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (2.20, 0.00)
+[train-10] [INFO] [1762471739.297987050] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471739.842751925] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471741.843021985] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471743.843248876] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471744.299100746] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471744.304810062] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471745.301925811] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471745.843534774] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471746.303943832] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471747.306603022] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471747.843783508] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471748.308801856] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471749.311676149] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471749.523656921] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471749.524185404] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[train-10] Using cpu device
+[train-10] Logging to tb_logs/PPO_168
+[train-10] [INFO] [1762471749.697159937] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471749.844016169] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471750.564644864] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[lifecycle_manager-8] [INFO] [1762471751.844240788] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471752.298670196] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471752.308392336] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471752.516442159] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471752.516520450] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471752.517515956] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471752.518477659] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471752.520380113] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471752.531909445] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471752.531968111] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471753.844511002] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471754.200948131] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471754.202827118] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471754.203366147] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471755.844747961] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471756.568131094] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[train-10] [INFO] [1762471756.568802610] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471757.844978763] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471759.845216607] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471761.570224026] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471761.583002318] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[lifecycle_manager-8] [INFO] [1762471761.845468406] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471762.573258052] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[goal_spawner-4] [INFO] [1762471763.575954012] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471763.845670256] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471764.578454869] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471765.580807417] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471765.845907362] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471766.583404788] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471766.802944999] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471766.803430460] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[train-10] [INFO] [1762471766.972491436] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[goal_spawner-4] [WARN] [1762471767.836185899] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[lifecycle_manager-8] [INFO] [1762471767.846148086] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471769.728008953] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471769.737275669] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[lifecycle_manager-8] [INFO] [1762471769.846323355] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471769.943097971] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471769.943155101] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471769.944357545] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471769.945698901] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471769.947491218] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471769.959389104] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471769.959437643] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[robot_spawner-3] [INFO] [1762471771.476105965] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471771.477511855] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471771.477935926] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471771.846541002] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471773.840334565] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (2.20, 2.20)
+[train-10] [INFO] [1762471773.840566714] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471773.846798792] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471775.847050909] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471777.847319631] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471778.841770348] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471778.850037718] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471779.844023677] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471779.847595809] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471780.846012271] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471781.847839145] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471781.848499976] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471782.851293753] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471783.848085187] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471783.854162500] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471784.065574090] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471784.066076662] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471785.107562926] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471785.124186019] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=2.404 angle=-1.487 lin=-0.088 ang=0.292
+[train-10] [INFO] [1762471785.187418024] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471785.848337636] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471787.848666611] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471787.952769787] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471787.962255388] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471788.167432552] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471788.167600938] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471788.168689193] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471788.170086493] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471788.171838722] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471788.183297248] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471788.183364924] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[robot_spawner-3] [INFO] [1762471789.690689425] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471789.692415953] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471789.693013089] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471789.848916926] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471791.112154549] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[train-10] [INFO] [1762471791.112451860] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471791.849130346] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471793.849334736] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471795.849539454] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471796.113843393] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471796.124192506] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471797.116594927] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471797.849760285] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471798.118972494] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471799.121476642] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471799.849997856] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471800.124347831] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471801.126536149] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471801.338220718] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471801.339406960] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[lifecycle_manager-8] [INFO] [1762471801.850315860] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471802.379063447] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471802.400741469] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=1.772 angle=-1.965 lin=-0.201 ang=-0.410
+[train-10] [INFO] [1762471802.463617808] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471803.850560370] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471805.162314103] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471805.171879607] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471805.382339197] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471805.382415533] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471805.383694872] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471805.385305256] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471805.387142063] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471805.398559180] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471805.398613516] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471805.850813448] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471806.967524194] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471806.968872605] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471806.969487342] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471807.851088362] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471808.383327441] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[train-10] [INFO] [1762471808.383420399] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471809.851371772] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471811.851625197] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471813.385399654] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471813.392468917] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[lifecycle_manager-8] [INFO] [1762471813.851865746] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471814.387856544] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[goal_spawner-4] [INFO] [1762471815.390338327] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471815.852100334] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471816.393235550] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471817.395672762] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471817.852326654] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471818.398138707] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471818.601964288] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471818.602551926] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471819.651725061] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471819.664205156] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=1.772 angle=-2.171 lin=0.647 ang=-0.902
+[train-10] [INFO] [1762471819.727538842] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471819.852537793] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471821.852760360] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471822.373488733] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471822.383360493] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471822.593941568] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471822.593997580] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471822.595166712] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471822.596715218] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471822.598625638] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471822.609253631] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471822.609316557] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471823.853027108] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471824.231357013] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471824.233347121] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471824.233901585] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762471825.654858716] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, -2.20)
+[train-10] [INFO] [1762471825.655724041] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471825.853239632] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471827.853510586] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471829.853768939] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471830.656617273] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471830.667733664] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471831.659344095] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471831.854006102] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471832.662362251] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471833.664614143] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471833.854334447] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471834.667159742] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471835.669932910] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[lifecycle_manager-8] [INFO] [1762471835.854550041] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471835.884608748] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471835.885210494] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471836.923350641] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471836.945249449] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=2.746 angle=2.026 lin=-0.300 ang=0.473
+[train-10] [INFO] [1762471837.008712790] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471837.854807857] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471839.796242509] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471839.805334782] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[lifecycle_manager-8] [INFO] [1762471839.855060754] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471840.015588404] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471840.015656079] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471840.016800488] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471840.018148482] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471840.019675129] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471840.032384658] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471840.032431800] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[robot_spawner-3] [INFO] [1762471841.512093401] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471841.513848845] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471841.514413437] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471841.855360833] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471842.927197510] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (-2.20, -2.20)
+[train-10] [INFO] [1762471842.927690934] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471843.855665420] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471845.855914102] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471847.856127972] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471847.929116548] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471847.939880040] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471848.931332678] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471849.856317574] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471849.933928698] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471850.936098647] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471851.856512801] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471851.938900680] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471852.941774955] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471853.156134028] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471853.156708887] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[lifecycle_manager-8] [INFO] [1762471853.856715676] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471854.195411594] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471854.222185011] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=3.818 angle=-0.738 lin=0.610 ang=-0.787
+[train-10] [INFO] [1762471854.285588809] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471855.856891699] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471857.016599369] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471857.026211610] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471857.241527314] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471857.241604209] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471857.243026933] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471857.244614411] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471857.246142036] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471857.257750673] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471857.257807942] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471857.857104842] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471858.789065154] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471858.790774295] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471858.791395807] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471859.857363697] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471860.199946650] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (2.20, 2.20)
+[train-10] [INFO] [1762471860.199968999] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471861.857656459] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471863.857882278] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471865.201684711] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471865.219963903] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[lifecycle_manager-8] [INFO] [1762471865.858105966] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471866.203909955] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[goal_spawner-4] [INFO] [1762471867.206635984] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471867.858364957] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471868.209218167] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471869.212165223] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471869.858633409] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471870.214944757] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471870.438442720] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471870.438997116] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471871.468398836] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471871.495277935] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=2.404 angle=3.086 lin=-0.290 ang=-0.094
+[train-10] [INFO] [1762471871.557706714] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471871.858900777] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471873.859108953] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471874.244343814] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471874.254999968] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471874.466657162] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471874.466734057] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471874.468024014] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471874.469146215] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471874.471345847] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471874.483468866] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471874.483522992] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471875.859325121] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471876.061332922] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471876.062465109] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471876.063210659] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762471877.472026897] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (-2.20, 0.00)
+[train-10] [INFO] [1762471877.472496017] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471877.859573868] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471879.859797432] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471881.860072361] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471882.474083403] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471882.490086983] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471883.476868093] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471883.860362824] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471884.479847803] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471885.482241994] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471885.860609947] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471886.485297601] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471887.488295056] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471887.707093742] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471887.707871418] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[lifecycle_manager-8] [INFO] [1762471887.860852349] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471888.742092526] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471888.769345144] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=2.746 angle=-2.082 lin=0.169 ang=0.377
+[train-10] [INFO] [1762471888.832123922] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471889.861063772] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471891.477713299] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471891.487119937] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471891.694533070] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471891.694599837] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471891.695393857] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471891.696462280] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471891.698313129] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471891.709596178] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471891.709657917] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471891.861311959] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471893.335192026] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471893.336909898] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471893.337524566] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471893.861589508] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471894.746649614] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (2.20, 0.00)
+[train-10] [INFO] [1762471894.746728673] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471895.861798921] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471897.862016462] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471899.748070469] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471899.766806017] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[lifecycle_manager-8] [INFO] [1762471899.862278170] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471900.751073837] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[goal_spawner-4] [INFO] [1762471901.753592394] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471901.862510432] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471902.756521360] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471903.759584584] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471903.862736435] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471904.762575896] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471904.976144369] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471904.977089943] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[lifecycle_manager-8] [INFO] [1762471905.862975036] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471906.016039005] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471906.035074521] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=1.772 angle=-0.050 lin=-0.290 ang=-0.088
+[train-10] [INFO] [1762471906.097330359] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471907.863225116] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471908.700823907] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471908.710919738] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471908.920755382] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471908.920839890] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471908.921871438] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471908.922937906] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471908.924670446] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471908.937948431] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471908.938003744] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471909.863507628] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471910.601051608] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471910.602656130] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471910.603710167] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471911.863785834] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [INFO] [1762471912.020609353] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[goal_spawner-4] [INFO] [1762471912.020806164] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (0.00, 2.20)
+[lifecycle_manager-8] [INFO] [1762471913.864040878] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471915.864278556] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471917.022899276] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471917.032937839] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[lifecycle_manager-8] [INFO] [1762471917.864474143] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471918.025032769] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[goal_spawner-4] [INFO] [1762471919.027657476] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471919.864694339] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471920.030727860] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471921.032994819] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471921.864928734] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471922.036113440] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471922.252934978] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471922.253525411] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471923.289257540] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471923.316015988] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=1.772 angle=-2.317 lin=0.613 ang=0.175
+[train-10] [INFO] [1762471923.378671549] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471923.865141712] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471925.865307639] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471926.134598271] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471926.145491478] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471926.359035827] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471926.359087579] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471926.360123178] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471926.361534520] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471926.363079119] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471926.374324184] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471926.374372025] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471927.865537772] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471927.881788886] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471927.883002299] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471927.883568219] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762471929.293468045] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (2.20, 2.20)
+[train-10] [INFO] [1762471929.294169875] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471929.865805013] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471931.866065989] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471933.866289341] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471934.295195929] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471934.303332522] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471935.297991980] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471935.866562371] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471936.300909856] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471937.303792067] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471937.866789537] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471938.306178988] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471939.309084151] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471939.520045431] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471939.520946377] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[lifecycle_manager-8] [INFO] [1762471939.867006176] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471940.562987912] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471940.579298953] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=2.404 angle=-1.362 lin=-0.209 ang=-0.520
+[train-10] [INFO] [1762471940.641431291] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471941.867198809] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471943.362900473] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471943.371852319] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471943.581499073] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471943.581569054] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471943.583068606] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471943.584719782] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471943.586254813] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471943.596796516] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471943.596849315] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471943.867432039] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471945.144908738] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471945.146658041] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471945.147673526] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471945.867701256] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471946.567323817] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (-2.20, 0.00)
+[train-10] [INFO] [1762471946.568202903] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471947.867941508] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471949.868186806] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471951.569514509] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471951.592891909] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[lifecycle_manager-8] [INFO] [1762471951.868448185] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471952.572567470] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[goal_spawner-4] [INFO] [1762471953.575644618] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[lifecycle_manager-8] [INFO] [1762471953.868688700] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471954.578593769] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[goal_spawner-4] [INFO] [1762471955.581613971] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[lifecycle_manager-8] [INFO] [1762471955.868986152] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471956.584037684] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[train-10] [WARN] [1762471956.802376608] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471956.802913614] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471957.836856592] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471957.853573065] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=2.746 angle=1.136 lin=0.139 ang=0.489
+[lifecycle_manager-8] [INFO] [1762471957.869279361] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [INFO] [1762471957.916843832] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471959.869512732] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471960.588137453] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471960.598073569] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1762471960.805482142] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471960.805543253] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471960.806858775] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471960.808297636] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471960.809773861] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471960.821852695] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471960.821902771] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[lifecycle_manager-8] [INFO] [1762471961.869784253] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[robot_spawner-3] [INFO] [1762471962.420598783] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471962.422375255] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471962.422890680] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[goal_spawner-4] [INFO] [1762471963.841658643] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (-2.20, -2.20)
+[train-10] [INFO] [1762471963.841800699] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471963.870094133] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471965.870405284] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471967.870643677] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471968.843840794] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471968.849574100] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471969.846738242] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471969.870918402] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471970.849862834] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s
+[goal_spawner-4] [INFO] [1762471971.852886038] [goal_spawner_node]: Waiting for navigate_to_pose action server... 3/5s
+[lifecycle_manager-8] [INFO] [1762471971.871225757] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471972.855688147] [goal_spawner_node]: Waiting for navigate_to_pose action server... 4/5s
+[goal_spawner-4] [INFO] [1762471973.857814916] [goal_spawner_node]: Waiting for navigate_to_pose action server... 5/5s
+[lifecycle_manager-8] [INFO] [1762471973.871528378] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[train-10] [WARN] [1762471974.060277068] [ppo_training_node]: Timeout em TF map->base_link no reset.
+[train-10] [INFO] [1762471974.060964302] [ppo_training_node]: ✅ Reset do ambiente concluído. Iniciando novo episódio.
+[goal_spawner-4] [WARN] [1762471975.111569803] [goal_spawner_node]: Action server 'navigate_to_pose' não disponível após 5.0s. Goal NÃO enviado ao Nav2.
+[train-10] [INFO] [1762471975.123866543] [ppo_training_node]: [TRAIN] step=10 Δd=0.000 dist=3.818 angle=1.629 lin=0.057 ang=-0.127
+[train-10] [INFO] [1762471975.186172483] [ppo_training_node]: Tentando spawnar o robô... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471975.871759425] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471977.814677536] [bumper_plugin]: Publishing contact states to [/bumper_states]
+[gzserver-1] [INFO] [1762471977.823998358] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[lifecycle_manager-8] [INFO] [1762471977.872009552] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[gzserver-1] [INFO] [1762471978.030251838] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.160000m]
+[gzserver-1] [INFO] [1762471978.030341933] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1762471978.031253356] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1762471978.032408105] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1762471978.034483845] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1762471978.045667812] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1762471978.045722497] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[robot_spawner-3] [INFO] [1762471979.689058998] [robot_spawner]: Robô spawnado em (0.50, 0.50)
+[train-10] [INFO] [1762471979.690721769] [ppo_training_node]: ✅ Robô spawnado com sucesso.
+[train-10] [INFO] [1762471979.691302007] [ppo_training_node]: Disparando 'spawn_new_goal'... (tentativa 1)
+[lifecycle_manager-8] [INFO] [1762471979.872245374] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471981.115488180] [goal_spawner_node]: Novo goal spawnado e enviado ao Nav2 em (-2.20, -2.20)
+[train-10] [INFO] [1762471981.116573507] [ppo_training_node]: ✅ Goal publicado/recebido (callback).
+[lifecycle_manager-8] [INFO] [1762471981.872536315] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471983.872808899] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[lifecycle_manager-8] [INFO] [1762471985.873085128] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [WARN] [1762471986.116933917] [goal_spawner_node]: spawn_entity: serviço não disponível ou falhou: call_timeout
+[train-10] [WARN] [1762471986.126011066] [ppo_training_node]: Timeout esperando plan do Nav2 no reset. Continuando mesmo assim (poderá abortar).
+[goal_spawner-4] [INFO] [1762471987.119835356] [goal_spawner_node]: Waiting for navigate_to_pose action server... 1/5s
+[lifecycle_manager-8] [INFO] [1762471987.873321489] [lifecycle_manager_navigation]: Waiting for service global_costmap/get_state...
+[goal_spawner-4] [INFO] [1762471988.122473096] [goal_spawner_node]: Waiting for navigate_to_pose action server... 2/5s

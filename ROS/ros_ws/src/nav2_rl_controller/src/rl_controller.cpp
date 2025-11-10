@@ -21,10 +21,12 @@ void RLController::configure(
   std::shared_ptr<tf2_ros::Buffer> tf,
   std::shared_ptr<nav2_costmap_2d::Costmap2DROS> costmap_ros)
 {
-  (void)tf; (void)costmap_ros;
+  (void)costmap_ros;
   name_ = name;
   node_ = parent.lock();
   logger_ = node_->get_logger();
+
+  tf_buffer_ = tf;
 
   RCLCPP_INFO(logger_, "Configuring RLController: %s", name_.c_str());
 
@@ -90,36 +92,20 @@ void RLController::scan_cb(const sensor_msgs::msg::LaserScan::SharedPtr msg)
   last_scan_.resize(L);
   for (size_t i = 0; i < L; ++i) {
     float v = msg->ranges[i];
-    if (!std::isfinite(v)) v = 10.0f;
+    if (!std::isfinite(v)) v = 10.0f; // Usa 10.0 como valor 'infinito'
     last_scan_[i] = v;
   }
   scan_angle_min_ = msg->angle_min;
   scan_angle_max_ = msg->angle_max;
+  
+  // Comprime o scan para setores (ex: 36)
   last_sectors_ = compressScan(last_scan_, n_sectors_, 10.0f);
-  last_min_obst_ = *std::min_element(last_scan_.begin(), last_scan_.end());
-
-  // compute front_min
-  double ang_min = scan_angle_min_;
-  double ang_max = scan_angle_max_;
-  int n = n_sectors_;
-  int front_idx = static_cast<int>(std::round((0.0 - ang_min) / (ang_max - ang_min + 1e-9) * (n - 1)));
-  front_idx = std::max(0, std::min(n - 1, front_idx));
-  int half_w = std::max(1, static_cast<int>(n * 60 / 360.0));
-  last_front_min_ = minInWindow(last_sectors_, front_idx, half_w);
-
-  // path_min (goal direction)
-  if (!current_plan_.poses.empty()) {
-    auto goal = current_plan_.poses.back().pose.position;
-    double dx = goal.x - robot_pose_.position.x;
-    double dy = goal.y - robot_pose_.position.y;
-    double yaw = tf2::getYaw(robot_pose_.orientation);
-    double curr_angle = std::atan2(dy, dx) - yaw;
-    while (curr_angle > M_PI) curr_angle -= 2*M_PI;
-    while (curr_angle < -M_PI) curr_angle += 2*M_PI;
-    double frac = (curr_angle - ang_min) / (ang_max - ang_min + 1e-9);
-    int sector_idx = std::clamp(static_cast<int>(std::round(frac * (n - 1))), 0, n - 1);
-    int w = std::max(1, static_cast<int>(n * 20 / 360.0));
-    last_path_min_ = minInWindow(last_sectors_, sector_idx, w);
+  
+  // Armazena a menor distância bruta (para min_norm)
+  if (!last_scan_.empty()) {
+    last_min_obst_ = *std::min_element(last_scan_.begin(), last_scan_.end());
+  } else {
+    last_min_obst_ = 10.0f;
   }
 }
 
@@ -127,6 +113,9 @@ void RLController::odom_cb(const nav_msgs::msg::Odometry::SharedPtr msg)
 {
   robot_pose_.position = msg->pose.pose.position;
   robot_pose_.orientation = msg->pose.pose.orientation;
+
+  // === NOVO: armazenar twist atual para o GoalChecker ===
+  last_robot_twist_ = msg->twist.twist;
 }
 
 double RLController::quaternion_to_yaw(const geometry_msgs::msg::Quaternion & q)
@@ -238,68 +227,147 @@ geometry_msgs::msg::TwistStamped RLController::computeVelocityCommands(
   const geometry_msgs::msg::Twist & velocity,
   nav2_core::GoalChecker * goal_checker)
 {
-  (void)velocity; (void)goal_checker;
+  (void)velocity; // usamos last_robot_twist_ em vez do velocity passado
   geometry_msgs::msg::TwistStamped cmd;
   cmd.header.stamp = node_->now();
+  cmd.header.frame_id = "base_link";
 
-  // === Build 44-D observation ===
+  if (current_plan_.poses.empty()) {
+    RCLCPP_WARN(logger_, "GoalChecker: O plano (current_plan_) está vazio. Parando.");
+    cmd.twist.linear.x = 0.0;
+    cmd.twist.angular.z = 0.0;
+    return cmd;
+  }
+
+  // --- Transformar both: robot pose (pose) e goal (current_plan_.poses.back()) para "map" ---
+  geometry_msgs::msg::PoseStamped robot_in_map;
+  geometry_msgs::msg::PoseStamped goal_in_map;
+  bool robot_transformed = false;
+  bool goal_transformed = false;
+
+  // Prepare goal_stamped (cópia do último pose do path)
+  geometry_msgs::msg::PoseStamped goal_stamped = current_plan_.poses.back();
+  if (goal_stamped.header.frame_id.empty()) {
+    // se o header do goal estiver vazio, assume 'map'
+    goal_stamped.header.frame_id = "map";
+  }
+
+  // 1) transformar goal -> map (se já estiver em map, doTransform funcionará com identity)
+  try {
+    auto tf_goal = tf_buffer_->lookupTransform(
+      "map",
+      goal_stamped.header.frame_id,
+      tf2::TimePointZero);
+    tf2::doTransform(goal_stamped, goal_in_map, tf_goal);
+    goal_transformed = true;
+  } catch (const tf2::TransformException & ex) {
+    RCLCPP_WARN(logger_, "TF failed transforming goal (%s -> map): %s. Using goal as-is.",
+                goal_stamped.header.frame_id.c_str(), ex.what());
+    goal_in_map = goal_stamped; // fallback: usar como está
+    goal_transformed = false;
+  }
+
+  // 2) transformar robot pose -> map
+  try {
+    auto tf_robot = tf_buffer_->lookupTransform(
+      "map",
+      pose.header.frame_id.empty() ? std::string("base_link") : pose.header.frame_id,
+      tf2::TimePointZero);
+    tf2::doTransform(pose, robot_in_map, tf_robot);
+    robot_transformed = true;
+  } catch (const tf2::TransformException & ex) {
+    RCLCPP_WARN(logger_, "TF failed transforming robot pose (%s -> map): %s. Using robot pose as-is.",
+                pose.header.frame_id.c_str(), ex.what());
+    robot_in_map = pose; // fallback
+    robot_transformed = false;
+  }
+
+  // --- Logging detalhado para debug (mostra os valores usados pelo controlador) ---
+  const auto & gp = goal_in_map.pose;
+  const auto & rp = robot_in_map.pose;
+  RCLCPP_INFO(logger_, "Goal (map) = [x=%.3f, y=%.3f, yaw=%.3f] (from frame='%s', tf_ok=%s)",
+              gp.position.x, gp.position.y,
+              tf2::getYaw(gp.orientation),
+              goal_stamped.header.frame_id.c_str(),
+              goal_transformed ? "true" : "false");
+  RCLCPP_INFO(logger_, "Robot (map) = [x=%.3f, y=%.3f, yaw=%.3f] (from frame='%s', tf_ok=%s)",
+              rp.position.x, rp.position.y,
+              tf2::getYaw(rp.orientation),
+              pose.header.frame_id.c_str(),
+              robot_transformed ? "true" : "false");
+
+  // --- Distância entre robot_in_map e goal_in_map (ambos em 'map' ou fallback) ---
+  double dx = gp.position.x - rp.position.x;
+  double dy = gp.position.y - rp.position.y;
+  double dist_to_goal = std::hypot(dx, dy);
+  RCLCPP_INFO(logger_, "Distância ao goal (map): %.3f m (robot_tf=%s goal_tf=%s)",
+              dist_to_goal, robot_transformed ? "true" : "false", goal_transformed ? "true" : "false");
+
+  // --- Chama o GoalChecker com as poses em 'map' ---
+  if (goal_checker && goal_checker->isGoalReached(rp, gp, last_robot_twist_)) {
+    RCLCPP_INFO(logger_, "GoalChecker [Nav2] diz: Chegamos ao objetivo!");
+    // opcional: poderia limpar current_plan_ aqui se desejar
+    cmd.twist.linear.x = 0.0;
+    cmd.twist.angular.z = 0.0;
+    return cmd;
+  }
+
+  // === RESTANTE: computar observações e chamar serviço RL (usa robot_in_map.pose) ===
   std::vector<float> sectors_norm = last_sectors_;
-  if (sectors_norm.empty()) sectors_norm.assign(n_sectors_, 10.0f);
+  if (sectors_norm.empty()) {
+    sectors_norm.assign(n_sectors_, 1.0f);
+  }
   for (auto &v : sectors_norm) {
     if (!std::isfinite(v)) v = 10.0f;
     v = std::clamp(v, 0.0f, 10.0f) / 10.0f;
   }
 
-  // compute goal direction
-  double gx = 0.0, gy = 0.0;
-  if (!current_plan_.poses.empty()) {
-    gx = current_plan_.poses.back().pose.position.x;
-    gy = current_plan_.poses.back().pose.position.y;
-  }
-  double rx = robot_pose_.position.x, ry = robot_pose_.position.y;
-  double dx = gx - rx, dy = gy - ry;
-  double dist = std::hypot(dx, dy);
-  double yaw = tf2::getYaw(robot_pose_.orientation);
-  double curr_angle = (dist > 0) ? std::atan2(dy, dx) - yaw : 0.0;
-  while (curr_angle > M_PI) curr_angle -= 2*M_PI;
-  while (curr_angle < -M_PI) curr_angle += 2*M_PI;
-
-  double angle_sin = std::sin(curr_angle);
-  double angle_cos = std::cos(curr_angle);
-
+  // Use a pose já transformada (robot_in_map.pose) para calcular lookahead/obs
+  auto look_rel = computeLookaheadRel(current_plan_, robot_in_map.pose, lookahead_distance_);
+  float dist = std::hypot(look_rel.first, look_rel.second);
+  float curr_angle = std::atan2(look_rel.second, look_rel.first);
+  float angle_sin = std::sin(curr_angle);
+  float angle_cos = std::cos(curr_angle);
   float min_norm = std::clamp(last_min_obst_, 0.0f, 10.0f) / 10.0f;
-  float front_norm = std::clamp(last_front_min_, 0.0f, 10.0f) / 10.0f;
-  float path_norm = std::clamp(last_path_min_, 0.0f, 10.0f) / 10.0f;
 
-  auto look_rel = computeLookaheadRel(current_plan_, robot_pose_, lookahead_distance_);
+  int n = n_sectors_;
+  double ang_min = scan_angle_min_;
+  double ang_max = scan_angle_max_;
+  int front_idx = static_cast<int>(std::round((0.0 - ang_min) / (ang_max - ang_min + 1e-9) * (n - 1)));
+  front_idx = std::max(0, std::min(n - 1, front_idx));
+  int half_w_front = std::max(1, static_cast<int>(n * 60 / 360.0));
+  float front_min_raw = minInWindow(last_sectors_, front_idx, half_w_front);
+  float front_norm = std::clamp(front_min_raw, 0.0f, 10.0f) / 10.0f;
 
-  std::vector<float> obs;
-  obs.reserve(n_sectors_ + 8);
-  obs.insert(obs.end(), sectors_norm.begin(), sectors_norm.end());
+  double frac = (curr_angle - ang_min) / (ang_max - ang_min + 1e-9);
+  int sector_idx = std::clamp(static_cast<int>(std::round(frac * (n - 1))), 0, n - 1);
+  int half_w_path = std::max(1, static_cast<int>(n * 20 / 360.0));
+  float path_min_raw = minInWindow(last_sectors_, sector_idx, half_w_path);
+  float path_norm = std::clamp(path_min_raw, 0.0f, 10.0f) / 10.0f;
+
+  std::vector<double> obs;
+  obs.reserve(n_sectors_ + 6);
+  for (float v : sectors_norm) obs.push_back(static_cast<double>(v));
   obs.push_back(dist);
   obs.push_back(angle_sin);
   obs.push_back(angle_cos);
   obs.push_back(min_norm);
   obs.push_back(front_norm);
   obs.push_back(path_norm);
-  obs.push_back(look_rel.first);
-  obs.push_back(look_rel.second);
 
-  // === Call RLInfer ===
   if (!rl_client_->wait_for_service(std::chrono::seconds(1))) {
-    RCLCPP_WARN(logger_, "RL service unavailable (timeout).");
+    RCLCPP_WARN(logger_, "RL service '/rl_infer' indisponível (timeout).");
     cmd.twist.linear.x = 0.0;
     cmd.twist.angular.z = 0.0;
     return cmd;
   }
 
   auto req = std::make_shared<nav2_rl_controller::srv::RLInfer::Request>();
-  req->obs.assign(obs.begin(), obs.end());  // conversão automática float -> double
+  req->obs = obs;
   auto future = rl_client_->async_send_request(req);
-
   auto status = future.wait_for(std::chrono::milliseconds((int)controller_timeout_ms_));
   if (status == std::future_status::timeout) {
-    RCLCPP_WARN(logger_, "RL service call timed out.");
+    RCLCPP_WARN(logger_, "Serviço RL '/rl_infer' demorou para responder (timeout).");
     cmd.twist.linear.x = 0.0;
     cmd.twist.angular.z = 0.0;
     return cmd;
@@ -308,11 +376,6 @@ geometry_msgs::msg::TwistStamped RLController::computeVelocityCommands(
   auto res = future.get();
   cmd.twist.linear.x = res->linear_x;
   cmd.twist.angular.z = res->angular_z;
-
-  RCLCPP_INFO(node_->get_logger(),
-    "[RLController] RLInfer result: lin=%.3f, ang=%.3f",
-    res->linear_x, res->angular_z);
-
   debug_pub_->publish(cmd.twist);
 
   return cmd;

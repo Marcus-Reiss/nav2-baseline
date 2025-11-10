@@ -39,6 +39,7 @@
             <namespace>/</namespace>
           </ros>
           <frameName>base_link</frameName>
+          <publish_odom_tf>false</publish_odom_tf>  <!-- ADICIONADO -->
         </plugin>
       </sensor>
 

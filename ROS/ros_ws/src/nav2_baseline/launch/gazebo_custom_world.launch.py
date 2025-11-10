@@ -10,7 +10,7 @@ def generate_launch_description():
     pkg = get_package_share_directory('nav2_baseline')
     gazebo_pkg = get_package_share_directory('gazebo_ros')
 
-    default_world = 'empty_bkp.world'
+    default_world = 'corridor_3x10_static.world'
     world_name = LaunchConfiguration('world_name')
 
     return LaunchDescription([

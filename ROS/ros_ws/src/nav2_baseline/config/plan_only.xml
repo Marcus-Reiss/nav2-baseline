@@ -1,0 +1,15 @@
+<!--
+This Behavior Tree was modified to launch only ComputePathToPose action
+-->
+<root main_tree_to_execute="MainTree">
+    <BehaviorTree ID="MainTree">
+        <PipelineSequence name="NavigateWithReplanning">
+            <RateController hz="1.0">
+                <RecoveryNode number_of_retries="1" name="ComputePathToPose">
+                    <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+                    <ClearEntireCostmap service_name="global_costmap/clear_entirely_global_costmap"/>
+                </RecoveryNode>
+            </RateController>
+        </PipelineSequence>
+    </BehaviorTree>
+</root>
