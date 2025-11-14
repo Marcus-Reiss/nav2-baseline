@@ -1,0 +1,12 @@
+records:
+
+rec_1: SA (não parou ao chegar ao goal)
+rec_2: SA (não parou ao chegar ao goal)
+rec_3: SA (não parou ao chegar ao goal)
+rec_4: SA (não parou ao chegar ao goal)
+rec_5: SA (não parou ao chegar ao goal)
+rec_6: SA (não parou ao chegar ao goal)
+rec_7: SA (não parou ao chegar ao goal)
+rec_8: SA (não parou ao chegar ao goal)
+rec_9: SA (não parou ao chegar ao goal)
+rec_10: SA (não parou ao chegar ao goal)

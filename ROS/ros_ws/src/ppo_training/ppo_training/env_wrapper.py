@@ -97,11 +97,11 @@ class PPOEnvironment(Node, gym.Env):
         self.k_omega = 0.15   # penalty on angular speed magnitude
         self.k_osc = 0.15     # penalty on change in angular speed (oscillation)
         self.k_step = 0.001   # small time-step penalty
-        self.goal_reward = 10.0
-        self.collision_reward = -10.0
+        self.goal_reward = 500.0
+        self.collision_reward = -500.0
 
         # path-clear reward
-        self.k_path_clear = 5.0
+        self.k_path_clear = 15.0
 
         self.reward_clip = 50.0
 
@@ -120,18 +120,18 @@ class PPOEnvironment(Node, gym.Env):
         self.spin_counter_max = 10
 
         # ---- NEW: safety / clearance shaping ----
-        self.k_prox = 5.0          # penalidade por proximidade
+        self.k_prox = 50.0          # penalidade por proximidade
         self.prox_thresh = 1.2     # m â€” comeÃ§a a penalizar
-        self.k_clear = 0.8         # recompensa por aumento de clearance
+        self.k_clear = 8.0         # recompensa por aumento de clearance
         self.k_ttc = 1.0           # penalidade se TTC for baixo
         self.ttc_thresh = 1.2      # s â€” TTC abaixo disso penaliza
-        self.k_front = 30.0         # penalidade para obstÃ¡culo frontal 8.0
+        self.k_front = 250.0         # penalidade para obstÃ¡culo frontal 8.0
         self.front_thresh = 2.5    # m â€” faixa frontal crÃ­tica
         self.prev_min_obst_for_reward = 10.0  # inicializaÃ§Ã£o
 
         # novo: peso de bloqueio e penalidade linear quando bloqueado
-        self.k_block = 100.0        # penalidade base por bloqueio 20.0
-        self.k_block_lin = 300.0    # penalidade por mover-se (lin_cmd) enquanto bloqueado 35.0
+        self.k_block = 75.0        # penalidade base por bloqueio 20.0
+        self.k_block_lin = 200.0    # penalidade por mover-se (lin_cmd) enquanto bloqueado 35.0
         self.k_commit = 25.0  # teimosia
 
         # permitir curvas mais agressivas (menos puniÃ§Ã£o em ang)
@@ -394,21 +394,6 @@ class PPOEnvironment(Node, gym.Env):
 
         r_clear = self.k_clear * (curr_min - prev_min)
 
-        r_ttc = 0.0
-        if lin_cmd > 1e-3:
-            ttc = curr_min / (abs(lin_cmd) + 1e-6)
-            if ttc < self.ttc_thresh:
-                r_ttc = - self.k_ttc * (1.0 - (ttc / self.ttc_thresh))
-
-        # ---------- frontal window and front_min ----------
-        # n = self.n_sectors
-        # w = max(1, int(n * 60 / 360))
-        # center = n // 2
-        # start = max(0, center - w//2)
-        # end = min(n, center + w//2 + 1)
-        # front_sectors = self.scan_compressed[start:end]
-        # front_min = float(np.min(front_sectors)) if front_sectors.size > 0 else curr_min
-
         # # --- substituir o bloco 'front_sectors' por este ---
         n = self.n_sectors
         angle_min = getattr(self, "scan_angle_min", -math.pi)
@@ -424,6 +409,21 @@ class PPOEnvironment(Node, gym.Env):
         front_sectors = self.scan_compressed[start:end]
         front_min = float(np.min(front_sectors)) if front_sectors.size > 0 else curr_min
         # #
+
+        r_ttc = 0.0
+        if lin_cmd > 1e-3:
+            ttc = front_min / (abs(lin_cmd) + 1e-6)
+            if ttc < self.ttc_thresh:
+                r_ttc = - self.k_ttc * (1.0 - (ttc / self.ttc_thresh))
+
+        # ---------- frontal window and front_min ----------
+        # n = self.n_sectors
+        # w = max(1, int(n * 60 / 360))
+        # center = n // 2
+        # start = max(0, center - w//2)
+        # end = min(n, center + w//2 + 1)
+        # front_sectors = self.scan_compressed[start:end]
+        # front_min = float(np.min(front_sectors)) if front_sectors.size > 0 else curr_min
 
         r_front = 0.0
         if front_min < self.front_thresh:

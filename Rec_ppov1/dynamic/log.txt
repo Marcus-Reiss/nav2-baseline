@@ -1,0 +1,12 @@
+records:
+
+rec_1: F (goal failed)
+rec_2: SC (mas não parou ao chegar no goal)
+rec_3: F (goal failed)
+rec_4: SA (bateu no final pq não parou ao chegar no goal, mas pode-se considerar SA)
+rec_5: F (goal failed)
+rec_6: SA (bateu no final pq não parou ao chegar no goal)
+rec_7: SA (bateu no final pq não parou ao chegar no goal)
+rec_8: SC (mas não parou ao chegar no goal)
+rec_9: SA (bateu no final pq não parou ao chegar no goal)
+rec_10: SA (bateu no final pq não parou ao chegar no goal)

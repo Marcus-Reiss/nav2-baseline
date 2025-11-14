@@ -1,0 +1,12 @@
+records:
+
+rec_1: SA
+rec_2: SA
+rec_3: SA
+rec_4: F  (goal failed)
+rec_5: SA
+rec_6: SA
+rec_7: SA
+rec_8: SC
+rec_9: F  (goal failed)
+rec_10: SA

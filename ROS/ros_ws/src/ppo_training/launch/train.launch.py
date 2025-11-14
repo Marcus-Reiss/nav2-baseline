@@ -10,6 +10,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     pkg_share = get_package_share_directory("ppo_training")
+    nav2_baseline_pkg = get_package_share_directory("nav2_baseline")
     gazebo_share = get_package_share_directory("gazebo_ros")
 
     # Stage argument: 1 = empty, 2 = static obstacles, 3 = static + dynamic
@@ -23,8 +24,8 @@ def generate_launch_description():
     # Seleciona o arquivo .world conforme stage (usando PythonExpression)
     world_expr = PythonExpression([
         "'", os.path.join(pkg_share, 'worlds', 'empty.world'), "' if '", stage, "' == '1' else '",
-        os.path.join(pkg_share, 'worlds', 'static_v1.world'), "' if '", stage, "' == '2' else '",
-        os.path.join(pkg_share, 'worlds', 'corridor_3x10_static.world'), "'"
+        os.path.join(nav2_baseline_pkg, 'worlds', 'static_v2.world'), "' if '", stage, "' == '2' else '",
+        os.path.join(nav2_baseline_pkg, 'worlds', 'dynamic.world'), "'"
     ])
 
     gazebo = IncludeLaunchDescription(
@@ -44,7 +45,7 @@ def generate_launch_description():
             '-entity', 'turtlebot3',
             '-file', tb3_file,
             '-x', '0.0',   # 4.0, 0.0
-            '-y', '0.0',  # -4.0, 0.0
+            '-y', '2.5',  # -4.0, 0.0
             '-z', '0.01'
         ],
         output='screen'

@@ -7,7 +7,7 @@ import os
 def generate_launch_description():
     ppo_models_dir = get_package_share_directory("ppo_training")
     ppo_models_path = os.path.join(
-        ppo_models_dir, "models", "ppo_stage1.zip"
+        ppo_models_dir, "models", "ppo_stage3.zip"
     )
 
     rl_infer_node = Node(
