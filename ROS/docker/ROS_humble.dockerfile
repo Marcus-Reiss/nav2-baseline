@@ -65,7 +65,8 @@ RUN pip install --no-cache-dir \
     gymnasium \
     tensorboard \
     pandas \
-    pyyaml
+    pyyaml \
+    matplotlib
 
 # Build tools and headers for building C++ plugin
 RUN apt-get update && apt-get install -y --no-install-recommends \

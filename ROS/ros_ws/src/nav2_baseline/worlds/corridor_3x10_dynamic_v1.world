@@ -1031,7 +1031,7 @@
         <axis>y</axis>
         <angle>30.96</angle>
         <amplitude>0.75</amplitude>
-        <frequency>0.6</frequency>
+        <frequency>0.3</frequency>
       </plugin>
     </model>
     <model name='moving_white_cylinder_0'>
@@ -1140,7 +1140,7 @@
       <plugin name='dyn_obst_plugin' filename='libdyn_obst_plugin.so'>
         <axis>y</axis>
         <amplitude>0.8</amplitude>
-        <frequency>-0.6</frequency>
+        <frequency>-0.3</frequency>
       </plugin>
     </model>
     <model name='moving_white_cylinder_1'>
@@ -1250,7 +1250,7 @@
         <axis>y</axis>
         <angle>146.31</angle>
         <amplitude>0.5</amplitude>
-        <frequency>-0.6</frequency>
+        <frequency>-0.3</frequency>
       </plugin>
     </model>
   </world>

@@ -21,8 +21,8 @@ def generate_launch_description():
         arguments=[
             '-entity', 'turtlebot3',
             '-file', model_file,
-            '-x', '0.0',   # 0.0
-            '-y', '-3.0',  # -3.0
+            '-x', '4.0',   # 0.0
+            '-y', '-0.5',  # -3.0
             '-z', '0.01'
         ],
         output='screen'

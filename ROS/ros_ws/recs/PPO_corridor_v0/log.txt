@@ -1,0 +1,10 @@
+rec_1: SC
+rec_2: SA
+rec_3: SA
+rec_4: SC
+rec_5: SC
+rec_6: F (goal failed)
+rec_7: SC
+rec_8: SA
+rec_9: SA
+rec_10: SA

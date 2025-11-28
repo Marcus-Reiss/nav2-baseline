@@ -21,8 +21,8 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 # Ajuste se quiser
-                'target_x': -2.75,  # 2.75
-                'target_y': 2.5,   # 2.5
+                'target_x': -4.0,  # 2.75
+                'target_y': 0.0,   # 2.5
                 'target_yaw': 0.0,
                 'frame_id': 'map',
                 'once': True,

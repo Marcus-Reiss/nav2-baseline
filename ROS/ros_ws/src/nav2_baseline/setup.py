@@ -33,6 +33,7 @@ setup(
         'console_scripts': [
             'goal_pub_node = nav2_baseline.goal_pub_node:main',
             'collision_monitor = nav2_baseline.collision_monitor:main',
+            'analyze_bag = nav2_baseline.analyze_bag_node:main'
         ],
     },
 )

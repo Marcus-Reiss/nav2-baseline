@@ -67,7 +67,7 @@ def generate_launch_description():
         nav2_pkg, 'config', 'nav2_params_eval.yaml'
     )
     map_file = os.path.join(
-        nav2_pkg, 'maps', 'static_v1.yaml'
+        nav2_pkg, 'maps', 'corr_v2.yaml'
     )
 
     # Map server node (enabled)

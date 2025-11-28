@@ -1,7 +1,7 @@
 # ppo_training/ppo_training/training_node.py
 import os
 import sys
-import time
+import datetime
 import argparse
 import threading
 from pathlib import Path
@@ -16,6 +16,7 @@ import yaml
 from stable_baselines3 import PPO
 from stable_baselines3.common.vec_env import DummyVecEnv
 from stable_baselines3.common.callbacks import CheckpointCallback
+from stable_baselines3.common.monitor import Monitor
 
 from .env_wrapper import PPOEnvironment  # seu env (Node que implementa step/reset)
 
@@ -55,9 +56,13 @@ class PPOTrainer(Node):
 
         self.stage = int(stage)
 
-        # Save dir
+        # Save dir - model
         self.models_dir = os.path.join(self.pkg_share, 'models')
         os.makedirs(self.models_dir, exist_ok=True)
+
+        # Save dir - log
+        self.log_dir = os.path.join(self.pkg_share, 'training_logs')
+        os.makedirs(self.log_dir, exist_ok=True)
 
         # Executor and env nodes list (para se certificar de limpar depois)
         self._executor = MultiThreadedExecutor()
@@ -70,7 +75,12 @@ class PPOTrainer(Node):
             # registra o node no executor para que callbacks (scan/odom) sejam processados
             self._env_nodes.append(env_node)
             self._executor.add_node(env_node)
-            return env_node
+
+            timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+            log_file = os.path.join(self.log_dir, f"stage{self.stage}_{timestamp}")
+
+            # return env_node
+            return Monitor(env_node, filename=log_file)
 
         self.vec_env = DummyVecEnv([make_env])
 

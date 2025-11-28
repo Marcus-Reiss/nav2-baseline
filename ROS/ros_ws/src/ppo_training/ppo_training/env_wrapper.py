@@ -56,7 +56,7 @@ class PPOEnvironment(Node, gym.Env):
 
     def __init__(self,
                  n_sectors: int = 36,
-                 max_linear: float = 0.7,
+                 max_linear: float = 0.22,
                  max_w: float = 1.0,
                  min_goal_dist: float = 0.2,
                  collision_dist: float = 0.25,
